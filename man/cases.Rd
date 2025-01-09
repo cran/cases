@@ -3,11 +3,41 @@
 \docType{package}
 \name{cases}
 \alias{cases}
+\alias{cases-package}
 \title{\code{cases} package}
 \description{
-Enables simultaneous statistical inference for the accuracy of multiple classifiers in multiple subgroups (strata). For instance, allows to perform multiple comparisons in diagnostic accuracy studies with co-primary endpoints sensitivity and specificity. (Westphal, Max, and Antonia Zapf. "Statistical Inference for Diagnostic Test Accuracy Studies with Multiple Comparisons." arXiv:2105.13469 (2021).)
+Enables simultaneous statistical inference for the accuracy of multiple classifiers
+in multiple subgroups (strata). For instance, allows to perform multiple comparisons
+in diagnostic accuracy studies with co-primary endpoints
+sensitivity (true positive rate, TPR) and specificity (true negative rate, TNR).
 }
 \details{
-See the vignettes
-vignette()
+The package functionality and syntax is described in the vignettes, see examples.
+}
+\examples{
+# overview over package functionality:
+vignette("package_overview")
+
+# a real-world data example:
+vignette("example_wdbc")
+
+}
+\references{
+Westphal M, Zapf A.
+Statistical inference for diagnostic test accuracy studies with multiple comparisons.
+Statistical Methods in Medical Research. 2024;0(0).
+\href{https://journals.sagepub.com/doi/full/10.1177/09622802241236933}{doi:10.1177/09622802241236933}
+}
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/maxwestphal/cases}
+  \item \url{https://maxwestphal.github.io/cases/}
+  \item Report bugs at \url{https://github.com/maxwestphal/cases/issues}
+}
+
+}
+\author{
+\strong{Maintainer}: Max Westphal \email{dev@maxwestphal.io} (\href{https://orcid.org/0000-0002-8488-758X}{ORCID})
+
 }

@@ -7,11 +7,11 @@
 evaluate(
   data,
   contrast = define_contrast("raw"),
-  benchmark = 0.75,
+  benchmark = 0.5,
   alpha = 0.05,
   alternative = c("two.sided", "greater", "less"),
   adjustment = c("none", "bonferroni", "maxt", "bootstrap", "mbeta"),
-  transformation = c("none", "logit"),
+  transformation = c("none", "logit", "arcsin"),
   analysis = c("co-primary", "full"),
   regu = FALSE,
   pars = list(),
@@ -19,33 +19,35 @@ evaluate(
 )
 }
 \arguments{
-\item{data}{list of n_g x m binary matrix or data.frame (n_g observations of m binary decisions),
+\item{data}{(list) \cr of n_g x m binary matrix or data.frame (n_g observations of m binary decisions),
 g is the index of subgroups/classes, usually created via \code{\link{compare}}.}
 
-\item{contrast}{\code{cases_contrast} object, specified via \code{\link{define_contrast}}}
+\item{contrast}{(\code{cases_contrast}) \cr specified via \code{\link{define_contrast}}}
 
-\item{benchmark}{value to compare against (RHS), should have same length as data.}
+\item{benchmark}{(numeric) \cr value to compare against (RHS), should have same length as data.}
 
-\item{alpha}{numeric, significance level (default: 0.05)}
+\item{alpha}{(numeric) \cr significance level (default: 0.05)}
 
-\item{alternative}{character, specify alternative hypothesis}
+\item{alternative}{(character) \cr specification of alternative hypothesis}
 
-\item{adjustment}{character, specify type of statistical adjustment taken to address multiplicity}
+\item{adjustment}{(character) \cr specification of statistical adjustment taken to address multiplicity.
+The default 'none' does not perform any adjustment for multiplicity.}
 
-\item{transformation}{character, define transformation to ensure results
-(e.g. point estimates, confidence limits) lie in unit interval ("none" (default) or "logit")}
+\item{transformation}{(character) \cr define transformation to ensure results
+(e.g. point estimates, confidence limits) lie in unit interval ("none" (default), "logit", or "arcsin" (sqrt))}
 
-\item{analysis}{character, "co-primary" or "full"}
+\item{analysis}{(character) \cr "co-primary" or "full"}
 
-\item{regu}{numeric vector of length 3, specify type of shrinkage.
-Alternatively, logical of length one (TRUE := c(2, 1, 1/2), FALSE := c(0, 0, 0))}
+\item{regu}{(numeric | logical) \cr vector of length 3, specify type of shrinkage.
+Alternatively, logical of length one (TRUE := c(1, 1/2, 1/4), FALSE := c(0, 0, 0))}
 
-\item{pars}{further parameters given as named list list(type="pairs", nboot=10000)}
+\item{pars}{(list) \cr further parameters given as named list list(type="pairs", nboot=2000)}
 
-\item{...}{additional named parameters, can be used instead of (in in conjunction with) \code{pars}}
+\item{...}{(any) \cr additional named parameters, can be used instead of (in in conjunction with) \code{pars}}
 }
 \value{
-cases_results object, which is a list of analysis results
+(\code{cases_results}) \cr
+list of analysis results including (adjusted) confidence intervals and p-values
 }
 \description{
 Assess classification accuracy of multiple classifcation rules stratified
@@ -59,20 +61,23 @@ Adjustment methods (\code{adjustment}) and additional parameters (\code{pars} or
 
 \strong{"bonferroni"}: Bonferroni adjustment\cr
 
-\strong{"maxt"}: maxT adjustment\cr
+\strong{"maxt"}: maxT adjustment, based on a multivariate normal approximation of the vector of test statistics\cr
 
 \strong{"bootstrap"}: Bootstrap approach
 \itemize{
-\item type: "pairs" (default) or "wild" = type (for adjustment="bootstrap)
-\item nboot: number of bootstrap draws (default: 5000)
-\item res_tra: = 0,1,2 or 3 = type of residual transformation of wild boostrap (default = 0: no transformation)
-(see https://www.math.kth.se/matstat/gru/sf2930/papers/wild.bootstrap.pdf)
+\item nboot: number of bootstrap draws (default: 2000)
+\item type: type of bootstrap, "pairs" (default) or "wild"
+\item dist: residual distribution for wild bootstrap, "Normal" (default) or "Rademacher"
+\item proj_est: should bootstrapped estimates for wild bootstrap be projected into unit interval? (default: TRUE)
+\item res_tra: type of residual transformation for wild boostrap, 0,1,2 or 3 (default: 0 = no transformation)
+(for details on res_tra options, see this presentation by
+\href{https://www.math.kth.se/matstat/gru/sf2930/papers/wild.bootstrap.pdf}{James G. MacKinnon (2012)} and references therein)
 }
 
 \strong{"mbeta"}: A heuristic Bayesian approach which is based on a multivariate beta-binomial model.
 \itemize{
 \item nrep: number of posterior draws (default: 5000)
-\item lfc_pr: prior probability of 'least-favorable parameter configuration' (default: 1).
+\item lfc_pr: prior probability of 'least-favorable parameter configuration' (default: 1 if analysis == "co-primary", 0 if analysis == "full").
 }
 }
 \examples{

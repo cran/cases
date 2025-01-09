@@ -29,27 +29,27 @@ document.addEventListener('DOMContentLoaded', function(e) {
 </script>
 
 <style type="text/css">
-  code{white-space: pre-wrap;}
-  span.smallcaps{font-variant: small-caps;}
-  span.underline{text-decoration: underline;}
-  div.column{display: inline-block; vertical-align: top; width: 50%;}
-  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-  ul.task-list{list-style: none;}
-    </style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
 
 
 
 <style type="text/css">
-  code {
-    white-space: pre;
-  }
-  .sourceCode {
-    overflow: visible;
-  }
+code {
+white-space: pre;
+}
+.sourceCode {
+overflow: visible;
+}
 </style>
 <style type="text/css" data-origin="pandoc">
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span { line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -60,58 +60,57 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
-  { counter-reset: source-line 0; }
+{ counter-reset: source-line 0; }
 pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
+{ position: relative; left: -4em; counter-increment: source-line; }
 pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+{ content: counter(source-line);
+position: relative; left: -1em; text-align: right; vertical-align: baseline;
+border: none; display: inline-block;
+-webkit-touch-callout: none; -webkit-user-select: none;
+-khtml-user-select: none; -moz-user-select: none;
+-ms-user-select: none; user-select: none;
+padding: 0 4px; width: 4em;
+color: #aaaaaa;
+}
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa; padding-left: 4px; }
 div.sourceCode
-  {   }
+{ }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-
+code span.al { color: #ff0000; font-weight: bold; } 
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.at { color: #7d9029; } 
+code span.bn { color: #40a070; } 
+code span.bu { color: #008000; } 
+code span.cf { color: #007020; font-weight: bold; } 
+code span.ch { color: #4070a0; } 
+code span.cn { color: #880000; } 
+code span.co { color: #60a0b0; font-style: italic; } 
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.do { color: #ba2121; font-style: italic; } 
+code span.dt { color: #902000; } 
+code span.dv { color: #40a070; } 
+code span.er { color: #ff0000; font-weight: bold; } 
+code span.ex { } 
+code span.fl { color: #40a070; } 
+code span.fu { color: #06287e; } 
+code span.im { color: #008000; font-weight: bold; } 
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.kw { color: #007020; font-weight: bold; } 
+code span.op { color: #666666; } 
+code span.ot { color: #007020; } 
+code span.pp { color: #bc7a00; } 
+code span.sc { color: #4070a0; } 
+code span.ss { color: #bb6688; } 
+code span.st { color: #4070a0; } 
+code span.va { color: #19177c; } 
+code span.vs { color: #4070a0; } 
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } 
 </style>
 <script>
 // apply pandoc div.sourceCode style to pre.sourceCode instead
@@ -120,13 +119,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   for (var i = 0; i < sheets.length; i++) {
     if (sheets[i].ownerNode.dataset["origin"] !== "pandoc") continue;
     try { var rules = sheets[i].cssRules; } catch (e) { continue; }
-    for (var j = 0; j < rules.length; j++) {
+    var j = 0;
+    while (j < rules.length) {
       var rule = rules[j];
       // check if there is a div.sourceCode rule
-      if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") continue;
+      if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") {
+        j++;
+        continue;
+      }
       var style = rule.style.cssText;
       // check if color or background-color is set
-      if (rule.style.color === '' && rule.style.backgroundColor === '') continue;
+      if (rule.style.color === '' && rule.style.backgroundColor === '') {
+        j++;
+        continue;
+      }
       // replace div.sourceCode by a pre.sourceCode rule
       sheets[i].deleteRule(j);
       sheets[i].insertRule('pre.sourceCode{' + style + '}', j);
@@ -341,391 +347,393 @@ prediction model evaluation.</p>
 <div id="preparation" class="section level2">
 <h2>Preparation</h2>
 <p>Load the package:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="do">## load packages:</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; </span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Attaching package: &#39;dplyr&#39;</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; The following objects are masked from &#39;package:stats&#39;:</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; </span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;     filter, lag</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; The following objects are masked from &#39;package:base&#39;:</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; </span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;     intersect, setdiff, setequal, union</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(splitstackshape)</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(glmnet)</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Loading required package: Matrix</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Loaded glmnet 4.1-4</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(cases)</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="do">## load packages:</span></span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a><span class="co">#&gt; </span></span>
+<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a><span class="co">#&gt; Attaching package: &#39;dplyr&#39;</span></span>
+<span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a><span class="co">#&gt; The following objects are masked from &#39;package:stats&#39;:</span></span>
+<span id="cb1-6"><a href="#cb1-6" tabindex="-1"></a><span class="co">#&gt; </span></span>
+<span id="cb1-7"><a href="#cb1-7" tabindex="-1"></a><span class="co">#&gt;     filter, lag</span></span>
+<span id="cb1-8"><a href="#cb1-8" tabindex="-1"></a><span class="co">#&gt; The following objects are masked from &#39;package:base&#39;:</span></span>
+<span id="cb1-9"><a href="#cb1-9" tabindex="-1"></a><span class="co">#&gt; </span></span>
+<span id="cb1-10"><a href="#cb1-10" tabindex="-1"></a><span class="co">#&gt;     intersect, setdiff, setequal, union</span></span>
+<span id="cb1-11"><a href="#cb1-11" tabindex="-1"></a><span class="fu">library</span>(cases)</span>
+<span id="cb1-12"><a href="#cb1-12" tabindex="-1"></a><span class="fu">library</span>(glmnet)</span>
+<span id="cb1-13"><a href="#cb1-13" tabindex="-1"></a><span class="co">#&gt; Loading required package: Matrix</span></span>
+<span id="cb1-14"><a href="#cb1-14" tabindex="-1"></a><span class="co">#&gt; Loaded glmnet 4.1-8</span></span>
+<span id="cb1-15"><a href="#cb1-15" tabindex="-1"></a><span class="fu">library</span>(splitstackshape)</span></code></pre></div>
 </div>
 <div id="introduction" class="section level2">
 <h2>Introduction</h2>
 <p>We utilize the breast cancer wisconsin (diagnostic) data set.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>?data_wdbc</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> data_wdbc</span></code></pre></div>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(data)</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] 569  31</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(data<span class="sc">$</span>diagnosis) </span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; </span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   0   1 </span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 357 212</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="do">## Missing values?</span></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="fu">colSums</span>(<span class="fu">is.na</span>(data)) <span class="co"># -&gt; no missing values</span></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;              diagnosis            radius_mean           texture_mean </span></span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;                      0                      0                      0 </span></span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;         perimeter_mean              area_mean        smoothness_mean </span></span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;                      0                      0                      0 </span></span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;       compactness_mean         concavity_mean    concave_points_mean </span></span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;                      0                      0                      0 </span></span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;          symmetry_mean fractal_dimension_mean              radius_sd </span></span>
-<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;                      0                      0                      0 </span></span>
-<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;             texture_sd           perimeter_sd                area_sd </span></span>
-<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;                      0                      0                      0 </span></span>
-<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;          smoothness_sd         compactness_sd           concavity_sd </span></span>
-<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;                      0                      0                      0 </span></span>
-<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;      concave_points_sd            symmetry_sd   fractal_dimension_sd </span></span>
-<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;                      0                      0                      0 </span></span>
-<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;            radius_peak           texture_peak         perimeter_peak </span></span>
-<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;                      0                      0                      0 </span></span>
-<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;              area_peak        smoothness_peak       compactness_peak </span></span>
-<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;                      0                      0                      0 </span></span>
-<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;         concavity_peak    concave_points_peak          symmetry_peak </span></span>
-<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;                      0                      0                      0 </span></span>
-<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; fractal_dimension_peak </span></span>
-<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;                      0</span></span></code></pre></div>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(data)</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  diagnosis  radius_mean      texture_mean   perimeter_mean     area_mean     </span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  0:357     Min.   : 6.981   Min.   : 9.71   Min.   : 43.79   Min.   : 143.5  </span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  1:212     1st Qu.:11.700   1st Qu.:16.17   1st Qu.: 75.17   1st Qu.: 420.3  </span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;            Median :13.370   Median :18.84   Median : 86.24   Median : 551.1  </span></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;            Mean   :14.127   Mean   :19.29   Mean   : 91.97   Mean   : 654.9  </span></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;            3rd Qu.:15.780   3rd Qu.:21.80   3rd Qu.:104.10   3rd Qu.: 782.7  </span></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;            Max.   :28.110   Max.   :39.28   Max.   :188.50   Max.   :2501.0  </span></span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  smoothness_mean   compactness_mean  concavity_mean    concave_points_mean</span></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  Min.   :0.05263   Min.   :0.01938   Min.   :0.00000   Min.   :0.00000    </span></span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  1st Qu.:0.08637   1st Qu.:0.06492   1st Qu.:0.02956   1st Qu.:0.02031    </span></span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  Median :0.09587   Median :0.09263   Median :0.06154   Median :0.03350    </span></span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  Mean   :0.09636   Mean   :0.10434   Mean   :0.08880   Mean   :0.04892    </span></span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  3rd Qu.:0.10530   3rd Qu.:0.13040   3rd Qu.:0.13070   3rd Qu.:0.07400    </span></span>
-<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  Max.   :0.16340   Max.   :0.34540   Max.   :0.42680   Max.   :0.20120    </span></span>
-<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  symmetry_mean    fractal_dimension_mean   radius_sd        texture_sd    </span></span>
-<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  Min.   :0.1060   Min.   :0.04996        Min.   :0.1115   Min.   :0.3602  </span></span>
-<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  1st Qu.:0.1619   1st Qu.:0.05770        1st Qu.:0.2324   1st Qu.:0.8339  </span></span>
-<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  Median :0.1792   Median :0.06154        Median :0.3242   Median :1.1080  </span></span>
-<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  Mean   :0.1812   Mean   :0.06280        Mean   :0.4052   Mean   :1.2169  </span></span>
-<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  3rd Qu.:0.1957   3rd Qu.:0.06612        3rd Qu.:0.4789   3rd Qu.:1.4740  </span></span>
-<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  Max.   :0.3040   Max.   :0.09744        Max.   :2.8730   Max.   :4.8850  </span></span>
-<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   perimeter_sd       area_sd        smoothness_sd      compactness_sd    </span></span>
-<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  Min.   : 0.757   Min.   :  6.802   Min.   :0.001713   Min.   :0.002252  </span></span>
-<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  1st Qu.: 1.606   1st Qu.: 17.850   1st Qu.:0.005169   1st Qu.:0.013080  </span></span>
-<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  Median : 2.287   Median : 24.530   Median :0.006380   Median :0.020450  </span></span>
-<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  Mean   : 2.866   Mean   : 40.337   Mean   :0.007041   Mean   :0.025478  </span></span>
-<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  3rd Qu.: 3.357   3rd Qu.: 45.190   3rd Qu.:0.008146   3rd Qu.:0.032450  </span></span>
-<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  Max.   :21.980   Max.   :542.200   Max.   :0.031130   Max.   :0.135400  </span></span>
-<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   concavity_sd     concave_points_sd   symmetry_sd       fractal_dimension_sd</span></span>
-<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  Min.   :0.00000   Min.   :0.000000   Min.   :0.007882   Min.   :0.0008948   </span></span>
-<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  1st Qu.:0.01509   1st Qu.:0.007638   1st Qu.:0.015160   1st Qu.:0.0022480   </span></span>
-<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  Median :0.02589   Median :0.010930   Median :0.018730   Median :0.0031870   </span></span>
-<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  Mean   :0.03189   Mean   :0.011796   Mean   :0.020542   Mean   :0.0037949   </span></span>
-<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  3rd Qu.:0.04205   3rd Qu.:0.014710   3rd Qu.:0.023480   3rd Qu.:0.0045580   </span></span>
-<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  Max.   :0.39600   Max.   :0.052790   Max.   :0.078950   Max.   :0.0298400   </span></span>
-<span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   radius_peak     texture_peak   perimeter_peak     area_peak     </span></span>
-<span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  Min.   : 7.93   Min.   :12.02   Min.   : 50.41   Min.   : 185.2  </span></span>
-<span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  1st Qu.:13.01   1st Qu.:21.08   1st Qu.: 84.11   1st Qu.: 515.3  </span></span>
-<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  Median :14.97   Median :25.41   Median : 97.66   Median : 686.5  </span></span>
-<span id="cb4-41"><a href="#cb4-41" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  Mean   :16.27   Mean   :25.68   Mean   :107.26   Mean   : 880.6  </span></span>
-<span id="cb4-42"><a href="#cb4-42" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  3rd Qu.:18.79   3rd Qu.:29.72   3rd Qu.:125.40   3rd Qu.:1084.0  </span></span>
-<span id="cb4-43"><a href="#cb4-43" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  Max.   :36.04   Max.   :49.54   Max.   :251.20   Max.   :4254.0  </span></span>
-<span id="cb4-44"><a href="#cb4-44" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  smoothness_peak   compactness_peak  concavity_peak   concave_points_peak</span></span>
-<span id="cb4-45"><a href="#cb4-45" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  Min.   :0.07117   Min.   :0.02729   Min.   :0.0000   Min.   :0.00000    </span></span>
-<span id="cb4-46"><a href="#cb4-46" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  1st Qu.:0.11660   1st Qu.:0.14720   1st Qu.:0.1145   1st Qu.:0.06493    </span></span>
-<span id="cb4-47"><a href="#cb4-47" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  Median :0.13130   Median :0.21190   Median :0.2267   Median :0.09993    </span></span>
-<span id="cb4-48"><a href="#cb4-48" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  Mean   :0.13237   Mean   :0.25427   Mean   :0.2722   Mean   :0.11461    </span></span>
-<span id="cb4-49"><a href="#cb4-49" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  3rd Qu.:0.14600   3rd Qu.:0.33910   3rd Qu.:0.3829   3rd Qu.:0.16140    </span></span>
-<span id="cb4-50"><a href="#cb4-50" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  Max.   :0.22260   Max.   :1.05800   Max.   :1.2520   Max.   :0.29100    </span></span>
-<span id="cb4-51"><a href="#cb4-51" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  symmetry_peak    fractal_dimension_peak</span></span>
-<span id="cb4-52"><a href="#cb4-52" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  Min.   :0.1565   Min.   :0.05504       </span></span>
-<span id="cb4-53"><a href="#cb4-53" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  1st Qu.:0.2504   1st Qu.:0.07146       </span></span>
-<span id="cb4-54"><a href="#cb4-54" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  Median :0.2822   Median :0.08004       </span></span>
-<span id="cb4-55"><a href="#cb4-55" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  Mean   :0.2901   Mean   :0.08395       </span></span>
-<span id="cb4-56"><a href="#cb4-56" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  3rd Qu.:0.3179   3rd Qu.:0.09208       </span></span>
-<span id="cb4-57"><a href="#cb4-57" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  Max.   :0.6638   Max.   :0.20750</span></span></code></pre></div>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="do">## define minimal acceptable criteria for specificity, sensitivity:</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>sp0 <span class="ot">&lt;-</span> <span class="fl">0.7</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>se0 <span class="ot">&lt;-</span> <span class="fl">0.9</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>benchmark <span class="ot">&lt;-</span> <span class="fu">c</span>(sp0, se0)</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="co"># ?data_wdbc</span></span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a>data <span class="ot">&lt;-</span> data_wdbc</span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="fu">dim</span>(data)</span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a><span class="co">#&gt; [1] 569  31</span></span>
+<span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" tabindex="-1"></a><span class="fu">table</span>(data<span class="sc">$</span>diagnosis)</span>
+<span id="cb3-5"><a href="#cb3-5" tabindex="-1"></a><span class="co">#&gt; </span></span>
+<span id="cb3-6"><a href="#cb3-6" tabindex="-1"></a><span class="co">#&gt;   0   1 </span></span>
+<span id="cb3-7"><a href="#cb3-7" tabindex="-1"></a><span class="co">#&gt; 357 212</span></span>
+<span id="cb3-8"><a href="#cb3-8" tabindex="-1"></a></span>
+<span id="cb3-9"><a href="#cb3-9" tabindex="-1"></a><span class="do">## Missing values?</span></span>
+<span id="cb3-10"><a href="#cb3-10" tabindex="-1"></a><span class="fu">colSums</span>(<span class="fu">is.na</span>(data)) <span class="co"># -&gt; no missing values</span></span>
+<span id="cb3-11"><a href="#cb3-11" tabindex="-1"></a><span class="co">#&gt;              diagnosis            radius_mean           texture_mean </span></span>
+<span id="cb3-12"><a href="#cb3-12" tabindex="-1"></a><span class="co">#&gt;                      0                      0                      0 </span></span>
+<span id="cb3-13"><a href="#cb3-13" tabindex="-1"></a><span class="co">#&gt;         perimeter_mean              area_mean        smoothness_mean </span></span>
+<span id="cb3-14"><a href="#cb3-14" tabindex="-1"></a><span class="co">#&gt;                      0                      0                      0 </span></span>
+<span id="cb3-15"><a href="#cb3-15" tabindex="-1"></a><span class="co">#&gt;       compactness_mean         concavity_mean    concave_points_mean </span></span>
+<span id="cb3-16"><a href="#cb3-16" tabindex="-1"></a><span class="co">#&gt;                      0                      0                      0 </span></span>
+<span id="cb3-17"><a href="#cb3-17" tabindex="-1"></a><span class="co">#&gt;          symmetry_mean fractal_dimension_mean              radius_sd </span></span>
+<span id="cb3-18"><a href="#cb3-18" tabindex="-1"></a><span class="co">#&gt;                      0                      0                      0 </span></span>
+<span id="cb3-19"><a href="#cb3-19" tabindex="-1"></a><span class="co">#&gt;             texture_sd           perimeter_sd                area_sd </span></span>
+<span id="cb3-20"><a href="#cb3-20" tabindex="-1"></a><span class="co">#&gt;                      0                      0                      0 </span></span>
+<span id="cb3-21"><a href="#cb3-21" tabindex="-1"></a><span class="co">#&gt;          smoothness_sd         compactness_sd           concavity_sd </span></span>
+<span id="cb3-22"><a href="#cb3-22" tabindex="-1"></a><span class="co">#&gt;                      0                      0                      0 </span></span>
+<span id="cb3-23"><a href="#cb3-23" tabindex="-1"></a><span class="co">#&gt;      concave_points_sd            symmetry_sd   fractal_dimension_sd </span></span>
+<span id="cb3-24"><a href="#cb3-24" tabindex="-1"></a><span class="co">#&gt;                      0                      0                      0 </span></span>
+<span id="cb3-25"><a href="#cb3-25" tabindex="-1"></a><span class="co">#&gt;            radius_peak           texture_peak         perimeter_peak </span></span>
+<span id="cb3-26"><a href="#cb3-26" tabindex="-1"></a><span class="co">#&gt;                      0                      0                      0 </span></span>
+<span id="cb3-27"><a href="#cb3-27" tabindex="-1"></a><span class="co">#&gt;              area_peak        smoothness_peak       compactness_peak </span></span>
+<span id="cb3-28"><a href="#cb3-28" tabindex="-1"></a><span class="co">#&gt;                      0                      0                      0 </span></span>
+<span id="cb3-29"><a href="#cb3-29" tabindex="-1"></a><span class="co">#&gt;         concavity_peak    concave_points_peak          symmetry_peak </span></span>
+<span id="cb3-30"><a href="#cb3-30" tabindex="-1"></a><span class="co">#&gt;                      0                      0                      0 </span></span>
+<span id="cb3-31"><a href="#cb3-31" tabindex="-1"></a><span class="co">#&gt; fractal_dimension_peak </span></span>
+<span id="cb3-32"><a href="#cb3-32" tabindex="-1"></a><span class="co">#&gt;                      0</span></span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="fu">summary</span>(data)</span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a><span class="co">#&gt;  diagnosis  radius_mean      texture_mean   perimeter_mean     area_mean     </span></span>
+<span id="cb4-3"><a href="#cb4-3" tabindex="-1"></a><span class="co">#&gt;  0:357     Min.   : 6.981   Min.   : 9.71   Min.   : 43.79   Min.   : 143.5  </span></span>
+<span id="cb4-4"><a href="#cb4-4" tabindex="-1"></a><span class="co">#&gt;  1:212     1st Qu.:11.700   1st Qu.:16.17   1st Qu.: 75.17   1st Qu.: 420.3  </span></span>
+<span id="cb4-5"><a href="#cb4-5" tabindex="-1"></a><span class="co">#&gt;            Median :13.370   Median :18.84   Median : 86.24   Median : 551.1  </span></span>
+<span id="cb4-6"><a href="#cb4-6" tabindex="-1"></a><span class="co">#&gt;            Mean   :14.127   Mean   :19.29   Mean   : 91.97   Mean   : 654.9  </span></span>
+<span id="cb4-7"><a href="#cb4-7" tabindex="-1"></a><span class="co">#&gt;            3rd Qu.:15.780   3rd Qu.:21.80   3rd Qu.:104.10   3rd Qu.: 782.7  </span></span>
+<span id="cb4-8"><a href="#cb4-8" tabindex="-1"></a><span class="co">#&gt;            Max.   :28.110   Max.   :39.28   Max.   :188.50   Max.   :2501.0  </span></span>
+<span id="cb4-9"><a href="#cb4-9" tabindex="-1"></a><span class="co">#&gt;  smoothness_mean   compactness_mean  concavity_mean    concave_points_mean</span></span>
+<span id="cb4-10"><a href="#cb4-10" tabindex="-1"></a><span class="co">#&gt;  Min.   :0.05263   Min.   :0.01938   Min.   :0.00000   Min.   :0.00000    </span></span>
+<span id="cb4-11"><a href="#cb4-11" tabindex="-1"></a><span class="co">#&gt;  1st Qu.:0.08637   1st Qu.:0.06492   1st Qu.:0.02956   1st Qu.:0.02031    </span></span>
+<span id="cb4-12"><a href="#cb4-12" tabindex="-1"></a><span class="co">#&gt;  Median :0.09587   Median :0.09263   Median :0.06154   Median :0.03350    </span></span>
+<span id="cb4-13"><a href="#cb4-13" tabindex="-1"></a><span class="co">#&gt;  Mean   :0.09636   Mean   :0.10434   Mean   :0.08880   Mean   :0.04892    </span></span>
+<span id="cb4-14"><a href="#cb4-14" tabindex="-1"></a><span class="co">#&gt;  3rd Qu.:0.10530   3rd Qu.:0.13040   3rd Qu.:0.13070   3rd Qu.:0.07400    </span></span>
+<span id="cb4-15"><a href="#cb4-15" tabindex="-1"></a><span class="co">#&gt;  Max.   :0.16340   Max.   :0.34540   Max.   :0.42680   Max.   :0.20120    </span></span>
+<span id="cb4-16"><a href="#cb4-16" tabindex="-1"></a><span class="co">#&gt;  symmetry_mean    fractal_dimension_mean   radius_sd        texture_sd    </span></span>
+<span id="cb4-17"><a href="#cb4-17" tabindex="-1"></a><span class="co">#&gt;  Min.   :0.1060   Min.   :0.04996        Min.   :0.1115   Min.   :0.3602  </span></span>
+<span id="cb4-18"><a href="#cb4-18" tabindex="-1"></a><span class="co">#&gt;  1st Qu.:0.1619   1st Qu.:0.05770        1st Qu.:0.2324   1st Qu.:0.8339  </span></span>
+<span id="cb4-19"><a href="#cb4-19" tabindex="-1"></a><span class="co">#&gt;  Median :0.1792   Median :0.06154        Median :0.3242   Median :1.1080  </span></span>
+<span id="cb4-20"><a href="#cb4-20" tabindex="-1"></a><span class="co">#&gt;  Mean   :0.1812   Mean   :0.06280        Mean   :0.4052   Mean   :1.2169  </span></span>
+<span id="cb4-21"><a href="#cb4-21" tabindex="-1"></a><span class="co">#&gt;  3rd Qu.:0.1957   3rd Qu.:0.06612        3rd Qu.:0.4789   3rd Qu.:1.4740  </span></span>
+<span id="cb4-22"><a href="#cb4-22" tabindex="-1"></a><span class="co">#&gt;  Max.   :0.3040   Max.   :0.09744        Max.   :2.8730   Max.   :4.8850  </span></span>
+<span id="cb4-23"><a href="#cb4-23" tabindex="-1"></a><span class="co">#&gt;   perimeter_sd       area_sd        smoothness_sd      compactness_sd    </span></span>
+<span id="cb4-24"><a href="#cb4-24" tabindex="-1"></a><span class="co">#&gt;  Min.   : 0.757   Min.   :  6.802   Min.   :0.001713   Min.   :0.002252  </span></span>
+<span id="cb4-25"><a href="#cb4-25" tabindex="-1"></a><span class="co">#&gt;  1st Qu.: 1.606   1st Qu.: 17.850   1st Qu.:0.005169   1st Qu.:0.013080  </span></span>
+<span id="cb4-26"><a href="#cb4-26" tabindex="-1"></a><span class="co">#&gt;  Median : 2.287   Median : 24.530   Median :0.006380   Median :0.020450  </span></span>
+<span id="cb4-27"><a href="#cb4-27" tabindex="-1"></a><span class="co">#&gt;  Mean   : 2.866   Mean   : 40.337   Mean   :0.007041   Mean   :0.025478  </span></span>
+<span id="cb4-28"><a href="#cb4-28" tabindex="-1"></a><span class="co">#&gt;  3rd Qu.: 3.357   3rd Qu.: 45.190   3rd Qu.:0.008146   3rd Qu.:0.032450  </span></span>
+<span id="cb4-29"><a href="#cb4-29" tabindex="-1"></a><span class="co">#&gt;  Max.   :21.980   Max.   :542.200   Max.   :0.031130   Max.   :0.135400  </span></span>
+<span id="cb4-30"><a href="#cb4-30" tabindex="-1"></a><span class="co">#&gt;   concavity_sd     concave_points_sd   symmetry_sd       fractal_dimension_sd</span></span>
+<span id="cb4-31"><a href="#cb4-31" tabindex="-1"></a><span class="co">#&gt;  Min.   :0.00000   Min.   :0.000000   Min.   :0.007882   Min.   :0.0008948   </span></span>
+<span id="cb4-32"><a href="#cb4-32" tabindex="-1"></a><span class="co">#&gt;  1st Qu.:0.01509   1st Qu.:0.007638   1st Qu.:0.015160   1st Qu.:0.0022480   </span></span>
+<span id="cb4-33"><a href="#cb4-33" tabindex="-1"></a><span class="co">#&gt;  Median :0.02589   Median :0.010930   Median :0.018730   Median :0.0031870   </span></span>
+<span id="cb4-34"><a href="#cb4-34" tabindex="-1"></a><span class="co">#&gt;  Mean   :0.03189   Mean   :0.011796   Mean   :0.020542   Mean   :0.0037949   </span></span>
+<span id="cb4-35"><a href="#cb4-35" tabindex="-1"></a><span class="co">#&gt;  3rd Qu.:0.04205   3rd Qu.:0.014710   3rd Qu.:0.023480   3rd Qu.:0.0045580   </span></span>
+<span id="cb4-36"><a href="#cb4-36" tabindex="-1"></a><span class="co">#&gt;  Max.   :0.39600   Max.   :0.052790   Max.   :0.078950   Max.   :0.0298400   </span></span>
+<span id="cb4-37"><a href="#cb4-37" tabindex="-1"></a><span class="co">#&gt;   radius_peak     texture_peak   perimeter_peak     area_peak     </span></span>
+<span id="cb4-38"><a href="#cb4-38" tabindex="-1"></a><span class="co">#&gt;  Min.   : 7.93   Min.   :12.02   Min.   : 50.41   Min.   : 185.2  </span></span>
+<span id="cb4-39"><a href="#cb4-39" tabindex="-1"></a><span class="co">#&gt;  1st Qu.:13.01   1st Qu.:21.08   1st Qu.: 84.11   1st Qu.: 515.3  </span></span>
+<span id="cb4-40"><a href="#cb4-40" tabindex="-1"></a><span class="co">#&gt;  Median :14.97   Median :25.41   Median : 97.66   Median : 686.5  </span></span>
+<span id="cb4-41"><a href="#cb4-41" tabindex="-1"></a><span class="co">#&gt;  Mean   :16.27   Mean   :25.68   Mean   :107.26   Mean   : 880.6  </span></span>
+<span id="cb4-42"><a href="#cb4-42" tabindex="-1"></a><span class="co">#&gt;  3rd Qu.:18.79   3rd Qu.:29.72   3rd Qu.:125.40   3rd Qu.:1084.0  </span></span>
+<span id="cb4-43"><a href="#cb4-43" tabindex="-1"></a><span class="co">#&gt;  Max.   :36.04   Max.   :49.54   Max.   :251.20   Max.   :4254.0  </span></span>
+<span id="cb4-44"><a href="#cb4-44" tabindex="-1"></a><span class="co">#&gt;  smoothness_peak   compactness_peak  concavity_peak   concave_points_peak</span></span>
+<span id="cb4-45"><a href="#cb4-45" tabindex="-1"></a><span class="co">#&gt;  Min.   :0.07117   Min.   :0.02729   Min.   :0.0000   Min.   :0.00000    </span></span>
+<span id="cb4-46"><a href="#cb4-46" tabindex="-1"></a><span class="co">#&gt;  1st Qu.:0.11660   1st Qu.:0.14720   1st Qu.:0.1145   1st Qu.:0.06493    </span></span>
+<span id="cb4-47"><a href="#cb4-47" tabindex="-1"></a><span class="co">#&gt;  Median :0.13130   Median :0.21190   Median :0.2267   Median :0.09993    </span></span>
+<span id="cb4-48"><a href="#cb4-48" tabindex="-1"></a><span class="co">#&gt;  Mean   :0.13237   Mean   :0.25427   Mean   :0.2722   Mean   :0.11461    </span></span>
+<span id="cb4-49"><a href="#cb4-49" tabindex="-1"></a><span class="co">#&gt;  3rd Qu.:0.14600   3rd Qu.:0.33910   3rd Qu.:0.3829   3rd Qu.:0.16140    </span></span>
+<span id="cb4-50"><a href="#cb4-50" tabindex="-1"></a><span class="co">#&gt;  Max.   :0.22260   Max.   :1.05800   Max.   :1.2520   Max.   :0.29100    </span></span>
+<span id="cb4-51"><a href="#cb4-51" tabindex="-1"></a><span class="co">#&gt;  symmetry_peak    fractal_dimension_peak</span></span>
+<span id="cb4-52"><a href="#cb4-52" tabindex="-1"></a><span class="co">#&gt;  Min.   :0.1565   Min.   :0.05504       </span></span>
+<span id="cb4-53"><a href="#cb4-53" tabindex="-1"></a><span class="co">#&gt;  1st Qu.:0.2504   1st Qu.:0.07146       </span></span>
+<span id="cb4-54"><a href="#cb4-54" tabindex="-1"></a><span class="co">#&gt;  Median :0.2822   Median :0.08004       </span></span>
+<span id="cb4-55"><a href="#cb4-55" tabindex="-1"></a><span class="co">#&gt;  Mean   :0.2901   Mean   :0.08395       </span></span>
+<span id="cb4-56"><a href="#cb4-56" tabindex="-1"></a><span class="co">#&gt;  3rd Qu.:0.3179   3rd Qu.:0.09208       </span></span>
+<span id="cb4-57"><a href="#cb4-57" tabindex="-1"></a><span class="co">#&gt;  Max.   :0.6638   Max.   :0.20750</span></span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="do">## define minimal acceptable criteria for specificity, sensitivity:</span></span>
+<span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a>sp0 <span class="ot">&lt;-</span> <span class="fl">0.7</span></span>
+<span id="cb5-3"><a href="#cb5-3" tabindex="-1"></a>se0 <span class="ot">&lt;-</span> <span class="fl">0.9</span></span>
+<span id="cb5-4"><a href="#cb5-4" tabindex="-1"></a>benchmark <span class="ot">&lt;-</span> <span class="fu">c</span>(sp0, se0)</span></code></pre></div>
 </div>
 <div id="scenario-a-biomarker-assessment" class="section level2">
 <h2>Scenario A: Biomarker assessment</h2>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>pr <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="dv">0</span>,<span class="dv">1</span>, <span class="fl">0.1</span>) </span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">quantile</span>(data<span class="sc">$</span>area_peak, pr) <span class="co"># 500, 600, 700, 800, 900 ---&gt; area</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;      0%     10%     20%     30%     40%     50%     60%     70%     80%     90% </span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  185.20  384.72  475.98  544.14  599.70  686.50  781.18  926.96 1269.00 1673.00 </span></span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;    100% </span></span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 4254.00</span></span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="fu">quantile</span>(data<span class="sc">$</span>compactness_peak, pr) <span class="co"># 0.10, 0.15, 0.20, 0.25, 0.30 ---&gt; compactness (perimeter^2 / area - 1.0)</span></span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;       0%      10%      20%      30%      40%      50%      60%      70% </span></span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 0.027290 0.093676 0.125660 0.161400 0.184620 0.211900 0.251400 0.303960 </span></span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;      80%      90%     100% </span></span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 0.367060 0.447840 1.058000</span></span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a><span class="fu">quantile</span>(data<span class="sc">$</span>concavity_peak, pr) <span class="co"># 0.10, 0.15, 0.20, 0.25, 0.30 ---&gt; concavity (severity of concave portions of the contour)</span></span>
-<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;       0%      10%      20%      30%      40%      50%      60%      70% </span></span>
-<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 0.000000 0.045652 0.091974 0.136880 0.177180 0.226700 0.286600 0.349920 </span></span>
-<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;      80%      90%     100% </span></span>
-<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 0.419540 0.571320 1.252000</span></span></code></pre></div>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>cc <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">500</span>, <span class="dv">600</span>, <span class="dv">700</span>, <span class="dv">800</span>, <span class="dv">900</span>, </span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>        <span class="fl">0.10</span>, <span class="fl">0.15</span>, <span class="fl">0.20</span>, <span class="fl">0.25</span>, <span class="fl">0.30</span>,</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>        <span class="fl">0.10</span>, <span class="fl">0.15</span>, <span class="fl">0.20</span>, <span class="fl">0.25</span>, <span class="fl">0.30</span>) </span></code></pre></div>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>comp_bm <span class="ot">&lt;-</span> data <span class="sc">%&gt;%</span> </span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(area_peak, compactness_peak, concavity_peak) <span class="sc">%&gt;%</span> </span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  cases<span class="sc">::</span><span class="fu">categorize</span>(cc, <span class="fu">rep</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>, <span class="at">each=</span><span class="dv">5</span>)) <span class="sc">%&gt;%</span> </span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  cases<span class="sc">::</span><span class="fu">compare</span>(<span class="at">labels =</span> <span class="fu">as.numeric</span>(<span class="fu">as.character</span>(data<span class="sc">$</span>diagnosis)))</span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>results_bm <span class="ot">&lt;-</span> cases<span class="sc">::</span><span class="fu">evaluate</span>(comp_bm, <span class="at">benchmark =</span> benchmark,</span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>                              <span class="at">alternative =</span> <span class="st">&quot;greater&quot;</span>, <span class="at">alpha =</span> <span class="fl">0.025</span>,</span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>                              <span class="at">adj=</span><span class="st">&quot;boot&quot;</span>, <span class="at">regu=</span><span class="dv">1</span>) </span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Drawing 2000 &#39;pairs&#39; bootstrap samples...</span></span>
-<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>results_bm</span>
-<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [cases] evaluation results:</span></span>
-<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; $specificity</span></span>
-<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;                parameter hypothesis estimate  lower upper  pval pval_all reject</span></span>
-<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1          area_peak_500     &lt;= 0.7   0.3645 0.2911   Inf 1.000   1.0000  FALSE</span></span>
-<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 2          area_peak_600     &lt;= 0.7   0.6243 0.5505   Inf 1.000   1.0000  FALSE</span></span>
-<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 3          area_peak_700     &lt;= 0.7   0.8059 0.7456   Inf 0.000   0.0010   TRUE</span></span>
-<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 4          area_peak_800     &lt;= 0.7   0.9064 0.8620   Inf 0.000   1.0000   TRUE</span></span>
-<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 5          area_peak_900     &lt;= 0.7   0.9763 0.9530   Inf 0.000   1.0000   TRUE</span></span>
-<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 6   compactness_peak_0.1     &lt;= 0.7   0.1913 0.1314   Inf 1.000   1.0000  FALSE</span></span>
-<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 7  compactness_peak_0.15     &lt;= 0.7   0.3980 0.3234   Inf 1.000   1.0000  FALSE</span></span>
-<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 8   compactness_peak_0.2     &lt;= 0.7   0.6466 0.5738   Inf 1.000   1.0000  FALSE</span></span>
-<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 9  compactness_peak_0.25     &lt;= 0.7   0.7975 0.7362   Inf 0.001   1.0000   TRUE</span></span>
-<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 10  compactness_peak_0.3     &lt;= 0.7   0.8925 0.8452   Inf 0.000   1.0000   TRUE</span></span>
-<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 11    concavity_peak_0.1     &lt;= 0.7   0.3422 0.2698   Inf 1.000   1.0000  FALSE</span></span>
-<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 12   concavity_peak_0.15     &lt;= 0.7   0.5321 0.4560   Inf 1.000   1.0000  FALSE</span></span>
-<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 13    concavity_peak_0.2     &lt;= 0.7   0.7221 0.6538   Inf 0.798   0.7980  FALSE</span></span>
-<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 14   concavity_peak_0.25     &lt;= 0.7   0.8059 0.7456   Inf 0.000   0.9855   TRUE</span></span>
-<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 15    concavity_peak_0.3     &lt;= 0.7   0.8673 0.8156   Inf 0.000   1.0000   TRUE</span></span>
-<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;    reject_all</span></span>
-<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1       FALSE</span></span>
-<span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 2       FALSE</span></span>
-<span id="cb8-32"><a href="#cb8-32" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 3        TRUE</span></span>
-<span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 4       FALSE</span></span>
-<span id="cb8-34"><a href="#cb8-34" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 5       FALSE</span></span>
-<span id="cb8-35"><a href="#cb8-35" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 6       FALSE</span></span>
-<span id="cb8-36"><a href="#cb8-36" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 7       FALSE</span></span>
-<span id="cb8-37"><a href="#cb8-37" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 8       FALSE</span></span>
-<span id="cb8-38"><a href="#cb8-38" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 9       FALSE</span></span>
-<span id="cb8-39"><a href="#cb8-39" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 10      FALSE</span></span>
-<span id="cb8-40"><a href="#cb8-40" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 11      FALSE</span></span>
-<span id="cb8-41"><a href="#cb8-41" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 12      FALSE</span></span>
-<span id="cb8-42"><a href="#cb8-42" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 13      FALSE</span></span>
-<span id="cb8-43"><a href="#cb8-43" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 14      FALSE</span></span>
-<span id="cb8-44"><a href="#cb8-44" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 15      FALSE</span></span>
-<span id="cb8-45"><a href="#cb8-45" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; </span></span>
-<span id="cb8-46"><a href="#cb8-46" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; $sensitivity</span></span>
-<span id="cb8-47"><a href="#cb8-47" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;                parameter hypothesis estimate  lower upper   pval pval_all</span></span>
-<span id="cb8-48"><a href="#cb8-48" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1          area_peak_500     &lt;= 0.9   0.9977 0.9881   Inf 0.0000   1.0000</span></span>
-<span id="cb8-49"><a href="#cb8-49" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 2          area_peak_600     &lt;= 0.9   0.9742 0.9429   Inf 0.0000   1.0000</span></span>
-<span id="cb8-50"><a href="#cb8-50" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 3          area_peak_700     &lt;= 0.9   0.9601 0.9214   Inf 0.0010   0.0010</span></span>
-<span id="cb8-51"><a href="#cb8-51" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 4          area_peak_800     &lt;= 0.9   0.8850 0.8220   Inf 1.0000   1.0000</span></span>
-<span id="cb8-52"><a href="#cb8-52" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 5          area_peak_900     &lt;= 0.9   0.8052 0.7269   Inf 1.0000   1.0000</span></span>
-<span id="cb8-53"><a href="#cb8-53" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 6   compactness_peak_0.1     &lt;= 0.9   0.9836 0.9585   Inf 0.0000   1.0000</span></span>
-<span id="cb8-54"><a href="#cb8-54" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 7  compactness_peak_0.15     &lt;= 0.9   0.9648 0.9284   Inf 0.0000   1.0000</span></span>
-<span id="cb8-55"><a href="#cb8-55" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 8   compactness_peak_0.2     &lt;= 0.9   0.8756 0.8104   Inf 1.0000   1.0000</span></span>
-<span id="cb8-56"><a href="#cb8-56" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 9  compactness_peak_0.25     &lt;= 0.9   0.7441 0.6580   Inf 1.0000   1.0000</span></span>
-<span id="cb8-57"><a href="#cb8-57" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 10  compactness_peak_0.3     &lt;= 0.9   0.6362 0.5411   Inf 1.0000   1.0000</span></span>
-<span id="cb8-58"><a href="#cb8-58" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 11    concavity_peak_0.1     &lt;= 0.9   0.9883 0.9670   Inf 0.0000   1.0000</span></span>
-<span id="cb8-59"><a href="#cb8-59" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 12   concavity_peak_0.15     &lt;= 0.9   0.9789 0.9505   Inf 0.0000   1.0000</span></span>
-<span id="cb8-60"><a href="#cb8-60" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 13    concavity_peak_0.2     &lt;= 0.9   0.9695 0.9355   Inf 0.0000   0.7980</span></span>
-<span id="cb8-61"><a href="#cb8-61" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 14   concavity_peak_0.25     &lt;= 0.9   0.9038 0.8455   Inf 0.9855   0.9855</span></span>
-<span id="cb8-62"><a href="#cb8-62" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 15    concavity_peak_0.3     &lt;= 0.9   0.8052 0.7269   Inf 1.0000   1.0000</span></span>
-<span id="cb8-63"><a href="#cb8-63" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;    reject reject_all</span></span>
-<span id="cb8-64"><a href="#cb8-64" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1    TRUE      FALSE</span></span>
-<span id="cb8-65"><a href="#cb8-65" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 2    TRUE      FALSE</span></span>
-<span id="cb8-66"><a href="#cb8-66" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 3    TRUE       TRUE</span></span>
-<span id="cb8-67"><a href="#cb8-67" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 4   FALSE      FALSE</span></span>
-<span id="cb8-68"><a href="#cb8-68" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 5   FALSE      FALSE</span></span>
-<span id="cb8-69"><a href="#cb8-69" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 6    TRUE      FALSE</span></span>
-<span id="cb8-70"><a href="#cb8-70" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 7    TRUE      FALSE</span></span>
-<span id="cb8-71"><a href="#cb8-71" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 8   FALSE      FALSE</span></span>
-<span id="cb8-72"><a href="#cb8-72" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 9   FALSE      FALSE</span></span>
-<span id="cb8-73"><a href="#cb8-73" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 10  FALSE      FALSE</span></span>
-<span id="cb8-74"><a href="#cb8-74" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 11   TRUE      FALSE</span></span>
-<span id="cb8-75"><a href="#cb8-75" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 12   TRUE      FALSE</span></span>
-<span id="cb8-76"><a href="#cb8-76" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 13   TRUE      FALSE</span></span>
-<span id="cb8-77"><a href="#cb8-77" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 14  FALSE      FALSE</span></span>
-<span id="cb8-78"><a href="#cb8-78" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 15  FALSE      FALSE</span></span></code></pre></div>
-<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">visualize</span>(results_bm)</span></code></pre></div>
-<p><img src="data:image/png;base64,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" width="100%" /></p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a>pr <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">1</span>, <span class="fl">0.1</span>)</span>
+<span id="cb6-2"><a href="#cb6-2" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" tabindex="-1"></a><span class="fu">quantile</span>(data<span class="sc">$</span>area_peak, pr) <span class="co"># 500, 600, 700, 800, 900 ---&gt; area</span></span>
+<span id="cb6-4"><a href="#cb6-4" tabindex="-1"></a><span class="co">#&gt;      0%     10%     20%     30%     40%     50%     60%     70%     80%     90% </span></span>
+<span id="cb6-5"><a href="#cb6-5" tabindex="-1"></a><span class="co">#&gt;  185.20  384.72  475.98  544.14  599.70  686.50  781.18  926.96 1269.00 1673.00 </span></span>
+<span id="cb6-6"><a href="#cb6-6" tabindex="-1"></a><span class="co">#&gt;    100% </span></span>
+<span id="cb6-7"><a href="#cb6-7" tabindex="-1"></a><span class="co">#&gt; 4254.00</span></span>
+<span id="cb6-8"><a href="#cb6-8" tabindex="-1"></a><span class="fu">quantile</span>(data<span class="sc">$</span>compactness_peak, pr) <span class="co"># 0.10, 0.15, 0.20, 0.25, 0.30 ---&gt; compactness (perimeter^2 / area - 1.0)</span></span>
+<span id="cb6-9"><a href="#cb6-9" tabindex="-1"></a><span class="co">#&gt;       0%      10%      20%      30%      40%      50%      60%      70% </span></span>
+<span id="cb6-10"><a href="#cb6-10" tabindex="-1"></a><span class="co">#&gt; 0.027290 0.093676 0.125660 0.161400 0.184620 0.211900 0.251400 0.303960 </span></span>
+<span id="cb6-11"><a href="#cb6-11" tabindex="-1"></a><span class="co">#&gt;      80%      90%     100% </span></span>
+<span id="cb6-12"><a href="#cb6-12" tabindex="-1"></a><span class="co">#&gt; 0.367060 0.447840 1.058000</span></span>
+<span id="cb6-13"><a href="#cb6-13" tabindex="-1"></a><span class="fu">quantile</span>(data<span class="sc">$</span>concavity_peak, pr) <span class="co"># 0.10, 0.15, 0.20, 0.25, 0.30 ---&gt; concavity (severity of concave portions of the contour)</span></span>
+<span id="cb6-14"><a href="#cb6-14" tabindex="-1"></a><span class="co">#&gt;       0%      10%      20%      30%      40%      50%      60%      70% </span></span>
+<span id="cb6-15"><a href="#cb6-15" tabindex="-1"></a><span class="co">#&gt; 0.000000 0.045652 0.091974 0.136880 0.177180 0.226700 0.286600 0.349920 </span></span>
+<span id="cb6-16"><a href="#cb6-16" tabindex="-1"></a><span class="co">#&gt;      80%      90%     100% </span></span>
+<span id="cb6-17"><a href="#cb6-17" tabindex="-1"></a><span class="co">#&gt; 0.419540 0.571320 1.252000</span></span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a>cc <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb7-2"><a href="#cb7-2" tabindex="-1"></a>  <span class="dv">500</span>, <span class="dv">600</span>, <span class="dv">700</span>, <span class="dv">800</span>, <span class="dv">900</span>,</span>
+<span id="cb7-3"><a href="#cb7-3" tabindex="-1"></a>  <span class="fl">0.10</span>, <span class="fl">0.15</span>, <span class="fl">0.20</span>, <span class="fl">0.25</span>, <span class="fl">0.30</span>,</span>
+<span id="cb7-4"><a href="#cb7-4" tabindex="-1"></a>  <span class="fl">0.10</span>, <span class="fl">0.15</span>, <span class="fl">0.20</span>, <span class="fl">0.25</span>, <span class="fl">0.30</span></span>
+<span id="cb7-5"><a href="#cb7-5" tabindex="-1"></a>)</span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a>comp_bm <span class="ot">&lt;-</span> data <span class="sc">%&gt;%</span></span>
+<span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(area_peak, compactness_peak, concavity_peak) <span class="sc">%&gt;%</span></span>
+<span id="cb8-3"><a href="#cb8-3" tabindex="-1"></a>  cases<span class="sc">::</span><span class="fu">categorize</span>(cc, <span class="fu">rep</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>, <span class="at">each =</span> <span class="dv">5</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb8-4"><a href="#cb8-4" tabindex="-1"></a>  cases<span class="sc">::</span><span class="fu">compare</span>(<span class="at">labels =</span> <span class="fu">as.numeric</span>(<span class="fu">as.character</span>(data<span class="sc">$</span>diagnosis)))</span>
+<span id="cb8-5"><a href="#cb8-5" tabindex="-1"></a></span>
+<span id="cb8-6"><a href="#cb8-6" tabindex="-1"></a>results_bm <span class="ot">&lt;-</span> cases<span class="sc">::</span><span class="fu">evaluate</span>(comp_bm,</span>
+<span id="cb8-7"><a href="#cb8-7" tabindex="-1"></a>  <span class="at">benchmark =</span> benchmark,</span>
+<span id="cb8-8"><a href="#cb8-8" tabindex="-1"></a>  <span class="at">alternative =</span> <span class="st">&quot;greater&quot;</span>, <span class="at">alpha =</span> <span class="fl">0.025</span>,</span>
+<span id="cb8-9"><a href="#cb8-9" tabindex="-1"></a>  <span class="at">adj =</span> <span class="st">&quot;boot&quot;</span>, <span class="at">regu =</span> <span class="dv">1</span></span>
+<span id="cb8-10"><a href="#cb8-10" tabindex="-1"></a>)</span>
+<span id="cb8-11"><a href="#cb8-11" tabindex="-1"></a><span class="co">#&gt; Drawing 2000 &#39;pairs&#39; bootstrap samples...</span></span>
+<span id="cb8-12"><a href="#cb8-12" tabindex="-1"></a>results_bm</span>
+<span id="cb8-13"><a href="#cb8-13" tabindex="-1"></a><span class="co">#&gt; [cases] evaluation results:</span></span>
+<span id="cb8-14"><a href="#cb8-14" tabindex="-1"></a><span class="co">#&gt; $specificity</span></span>
+<span id="cb8-15"><a href="#cb8-15" tabindex="-1"></a><span class="co">#&gt;                parameter hypothesis estimate  lower upper    tstat   pval</span></span>
+<span id="cb8-16"><a href="#cb8-16" tabindex="-1"></a><span class="co">#&gt; 1          area_peak_500     &lt;= 0.7   0.3645 0.2886   Inf -13.2067 1.0000</span></span>
+<span id="cb8-17"><a href="#cb8-17" tabindex="-1"></a><span class="co">#&gt; 2          area_peak_600     &lt;= 0.7   0.6243 0.5479   Inf  -2.9615 1.0000</span></span>
+<span id="cb8-18"><a href="#cb8-18" tabindex="-1"></a><span class="co">#&gt; 3          area_peak_700     &lt;= 0.7   0.8059 0.7434   Inf   5.0713 0.0000</span></span>
+<span id="cb8-19"><a href="#cb8-19" tabindex="-1"></a><span class="co">#&gt; 4          area_peak_800     &lt;= 0.7   0.9064 0.8605   Inf  13.4296 0.0000</span></span>
+<span id="cb8-20"><a href="#cb8-20" tabindex="-1"></a><span class="co">#&gt; 5          area_peak_900     &lt;= 0.7   0.9763 0.9522   Inf  34.3804 0.0000</span></span>
+<span id="cb8-21"><a href="#cb8-21" tabindex="-1"></a><span class="co">#&gt; 6   compactness_peak_0.1     &lt;= 0.7   0.1913 0.1293   Inf -24.5012 1.0000</span></span>
+<span id="cb8-22"><a href="#cb8-22" tabindex="-1"></a><span class="co">#&gt; 7  compactness_peak_0.15     &lt;= 0.7   0.3980 0.3208   Inf -11.6880 1.0000</span></span>
+<span id="cb8-23"><a href="#cb8-23" tabindex="-1"></a><span class="co">#&gt; 8   compactness_peak_0.2     &lt;= 0.7   0.6466 0.5712   Inf  -2.1148 1.0000</span></span>
+<span id="cb8-24"><a href="#cb8-24" tabindex="-1"></a><span class="co">#&gt; 9  compactness_peak_0.25     &lt;= 0.7   0.7975 0.7341   Inf   4.5962 0.0005</span></span>
+<span id="cb8-25"><a href="#cb8-25" tabindex="-1"></a><span class="co">#&gt; 10  compactness_peak_0.3     &lt;= 0.7   0.8925 0.8436   Inf  11.7707 0.0000</span></span>
+<span id="cb8-26"><a href="#cb8-26" tabindex="-1"></a><span class="co">#&gt; 11    concavity_peak_0.1     &lt;= 0.7   0.3422 0.2673   Inf -14.2900 1.0000</span></span>
+<span id="cb8-27"><a href="#cb8-27" tabindex="-1"></a><span class="co">#&gt; 12   concavity_peak_0.15     &lt;= 0.7   0.5321 0.4534   Inf  -6.3748 1.0000</span></span>
+<span id="cb8-28"><a href="#cb8-28" tabindex="-1"></a><span class="co">#&gt; 13    concavity_peak_0.2     &lt;= 0.7   0.7221 0.6514   Inf   0.9333 0.7760</span></span>
+<span id="cb8-29"><a href="#cb8-29" tabindex="-1"></a><span class="co">#&gt; 14   concavity_peak_0.25     &lt;= 0.7   0.8059 0.7434   Inf   5.0713 0.0000</span></span>
+<span id="cb8-30"><a href="#cb8-30" tabindex="-1"></a><span class="co">#&gt; 15    concavity_peak_0.3     &lt;= 0.7   0.8673 0.8138   Inf   9.3454 0.0000</span></span>
+<span id="cb8-31"><a href="#cb8-31" tabindex="-1"></a><span class="co">#&gt;    reject pval_all reject_all</span></span>
+<span id="cb8-32"><a href="#cb8-32" tabindex="-1"></a><span class="co">#&gt; 1   FALSE   1.0000      FALSE</span></span>
+<span id="cb8-33"><a href="#cb8-33" tabindex="-1"></a><span class="co">#&gt; 2   FALSE   1.0000      FALSE</span></span>
+<span id="cb8-34"><a href="#cb8-34" tabindex="-1"></a><span class="co">#&gt; 3    TRUE   0.0005       TRUE</span></span>
+<span id="cb8-35"><a href="#cb8-35" tabindex="-1"></a><span class="co">#&gt; 4    TRUE   1.0000      FALSE</span></span>
+<span id="cb8-36"><a href="#cb8-36" tabindex="-1"></a><span class="co">#&gt; 5    TRUE   1.0000      FALSE</span></span>
+<span id="cb8-37"><a href="#cb8-37" tabindex="-1"></a><span class="co">#&gt; 6   FALSE   1.0000      FALSE</span></span>
+<span id="cb8-38"><a href="#cb8-38" tabindex="-1"></a><span class="co">#&gt; 7   FALSE   1.0000      FALSE</span></span>
+<span id="cb8-39"><a href="#cb8-39" tabindex="-1"></a><span class="co">#&gt; 8   FALSE   1.0000      FALSE</span></span>
+<span id="cb8-40"><a href="#cb8-40" tabindex="-1"></a><span class="co">#&gt; 9    TRUE   1.0000      FALSE</span></span>
+<span id="cb8-41"><a href="#cb8-41" tabindex="-1"></a><span class="co">#&gt; 10   TRUE   1.0000      FALSE</span></span>
+<span id="cb8-42"><a href="#cb8-42" tabindex="-1"></a><span class="co">#&gt; 11  FALSE   1.0000      FALSE</span></span>
+<span id="cb8-43"><a href="#cb8-43" tabindex="-1"></a><span class="co">#&gt; 12  FALSE   1.0000      FALSE</span></span>
+<span id="cb8-44"><a href="#cb8-44" tabindex="-1"></a><span class="co">#&gt; 13  FALSE   0.7760      FALSE</span></span>
+<span id="cb8-45"><a href="#cb8-45" tabindex="-1"></a><span class="co">#&gt; 14   TRUE   0.9795      FALSE</span></span>
+<span id="cb8-46"><a href="#cb8-46" tabindex="-1"></a><span class="co">#&gt; 15   TRUE   1.0000      FALSE</span></span>
+<span id="cb8-47"><a href="#cb8-47" tabindex="-1"></a><span class="co">#&gt; </span></span>
+<span id="cb8-48"><a href="#cb8-48" tabindex="-1"></a><span class="co">#&gt; $sensitivity</span></span>
+<span id="cb8-49"><a href="#cb8-49" tabindex="-1"></a><span class="co">#&gt;                parameter hypothesis estimate  lower upper   tstat   pval reject</span></span>
+<span id="cb8-50"><a href="#cb8-50" tabindex="-1"></a><span class="co">#&gt; 1          area_peak_500     &lt;= 0.9   0.9977 0.9878   Inf 29.5193 0.0000   TRUE</span></span>
+<span id="cb8-51"><a href="#cb8-51" tabindex="-1"></a><span class="co">#&gt; 2          area_peak_600     &lt;= 0.9   0.9742 0.9418   Inf  6.8419 0.0000   TRUE</span></span>
+<span id="cb8-52"><a href="#cb8-52" tabindex="-1"></a><span class="co">#&gt; 3          area_peak_700     &lt;= 0.9   0.9601 0.9201   Inf  4.4912 0.0005   TRUE</span></span>
+<span id="cb8-53"><a href="#cb8-53" tabindex="-1"></a><span class="co">#&gt; 4          area_peak_800     &lt;= 0.9   0.8850 0.8198   Inf -0.6888 1.0000  FALSE</span></span>
+<span id="cb8-54"><a href="#cb8-54" tabindex="-1"></a><span class="co">#&gt; 5          area_peak_900     &lt;= 0.9   0.8052 0.7242   Inf -3.5027 1.0000  FALSE</span></span>
+<span id="cb8-55"><a href="#cb8-55" tabindex="-1"></a><span class="co">#&gt; 6   compactness_peak_0.1     &lt;= 0.9   0.9836 0.9576   Inf  9.6161 0.0000   TRUE</span></span>
+<span id="cb8-56"><a href="#cb8-56" tabindex="-1"></a><span class="co">#&gt; 7  compactness_peak_0.15     &lt;= 0.9   0.9648 0.9271   Inf  5.1422 0.0000   TRUE</span></span>
+<span id="cb8-57"><a href="#cb8-57" tabindex="-1"></a><span class="co">#&gt; 8   compactness_peak_0.2     &lt;= 0.9   0.8756 0.8081   Inf -1.0821 1.0000  FALSE</span></span>
+<span id="cb8-58"><a href="#cb8-58" tabindex="-1"></a><span class="co">#&gt; 9  compactness_peak_0.25     &lt;= 0.9   0.7441 0.6549   Inf -5.2256 1.0000  FALSE</span></span>
+<span id="cb8-59"><a href="#cb8-59" tabindex="-1"></a><span class="co">#&gt; 10  compactness_peak_0.3     &lt;= 0.9   0.6362 0.5378   Inf -8.0227 1.0000  FALSE</span></span>
+<span id="cb8-60"><a href="#cb8-60" tabindex="-1"></a><span class="co">#&gt; 11    concavity_peak_0.1     &lt;= 0.9   0.9883 0.9662   Inf 11.9886 0.0000   TRUE</span></span>
+<span id="cb8-61"><a href="#cb8-61" tabindex="-1"></a><span class="co">#&gt; 12   concavity_peak_0.15     &lt;= 0.9   0.9789 0.9495   Inf  8.0234 0.0000   TRUE</span></span>
+<span id="cb8-62"><a href="#cb8-62" tabindex="-1"></a><span class="co">#&gt; 13    concavity_peak_0.2     &lt;= 0.9   0.9695 0.9343   Inf  5.9095 0.0000   TRUE</span></span>
+<span id="cb8-63"><a href="#cb8-63" tabindex="-1"></a><span class="co">#&gt; 14   concavity_peak_0.25     &lt;= 0.9   0.9038 0.8435   Inf  0.1863 0.9795  FALSE</span></span>
+<span id="cb8-64"><a href="#cb8-64" tabindex="-1"></a><span class="co">#&gt; 15    concavity_peak_0.3     &lt;= 0.9   0.8052 0.7242   Inf -3.5027 1.0000  FALSE</span></span>
+<span id="cb8-65"><a href="#cb8-65" tabindex="-1"></a><span class="co">#&gt;    pval_all reject_all</span></span>
+<span id="cb8-66"><a href="#cb8-66" tabindex="-1"></a><span class="co">#&gt; 1    1.0000      FALSE</span></span>
+<span id="cb8-67"><a href="#cb8-67" tabindex="-1"></a><span class="co">#&gt; 2    1.0000      FALSE</span></span>
+<span id="cb8-68"><a href="#cb8-68" tabindex="-1"></a><span class="co">#&gt; 3    0.0005       TRUE</span></span>
+<span id="cb8-69"><a href="#cb8-69" tabindex="-1"></a><span class="co">#&gt; 4    1.0000      FALSE</span></span>
+<span id="cb8-70"><a href="#cb8-70" tabindex="-1"></a><span class="co">#&gt; 5    1.0000      FALSE</span></span>
+<span id="cb8-71"><a href="#cb8-71" tabindex="-1"></a><span class="co">#&gt; 6    1.0000      FALSE</span></span>
+<span id="cb8-72"><a href="#cb8-72" tabindex="-1"></a><span class="co">#&gt; 7    1.0000      FALSE</span></span>
+<span id="cb8-73"><a href="#cb8-73" tabindex="-1"></a><span class="co">#&gt; 8    1.0000      FALSE</span></span>
+<span id="cb8-74"><a href="#cb8-74" tabindex="-1"></a><span class="co">#&gt; 9    1.0000      FALSE</span></span>
+<span id="cb8-75"><a href="#cb8-75" tabindex="-1"></a><span class="co">#&gt; 10   1.0000      FALSE</span></span>
+<span id="cb8-76"><a href="#cb8-76" tabindex="-1"></a><span class="co">#&gt; 11   1.0000      FALSE</span></span>
+<span id="cb8-77"><a href="#cb8-77" tabindex="-1"></a><span class="co">#&gt; 12   1.0000      FALSE</span></span>
+<span id="cb8-78"><a href="#cb8-78" tabindex="-1"></a><span class="co">#&gt; 13   0.7760      FALSE</span></span>
+<span id="cb8-79"><a href="#cb8-79" tabindex="-1"></a><span class="co">#&gt; 14   0.9795      FALSE</span></span>
+<span id="cb8-80"><a href="#cb8-80" tabindex="-1"></a><span class="co">#&gt; 15   1.0000      FALSE</span></span></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a><span class="fu">visualize</span>(results_bm)</span></code></pre></div>
+<p><img role="img" src="data:image/png;base64,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" width="100%" /></p>
 </div>
 <div id="scenario-b-prediction-model-evaluation" class="section level2">
 <h2>Scenario B: Prediction model evaluation</h2>
-<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="do">## data splitting:</span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">1337</span>)</span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>split <span class="ot">&lt;-</span> <span class="fu">stratified</span>(data, <span class="fu">c</span>(<span class="st">&#39;diagnosis&#39;</span>), <span class="dv">1</span><span class="sc">/</span><span class="dv">3</span>, <span class="at">bothSets =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>val <span class="ot">&lt;-</span> split[[<span class="dv">1</span>]] <span class="sc">%&gt;%</span> <span class="fu">as.data.frame</span>()</span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>trn <span class="ot">&lt;-</span> split[[<span class="dv">2</span>]] <span class="sc">%&gt;%</span> <span class="fu">as.data.frame</span>()</span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(trn)</span>
-<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] 379  31</span></span>
-<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(val)</span>
-<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] 190  31</span></span>
-<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(val<span class="sc">$</span>diagnosis)</span>
-<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; </span></span>
-<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   0   1 </span></span>
-<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 119  71</span></span></code></pre></div>
-<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="do">## train example model</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>mod <span class="ot">&lt;-</span> <span class="fu">glmnet</span>(<span class="at">x=</span>trn[,<span class="sc">-</span><span class="dv">1</span>], <span class="at">y=</span>trn[,<span class="dv">1</span>], <span class="at">family=</span><span class="st">&quot;binomial&quot;</span>, <span class="at">alpha=</span><span class="fl">0.25</span>)</span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(mod, <span class="dv">0</span>)</span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; List of 13</span></span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  - attr(*, &quot;class&quot;)= chr [1:2] &quot;lognet&quot; &quot;glmnet&quot;</span></span></code></pre></div>
-<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">1337</span>)</span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="do">## define hyperparameter values for L1/L2 penalty mixing parameter (alpha):</span></span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>aa <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fl">0.25</span>, <span class="fl">0.5</span>, <span class="fl">0.75</span>, <span class="dv">1</span>)</span>
-<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a><span class="do">## train models and create predictions:</span></span>
-<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>pred_pm <span class="ot">&lt;-</span> <span class="fu">sapply</span>(aa, <span class="cf">function</span>(alpha){</span>
-<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>  mod_pm <span class="ot">&lt;-</span> <span class="fu">cv.glmnet</span>(<span class="at">x =</span> <span class="fu">as.matrix</span>(trn[,<span class="sc">-</span><span class="dv">1</span>]), <span class="at">y=</span>trn[,<span class="dv">1</span>],</span>
-<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>                      <span class="at">family =</span> <span class="st">&quot;binomial&quot;</span>,</span>
-<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>                      <span class="at">type.measure =</span> <span class="st">&quot;class&quot;</span>,</span>
-<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>                      <span class="at">alpha =</span> alpha)</span>
-<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">message</span>(<span class="fu">paste0</span>(<span class="st">&quot;cv.glmnet (alpha = &quot;</span>, alpha, <span class="st">&quot;):&quot;</span>))</span>
-<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(mod_pm)</span>
-<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">message</span>(<span class="st">&quot;+++++&quot;</span>)</span>
-<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">predict</span>(mod_pm, <span class="fu">as.matrix</span>(val[,<span class="sc">-</span><span class="dv">1</span>]), <span class="at">type=</span><span class="st">&quot;response&quot;</span>)</span>
-<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a>})</span>
-<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; cv.glmnet (alpha = 0):</span></span>
-<span id="cb12-18"><a href="#cb12-18" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; </span></span>
-<span id="cb12-19"><a href="#cb12-19" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Call:  cv.glmnet(x = as.matrix(trn[, -1]), y = trn[, 1], type.measure = &quot;class&quot;,      family = &quot;binomial&quot;, alpha = alpha) </span></span>
-<span id="cb12-20"><a href="#cb12-20" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; </span></span>
-<span id="cb12-21"><a href="#cb12-21" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Measure: Misclassification Error </span></span>
-<span id="cb12-22"><a href="#cb12-22" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; </span></span>
-<span id="cb12-23"><a href="#cb12-23" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;      Lambda Index Measure       SE Nonzero</span></span>
-<span id="cb12-24"><a href="#cb12-24" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; min 0.03847   100 0.01847 0.006853      30</span></span>
-<span id="cb12-25"><a href="#cb12-25" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1se 0.04634    98 0.02375 0.008289      30</span></span>
-<span id="cb12-26"><a href="#cb12-26" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; +++++</span></span>
-<span id="cb12-27"><a href="#cb12-27" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; cv.glmnet (alpha = 0.25):</span></span>
-<span id="cb12-28"><a href="#cb12-28" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; </span></span>
-<span id="cb12-29"><a href="#cb12-29" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Call:  cv.glmnet(x = as.matrix(trn[, -1]), y = trn[, 1], type.measure = &quot;class&quot;,      family = &quot;binomial&quot;, alpha = alpha) </span></span>
-<span id="cb12-30"><a href="#cb12-30" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; </span></span>
-<span id="cb12-31"><a href="#cb12-31" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Measure: Misclassification Error </span></span>
-<span id="cb12-32"><a href="#cb12-32" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; </span></span>
-<span id="cb12-33"><a href="#cb12-33" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;       Lambda Index Measure       SE Nonzero</span></span>
-<span id="cb12-34"><a href="#cb12-34" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; min 0.004383    64 0.01055 0.004299      27</span></span>
-<span id="cb12-35"><a href="#cb12-35" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1se 0.012195    53 0.01319 0.005888      23</span></span>
-<span id="cb12-36"><a href="#cb12-36" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; +++++</span></span>
-<span id="cb12-37"><a href="#cb12-37" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; cv.glmnet (alpha = 0.5):</span></span>
-<span id="cb12-38"><a href="#cb12-38" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; </span></span>
-<span id="cb12-39"><a href="#cb12-39" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Call:  cv.glmnet(x = as.matrix(trn[, -1]), y = trn[, 1], type.measure = &quot;class&quot;,      family = &quot;binomial&quot;, alpha = alpha) </span></span>
-<span id="cb12-40"><a href="#cb12-40" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; </span></span>
-<span id="cb12-41"><a href="#cb12-41" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Measure: Misclassification Error </span></span>
-<span id="cb12-42"><a href="#cb12-42" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; </span></span>
-<span id="cb12-43"><a href="#cb12-43" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;       Lambda Index Measure       SE Nonzero</span></span>
-<span id="cb12-44"><a href="#cb12-44" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; min 0.004612    56 0.01055 0.008061      22</span></span>
-<span id="cb12-45"><a href="#cb12-45" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1se 0.012834    45 0.01847 0.008869      19</span></span>
-<span id="cb12-46"><a href="#cb12-46" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; +++++</span></span>
-<span id="cb12-47"><a href="#cb12-47" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; cv.glmnet (alpha = 0.75):</span></span>
-<span id="cb12-48"><a href="#cb12-48" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; </span></span>
-<span id="cb12-49"><a href="#cb12-49" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Call:  cv.glmnet(x = as.matrix(trn[, -1]), y = trn[, 1], type.measure = &quot;class&quot;,      family = &quot;binomial&quot;, alpha = alpha) </span></span>
-<span id="cb12-50"><a href="#cb12-50" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; </span></span>
-<span id="cb12-51"><a href="#cb12-51" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Measure: Misclassification Error </span></span>
-<span id="cb12-52"><a href="#cb12-52" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; </span></span>
-<span id="cb12-53"><a href="#cb12-53" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;       Lambda Index  Measure       SE Nonzero</span></span>
-<span id="cb12-54"><a href="#cb12-54" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; min 0.002802    57 0.007916 0.004023      19</span></span>
-<span id="cb12-55"><a href="#cb12-55" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1se 0.009391    44 0.010554 0.005824      18</span></span>
-<span id="cb12-56"><a href="#cb12-56" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; +++++</span></span>
-<span id="cb12-57"><a href="#cb12-57" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; cv.glmnet (alpha = 1):</span></span>
-<span id="cb12-58"><a href="#cb12-58" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; </span></span>
-<span id="cb12-59"><a href="#cb12-59" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Call:  cv.glmnet(x = as.matrix(trn[, -1]), y = trn[, 1], type.measure = &quot;class&quot;,      family = &quot;binomial&quot;, alpha = alpha) </span></span>
-<span id="cb12-60"><a href="#cb12-60" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; </span></span>
-<span id="cb12-61"><a href="#cb12-61" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Measure: Misclassification Error </span></span>
-<span id="cb12-62"><a href="#cb12-62" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; </span></span>
-<span id="cb12-63"><a href="#cb12-63" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;       Lambda Index Measure       SE Nonzero</span></span>
-<span id="cb12-64"><a href="#cb12-64" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; min 0.003672    51 0.01319 0.005888      13</span></span>
-<span id="cb12-65"><a href="#cb12-65" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1se 0.005328    47 0.01847 0.008822      11</span></span>
-<span id="cb12-66"><a href="#cb12-66" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; +++++</span></span>
-<span id="cb12-67"><a href="#cb12-67" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(pred_pm) <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="st">&quot;en&quot;</span>, aa<span class="sc">*</span><span class="dv">100</span>)</span></code></pre></div>
-<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(pred_pm)</span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;            en0      en25      en50      en75     en100</span></span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1,] 0.9747700 0.9961507 0.9938921 0.9964515 0.9992168</span></span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [2,] 0.9996722 0.9999897 0.9999674 0.9999877 0.9999995</span></span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [3,] 0.9142164 0.9763833 0.9698399 0.9816259 0.9949924</span></span>
-<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [4,] 0.9955105 0.9995248 0.9991571 0.9995259 0.9999234</span></span>
-<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [5,] 0.9559590 0.9885991 0.9807955 0.9856935 0.9949629</span></span>
-<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [6,] 0.7573470 0.7981572 0.7785671 0.7485468 0.6770751</span></span></code></pre></div>
-<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="do">## define cutpoints (probability scale):</span></span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>cc <span class="ot">&lt;-</span> <span class="fu">rep</span>(<span class="fu">seq</span>(<span class="fl">0.1</span>, <span class="fl">0.5</span>, <span class="fl">0.1</span>), <span class="dv">5</span>)</span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>mm <span class="ot">&lt;-</span> <span class="fu">rep</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>, <span class="at">each=</span><span class="dv">5</span>)</span>
-<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="do">## create predictions: </span></span>
-<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>comp_pm <span class="ot">&lt;-</span> pred_pm <span class="sc">%&gt;%</span> </span>
-<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>  cases<span class="sc">::</span><span class="fu">categorize</span>(cc, mm) <span class="sc">%&gt;%</span> </span>
-<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>  cases<span class="sc">::</span><span class="fu">compare</span>(<span class="at">labels =</span> <span class="fu">as.numeric</span>(<span class="fu">as.character</span>(val<span class="sc">$</span>diagnosis)))</span>
-<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(comp_pm, <span class="dv">1</span>)</span>
-<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; List of 2</span></span>
-<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  $ specificity:&#39;data.frame&#39;: 119 obs. of  25 variables:</span></span>
-<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  $ sensitivity:&#39;data.frame&#39;: 71 obs. of  25 variables:</span></span></code></pre></div>
-<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="do">## conduct statistical analysis:</span></span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">1337</span>)</span>
-<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>results_pm <span class="ot">&lt;-</span> cases<span class="sc">::</span><span class="fu">evaluate</span>(comp_pm, <span class="at">benchmark =</span> benchmark,</span>
-<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>                              <span class="at">alternative =</span> <span class="st">&quot;greater&quot;</span>, <span class="at">alpha =</span> <span class="fl">0.025</span>,</span>
-<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>                              <span class="at">adj=</span><span class="st">&quot;boot&quot;</span>, <span class="at">regu=</span><span class="dv">1</span>) </span>
-<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; Drawing 2000 &#39;pairs&#39; bootstrap samples...</span></span>
-<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(results_pm, <span class="dv">1</span>)</span>
-<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; List of 2</span></span>
-<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  $ specificity:&#39;data.frame&#39;: 25 obs. of  9 variables:</span></span>
-<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  $ sensitivity:&#39;data.frame&#39;: 25 obs. of  9 variables:</span></span>
-<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  - attr(*, &quot;n&quot;)= Named int [1:2] 119 71</span></span>
-<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   ..- attr(*, &quot;names&quot;)= chr [1:2] &quot;specificity&quot; &quot;sensitivity&quot;</span></span>
-<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  - attr(*, &quot;m&quot;)= int 25</span></span>
-<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  - attr(*, &quot;alpha&quot;)= num 0.025</span></span>
-<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  - attr(*, &quot;alpha_adj&quot;)= logi NA</span></span>
-<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  - attr(*, &quot;cv&quot;)= num [1:2] -3.65 Inf</span></span>
-<span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  - attr(*, &quot;class&quot;)= chr [1:2] &quot;list&quot; &quot;cases_results&quot;</span></span>
-<span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  - attr(*, &quot;contrast&quot;)= chr [1:2] &quot;raw&quot; NA</span></span>
-<span id="cb15-19"><a href="#cb15-19" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  - attr(*, &quot;benchmark&quot;)= num [1:2] 0.7 0.9</span></span>
-<span id="cb15-20"><a href="#cb15-20" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  - attr(*, &quot;alternative&quot;)= chr &quot;greater&quot;</span></span>
-<span id="cb15-21"><a href="#cb15-21" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  - attr(*, &quot;analysis&quot;)= chr &quot;co-primary&quot;</span></span>
-<span id="cb15-22"><a href="#cb15-22" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  - attr(*, &quot;transformation&quot;)= chr &quot;none&quot;</span></span>
-<span id="cb15-23"><a href="#cb15-23" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  - attr(*, &quot;regu&quot;)= num [1:3] 1 0.5 0.25</span></span>
-<span id="cb15-24"><a href="#cb15-24" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  - attr(*, &quot;pars&quot;)= list()</span></span></code></pre></div>
-<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>results_pm <span class="sc">%&gt;%</span> <span class="fu">lapply</span>(filter, reject_all) </span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; $specificity</span></span>
-<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   parameter hypothesis  estimate     lower upper   pval pval_all reject</span></span>
-<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1  en25_0.1     &lt;= 0.7 0.8541667 0.7371061   Inf 0.0095   0.0095   TRUE</span></span>
-<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 2  en50_0.1     &lt;= 0.7 0.8541667 0.7371061   Inf 0.0095   0.0095   TRUE</span></span>
-<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 3  en75_0.1     &lt;= 0.7 0.8708333 0.7595952   Inf 0.0045   0.0045   TRUE</span></span>
-<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 4 en100_0.1     &lt;= 0.7 0.8875000 0.7826976   Inf 0.0040   0.0095   TRUE</span></span>
-<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   reject_all</span></span>
-<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1       TRUE</span></span>
-<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 2       TRUE</span></span>
-<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 3       TRUE</span></span>
-<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 4       TRUE</span></span>
-<span id="cb16-13"><a href="#cb16-13" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; </span></span>
-<span id="cb16-14"><a href="#cb16-14" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; $sensitivity</span></span>
-<span id="cb16-15"><a href="#cb16-15" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   parameter hypothesis  estimate     lower upper   pval pval_all reject</span></span>
-<span id="cb16-16"><a href="#cb16-16" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1  en25_0.1     &lt;= 0.9 0.9791667 0.9181779   Inf 0.0095   0.0095   TRUE</span></span>
-<span id="cb16-17"><a href="#cb16-17" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 2  en50_0.1     &lt;= 0.9 0.9930556 0.9575948   Inf 0.0000   0.0095   TRUE</span></span>
-<span id="cb16-18"><a href="#cb16-18" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 3  en75_0.1     &lt;= 0.9 0.9930556 0.9575948   Inf 0.0000   0.0045   TRUE</span></span>
-<span id="cb16-19"><a href="#cb16-19" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 4 en100_0.1     &lt;= 0.9 0.9791667 0.9181779   Inf 0.0095   0.0095   TRUE</span></span>
-<span id="cb16-20"><a href="#cb16-20" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   reject_all</span></span>
-<span id="cb16-21"><a href="#cb16-21" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1       TRUE</span></span>
-<span id="cb16-22"><a href="#cb16-22" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 2       TRUE</span></span>
-<span id="cb16-23"><a href="#cb16-23" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 3       TRUE</span></span>
-<span id="cb16-24"><a href="#cb16-24" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 4       TRUE</span></span></code></pre></div>
-<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">visualize</span>(results_pm)</span></code></pre></div>
-<p><img src="data:image/png;base64,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" width="100%" /></p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a><span class="do">## data splitting:</span></span>
+<span id="cb10-2"><a href="#cb10-2" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">1337</span>)</span>
+<span id="cb10-3"><a href="#cb10-3" tabindex="-1"></a>split <span class="ot">&lt;-</span> <span class="fu">stratified</span>(data, <span class="fu">c</span>(<span class="st">&quot;diagnosis&quot;</span>), <span class="dv">1</span> <span class="sc">/</span> <span class="dv">3</span>, <span class="at">bothSets =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb10-4"><a href="#cb10-4" tabindex="-1"></a>val <span class="ot">&lt;-</span> split[[<span class="dv">1</span>]] <span class="sc">%&gt;%</span> <span class="fu">as.data.frame</span>()</span>
+<span id="cb10-5"><a href="#cb10-5" tabindex="-1"></a>trn <span class="ot">&lt;-</span> split[[<span class="dv">2</span>]] <span class="sc">%&gt;%</span> <span class="fu">as.data.frame</span>()</span>
+<span id="cb10-6"><a href="#cb10-6" tabindex="-1"></a><span class="fu">dim</span>(trn)</span>
+<span id="cb10-7"><a href="#cb10-7" tabindex="-1"></a><span class="co">#&gt; [1] 379  31</span></span>
+<span id="cb10-8"><a href="#cb10-8" tabindex="-1"></a><span class="fu">dim</span>(val)</span>
+<span id="cb10-9"><a href="#cb10-9" tabindex="-1"></a><span class="co">#&gt; [1] 190  31</span></span>
+<span id="cb10-10"><a href="#cb10-10" tabindex="-1"></a><span class="fu">table</span>(val<span class="sc">$</span>diagnosis)</span>
+<span id="cb10-11"><a href="#cb10-11" tabindex="-1"></a><span class="co">#&gt; </span></span>
+<span id="cb10-12"><a href="#cb10-12" tabindex="-1"></a><span class="co">#&gt;   0   1 </span></span>
+<span id="cb10-13"><a href="#cb10-13" tabindex="-1"></a><span class="co">#&gt; 119  71</span></span></code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a><span class="do">## train example model</span></span>
+<span id="cb11-2"><a href="#cb11-2" tabindex="-1"></a>mod <span class="ot">&lt;-</span> <span class="fu">glmnet</span>(<span class="at">x =</span> trn[, <span class="sc">-</span><span class="dv">1</span>], <span class="at">y =</span> trn[, <span class="dv">1</span>], <span class="at">family =</span> <span class="st">&quot;binomial&quot;</span>, <span class="at">alpha =</span> <span class="fl">0.25</span>)</span>
+<span id="cb11-3"><a href="#cb11-3" tabindex="-1"></a><span class="fu">str</span>(mod, <span class="dv">0</span>)</span>
+<span id="cb11-4"><a href="#cb11-4" tabindex="-1"></a><span class="co">#&gt; List of 13</span></span>
+<span id="cb11-5"><a href="#cb11-5" tabindex="-1"></a><span class="co">#&gt;  - attr(*, &quot;class&quot;)= chr [1:2] &quot;lognet&quot; &quot;glmnet&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">1337</span>)</span>
+<span id="cb12-2"><a href="#cb12-2" tabindex="-1"></a></span>
+<span id="cb12-3"><a href="#cb12-3" tabindex="-1"></a><span class="do">## define hyperparameter values for L1/L2 penalty mixing parameter (alpha):</span></span>
+<span id="cb12-4"><a href="#cb12-4" tabindex="-1"></a>aa <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fl">0.25</span>, <span class="fl">0.5</span>, <span class="fl">0.75</span>, <span class="dv">1</span>)</span>
+<span id="cb12-5"><a href="#cb12-5" tabindex="-1"></a></span>
+<span id="cb12-6"><a href="#cb12-6" tabindex="-1"></a><span class="do">## train models and create predictions:</span></span>
+<span id="cb12-7"><a href="#cb12-7" tabindex="-1"></a>pred_pm <span class="ot">&lt;-</span> <span class="fu">sapply</span>(aa, <span class="cf">function</span>(alpha) {</span>
+<span id="cb12-8"><a href="#cb12-8" tabindex="-1"></a>  mod_pm <span class="ot">&lt;-</span> <span class="fu">cv.glmnet</span>(</span>
+<span id="cb12-9"><a href="#cb12-9" tabindex="-1"></a>    <span class="at">x =</span> <span class="fu">as.matrix</span>(trn[, <span class="sc">-</span><span class="dv">1</span>]), <span class="at">y =</span> trn[, <span class="dv">1</span>],</span>
+<span id="cb12-10"><a href="#cb12-10" tabindex="-1"></a>    <span class="at">family =</span> <span class="st">&quot;binomial&quot;</span>,</span>
+<span id="cb12-11"><a href="#cb12-11" tabindex="-1"></a>    <span class="at">type.measure =</span> <span class="st">&quot;class&quot;</span>,</span>
+<span id="cb12-12"><a href="#cb12-12" tabindex="-1"></a>    <span class="at">alpha =</span> alpha</span>
+<span id="cb12-13"><a href="#cb12-13" tabindex="-1"></a>  )</span>
+<span id="cb12-14"><a href="#cb12-14" tabindex="-1"></a>  <span class="fu">message</span>(<span class="fu">paste0</span>(<span class="st">&quot;cv.glmnet (alpha = &quot;</span>, alpha, <span class="st">&quot;):&quot;</span>))</span>
+<span id="cb12-15"><a href="#cb12-15" tabindex="-1"></a>  <span class="fu">print</span>(mod_pm)</span>
+<span id="cb12-16"><a href="#cb12-16" tabindex="-1"></a>  <span class="fu">message</span>(<span class="st">&quot;+++++&quot;</span>)</span>
+<span id="cb12-17"><a href="#cb12-17" tabindex="-1"></a>  <span class="fu">predict</span>(mod_pm, <span class="fu">as.matrix</span>(val[, <span class="sc">-</span><span class="dv">1</span>]), <span class="at">type =</span> <span class="st">&quot;response&quot;</span>)</span>
+<span id="cb12-18"><a href="#cb12-18" tabindex="-1"></a>})</span>
+<span id="cb12-19"><a href="#cb12-19" tabindex="-1"></a><span class="co">#&gt; cv.glmnet (alpha = 0):</span></span>
+<span id="cb12-20"><a href="#cb12-20" tabindex="-1"></a><span class="co">#&gt; </span></span>
+<span id="cb12-21"><a href="#cb12-21" tabindex="-1"></a><span class="co">#&gt; Call:  cv.glmnet(x = as.matrix(trn[, -1]), y = trn[, 1], type.measure = &quot;class&quot;,      family = &quot;binomial&quot;, alpha = alpha) </span></span>
+<span id="cb12-22"><a href="#cb12-22" tabindex="-1"></a><span class="co">#&gt; </span></span>
+<span id="cb12-23"><a href="#cb12-23" tabindex="-1"></a><span class="co">#&gt; Measure: Misclassification Error </span></span>
+<span id="cb12-24"><a href="#cb12-24" tabindex="-1"></a><span class="co">#&gt; </span></span>
+<span id="cb12-25"><a href="#cb12-25" tabindex="-1"></a><span class="co">#&gt;      Lambda Index Measure       SE Nonzero</span></span>
+<span id="cb12-26"><a href="#cb12-26" tabindex="-1"></a><span class="co">#&gt; min 0.03847   100 0.01847 0.006853      30</span></span>
+<span id="cb12-27"><a href="#cb12-27" tabindex="-1"></a><span class="co">#&gt; 1se 0.04634    98 0.02375 0.008289      30</span></span>
+<span id="cb12-28"><a href="#cb12-28" tabindex="-1"></a><span class="co">#&gt; +++++</span></span>
+<span id="cb12-29"><a href="#cb12-29" tabindex="-1"></a><span class="co">#&gt; cv.glmnet (alpha = 0.25):</span></span>
+<span id="cb12-30"><a href="#cb12-30" tabindex="-1"></a><span class="co">#&gt; </span></span>
+<span id="cb12-31"><a href="#cb12-31" tabindex="-1"></a><span class="co">#&gt; Call:  cv.glmnet(x = as.matrix(trn[, -1]), y = trn[, 1], type.measure = &quot;class&quot;,      family = &quot;binomial&quot;, alpha = alpha) </span></span>
+<span id="cb12-32"><a href="#cb12-32" tabindex="-1"></a><span class="co">#&gt; </span></span>
+<span id="cb12-33"><a href="#cb12-33" tabindex="-1"></a><span class="co">#&gt; Measure: Misclassification Error </span></span>
+<span id="cb12-34"><a href="#cb12-34" tabindex="-1"></a><span class="co">#&gt; </span></span>
+<span id="cb12-35"><a href="#cb12-35" tabindex="-1"></a><span class="co">#&gt;       Lambda Index Measure       SE Nonzero</span></span>
+<span id="cb12-36"><a href="#cb12-36" tabindex="-1"></a><span class="co">#&gt; min 0.004383    64 0.01055 0.004299      27</span></span>
+<span id="cb12-37"><a href="#cb12-37" tabindex="-1"></a><span class="co">#&gt; 1se 0.012195    53 0.01319 0.005888      23</span></span>
+<span id="cb12-38"><a href="#cb12-38" tabindex="-1"></a><span class="co">#&gt; +++++</span></span>
+<span id="cb12-39"><a href="#cb12-39" tabindex="-1"></a><span class="co">#&gt; cv.glmnet (alpha = 0.5):</span></span>
+<span id="cb12-40"><a href="#cb12-40" tabindex="-1"></a><span class="co">#&gt; </span></span>
+<span id="cb12-41"><a href="#cb12-41" tabindex="-1"></a><span class="co">#&gt; Call:  cv.glmnet(x = as.matrix(trn[, -1]), y = trn[, 1], type.measure = &quot;class&quot;,      family = &quot;binomial&quot;, alpha = alpha) </span></span>
+<span id="cb12-42"><a href="#cb12-42" tabindex="-1"></a><span class="co">#&gt; </span></span>
+<span id="cb12-43"><a href="#cb12-43" tabindex="-1"></a><span class="co">#&gt; Measure: Misclassification Error </span></span>
+<span id="cb12-44"><a href="#cb12-44" tabindex="-1"></a><span class="co">#&gt; </span></span>
+<span id="cb12-45"><a href="#cb12-45" tabindex="-1"></a><span class="co">#&gt;       Lambda Index Measure       SE Nonzero</span></span>
+<span id="cb12-46"><a href="#cb12-46" tabindex="-1"></a><span class="co">#&gt; min 0.004612    56 0.01055 0.008061      22</span></span>
+<span id="cb12-47"><a href="#cb12-47" tabindex="-1"></a><span class="co">#&gt; 1se 0.012834    45 0.01847 0.008869      19</span></span>
+<span id="cb12-48"><a href="#cb12-48" tabindex="-1"></a><span class="co">#&gt; +++++</span></span>
+<span id="cb12-49"><a href="#cb12-49" tabindex="-1"></a><span class="co">#&gt; cv.glmnet (alpha = 0.75):</span></span>
+<span id="cb12-50"><a href="#cb12-50" tabindex="-1"></a><span class="co">#&gt; </span></span>
+<span id="cb12-51"><a href="#cb12-51" tabindex="-1"></a><span class="co">#&gt; Call:  cv.glmnet(x = as.matrix(trn[, -1]), y = trn[, 1], type.measure = &quot;class&quot;,      family = &quot;binomial&quot;, alpha = alpha) </span></span>
+<span id="cb12-52"><a href="#cb12-52" tabindex="-1"></a><span class="co">#&gt; </span></span>
+<span id="cb12-53"><a href="#cb12-53" tabindex="-1"></a><span class="co">#&gt; Measure: Misclassification Error </span></span>
+<span id="cb12-54"><a href="#cb12-54" tabindex="-1"></a><span class="co">#&gt; </span></span>
+<span id="cb12-55"><a href="#cb12-55" tabindex="-1"></a><span class="co">#&gt;       Lambda Index  Measure       SE Nonzero</span></span>
+<span id="cb12-56"><a href="#cb12-56" tabindex="-1"></a><span class="co">#&gt; min 0.002802    57 0.007916 0.004023      19</span></span>
+<span id="cb12-57"><a href="#cb12-57" tabindex="-1"></a><span class="co">#&gt; 1se 0.009391    44 0.010554 0.005824      18</span></span>
+<span id="cb12-58"><a href="#cb12-58" tabindex="-1"></a><span class="co">#&gt; +++++</span></span>
+<span id="cb12-59"><a href="#cb12-59" tabindex="-1"></a><span class="co">#&gt; cv.glmnet (alpha = 1):</span></span>
+<span id="cb12-60"><a href="#cb12-60" tabindex="-1"></a><span class="co">#&gt; </span></span>
+<span id="cb12-61"><a href="#cb12-61" tabindex="-1"></a><span class="co">#&gt; Call:  cv.glmnet(x = as.matrix(trn[, -1]), y = trn[, 1], type.measure = &quot;class&quot;,      family = &quot;binomial&quot;, alpha = alpha) </span></span>
+<span id="cb12-62"><a href="#cb12-62" tabindex="-1"></a><span class="co">#&gt; </span></span>
+<span id="cb12-63"><a href="#cb12-63" tabindex="-1"></a><span class="co">#&gt; Measure: Misclassification Error </span></span>
+<span id="cb12-64"><a href="#cb12-64" tabindex="-1"></a><span class="co">#&gt; </span></span>
+<span id="cb12-65"><a href="#cb12-65" tabindex="-1"></a><span class="co">#&gt;       Lambda Index Measure       SE Nonzero</span></span>
+<span id="cb12-66"><a href="#cb12-66" tabindex="-1"></a><span class="co">#&gt; min 0.003672    51 0.01319 0.005888      13</span></span>
+<span id="cb12-67"><a href="#cb12-67" tabindex="-1"></a><span class="co">#&gt; 1se 0.005328    47 0.01847 0.008822      11</span></span>
+<span id="cb12-68"><a href="#cb12-68" tabindex="-1"></a><span class="co">#&gt; +++++</span></span>
+<span id="cb12-69"><a href="#cb12-69" tabindex="-1"></a><span class="fu">colnames</span>(pred_pm) <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="st">&quot;en&quot;</span>, aa <span class="sc">*</span> <span class="dv">100</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a><span class="fu">head</span>(pred_pm)</span>
+<span id="cb13-2"><a href="#cb13-2" tabindex="-1"></a><span class="co">#&gt;            en0      en25      en50      en75     en100</span></span>
+<span id="cb13-3"><a href="#cb13-3" tabindex="-1"></a><span class="co">#&gt; [1,] 0.9747700 0.9961507 0.9938921 0.9964515 0.9992168</span></span>
+<span id="cb13-4"><a href="#cb13-4" tabindex="-1"></a><span class="co">#&gt; [2,] 0.9996722 0.9999897 0.9999674 0.9999877 0.9999995</span></span>
+<span id="cb13-5"><a href="#cb13-5" tabindex="-1"></a><span class="co">#&gt; [3,] 0.9142164 0.9763833 0.9698399 0.9816259 0.9949924</span></span>
+<span id="cb13-6"><a href="#cb13-6" tabindex="-1"></a><span class="co">#&gt; [4,] 0.9955105 0.9995248 0.9991571 0.9995259 0.9999234</span></span>
+<span id="cb13-7"><a href="#cb13-7" tabindex="-1"></a><span class="co">#&gt; [5,] 0.9559590 0.9885991 0.9807955 0.9856935 0.9949629</span></span>
+<span id="cb13-8"><a href="#cb13-8" tabindex="-1"></a><span class="co">#&gt; [6,] 0.7573470 0.7981572 0.7785671 0.7485468 0.6770751</span></span></code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" tabindex="-1"></a><span class="do">## define cutpoints (probability scale):</span></span>
+<span id="cb14-2"><a href="#cb14-2" tabindex="-1"></a>cc <span class="ot">&lt;-</span> <span class="fu">rep</span>(<span class="fu">seq</span>(<span class="fl">0.1</span>, <span class="fl">0.5</span>, <span class="fl">0.1</span>), <span class="dv">5</span>)</span>
+<span id="cb14-3"><a href="#cb14-3" tabindex="-1"></a>mm <span class="ot">&lt;-</span> <span class="fu">rep</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>, <span class="at">each =</span> <span class="dv">5</span>)</span>
+<span id="cb14-4"><a href="#cb14-4" tabindex="-1"></a></span>
+<span id="cb14-5"><a href="#cb14-5" tabindex="-1"></a><span class="do">## create predictions:</span></span>
+<span id="cb14-6"><a href="#cb14-6" tabindex="-1"></a>comp_pm <span class="ot">&lt;-</span> pred_pm <span class="sc">%&gt;%</span></span>
+<span id="cb14-7"><a href="#cb14-7" tabindex="-1"></a>  cases<span class="sc">::</span><span class="fu">categorize</span>(cc, mm) <span class="sc">%&gt;%</span></span>
+<span id="cb14-8"><a href="#cb14-8" tabindex="-1"></a>  cases<span class="sc">::</span><span class="fu">compare</span>(<span class="at">labels =</span> <span class="fu">as.numeric</span>(<span class="fu">as.character</span>(val<span class="sc">$</span>diagnosis)))</span>
+<span id="cb14-9"><a href="#cb14-9" tabindex="-1"></a><span class="fu">str</span>(comp_pm, <span class="dv">1</span>)</span>
+<span id="cb14-10"><a href="#cb14-10" tabindex="-1"></a><span class="co">#&gt; List of 2</span></span>
+<span id="cb14-11"><a href="#cb14-11" tabindex="-1"></a><span class="co">#&gt;  $ specificity:&#39;data.frame&#39;: 119 obs. of  25 variables:</span></span>
+<span id="cb14-12"><a href="#cb14-12" tabindex="-1"></a><span class="co">#&gt;  $ sensitivity:&#39;data.frame&#39;: 71 obs. of  25 variables:</span></span></code></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" tabindex="-1"></a><span class="do">## conduct statistical analysis:</span></span>
+<span id="cb15-2"><a href="#cb15-2" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">1337</span>)</span>
+<span id="cb15-3"><a href="#cb15-3" tabindex="-1"></a>results_pm <span class="ot">&lt;-</span> cases<span class="sc">::</span><span class="fu">evaluate</span>(comp_pm,</span>
+<span id="cb15-4"><a href="#cb15-4" tabindex="-1"></a>  <span class="at">benchmark =</span> benchmark,</span>
+<span id="cb15-5"><a href="#cb15-5" tabindex="-1"></a>  <span class="at">alternative =</span> <span class="st">&quot;greater&quot;</span>, <span class="at">alpha =</span> <span class="fl">0.025</span>,</span>
+<span id="cb15-6"><a href="#cb15-6" tabindex="-1"></a>  <span class="at">adj =</span> <span class="st">&quot;boot&quot;</span>, <span class="at">regu =</span> <span class="dv">1</span></span>
+<span id="cb15-7"><a href="#cb15-7" tabindex="-1"></a>)</span>
+<span id="cb15-8"><a href="#cb15-8" tabindex="-1"></a><span class="co">#&gt; Drawing 2000 &#39;pairs&#39; bootstrap samples...</span></span>
+<span id="cb15-9"><a href="#cb15-9" tabindex="-1"></a><span class="fu">str</span>(results_pm, <span class="dv">1</span>)</span>
+<span id="cb15-10"><a href="#cb15-10" tabindex="-1"></a><span class="co">#&gt; List of 2</span></span>
+<span id="cb15-11"><a href="#cb15-11" tabindex="-1"></a><span class="co">#&gt;  $ specificity:&#39;data.frame&#39;: 25 obs. of  10 variables:</span></span>
+<span id="cb15-12"><a href="#cb15-12" tabindex="-1"></a><span class="co">#&gt;  $ sensitivity:&#39;data.frame&#39;: 25 obs. of  10 variables:</span></span>
+<span id="cb15-13"><a href="#cb15-13" tabindex="-1"></a><span class="co">#&gt;  - attr(*, &quot;class&quot;)= chr [1:2] &quot;list&quot; &quot;cases_results&quot;</span></span>
+<span id="cb15-14"><a href="#cb15-14" tabindex="-1"></a><span class="co">#&gt;  - attr(*, &quot;n_obs&quot;)= Named int [1:2] 119 71</span></span>
+<span id="cb15-15"><a href="#cb15-15" tabindex="-1"></a><span class="co">#&gt;   ..- attr(*, &quot;names&quot;)= chr [1:2] &quot;specificity&quot; &quot;sensitivity&quot;</span></span>
+<span id="cb15-16"><a href="#cb15-16" tabindex="-1"></a><span class="co">#&gt;  - attr(*, &quot;n_params&quot;)= int 25</span></span>
+<span id="cb15-17"><a href="#cb15-17" tabindex="-1"></a><span class="co">#&gt;  - attr(*, &quot;n_groups&quot;)= int 2</span></span>
+<span id="cb15-18"><a href="#cb15-18" tabindex="-1"></a><span class="co">#&gt;  - attr(*, &quot;critval&quot;)= num [1:2] -3.63 Inf</span></span>
+<span id="cb15-19"><a href="#cb15-19" tabindex="-1"></a><span class="co">#&gt;  - attr(*, &quot;alpha_adj&quot;)= num 0.0095</span></span>
+<span id="cb15-20"><a href="#cb15-20" tabindex="-1"></a><span class="co">#&gt;  - attr(*, &quot;call&quot;)=List of 8</span></span></code></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" tabindex="-1"></a>results_pm <span class="sc">%&gt;%</span> <span class="fu">lapply</span>(filter, reject_all)</span>
+<span id="cb16-2"><a href="#cb16-2" tabindex="-1"></a><span class="co">#&gt; $specificity</span></span>
+<span id="cb16-3"><a href="#cb16-3" tabindex="-1"></a><span class="co">#&gt;   parameter hypothesis  estimate     lower upper    tstat   pval reject</span></span>
+<span id="cb16-4"><a href="#cb16-4" tabindex="-1"></a><span class="co">#&gt; 1  en25_0.1     &lt;= 0.7 0.8541667 0.7375908   Inf 4.804890 0.0095   TRUE</span></span>
+<span id="cb16-5"><a href="#cb16-5" tabindex="-1"></a><span class="co">#&gt; 2  en50_0.1     &lt;= 0.7 0.8541667 0.7375908   Inf 4.804890 0.0095   TRUE</span></span>
+<span id="cb16-6"><a href="#cb16-6" tabindex="-1"></a><span class="co">#&gt; 3  en75_0.1     &lt;= 0.7 0.8708333 0.7600558   Inf 5.603025 0.0045   TRUE</span></span>
+<span id="cb16-7"><a href="#cb16-7" tabindex="-1"></a><span class="co">#&gt; 4 en100_0.1     &lt;= 0.7 0.8875000 0.7831315   Inf 6.527299 0.0040   TRUE</span></span>
+<span id="cb16-8"><a href="#cb16-8" tabindex="-1"></a><span class="co">#&gt;   pval_all reject_all</span></span>
+<span id="cb16-9"><a href="#cb16-9" tabindex="-1"></a><span class="co">#&gt; 1   0.0095       TRUE</span></span>
+<span id="cb16-10"><a href="#cb16-10" tabindex="-1"></a><span class="co">#&gt; 2   0.0095       TRUE</span></span>
+<span id="cb16-11"><a href="#cb16-11" tabindex="-1"></a><span class="co">#&gt; 3   0.0045       TRUE</span></span>
+<span id="cb16-12"><a href="#cb16-12" tabindex="-1"></a><span class="co">#&gt; 4   0.0095       TRUE</span></span>
+<span id="cb16-13"><a href="#cb16-13" tabindex="-1"></a><span class="co">#&gt; </span></span>
+<span id="cb16-14"><a href="#cb16-14" tabindex="-1"></a><span class="co">#&gt; $sensitivity</span></span>
+<span id="cb16-15"><a href="#cb16-15" tabindex="-1"></a><span class="co">#&gt;   parameter hypothesis  estimate     lower upper    tstat   pval reject</span></span>
+<span id="cb16-16"><a href="#cb16-16" tabindex="-1"></a><span class="co">#&gt; 1  en25_0.1     &lt;= 0.9 0.9791667 0.9184304   Inf 4.735830 0.0095   TRUE</span></span>
+<span id="cb16-17"><a href="#cb16-17" tabindex="-1"></a><span class="co">#&gt; 2  en50_0.1     &lt;= 0.9 0.9930556 0.9577417   Inf 9.574106 0.0000   TRUE</span></span>
+<span id="cb16-18"><a href="#cb16-18" tabindex="-1"></a><span class="co">#&gt; 3  en75_0.1     &lt;= 0.9 0.9930556 0.9577417   Inf 9.574106 0.0000   TRUE</span></span>
+<span id="cb16-19"><a href="#cb16-19" tabindex="-1"></a><span class="co">#&gt; 4 en100_0.1     &lt;= 0.9 0.9791667 0.9184304   Inf 4.735830 0.0095   TRUE</span></span>
+<span id="cb16-20"><a href="#cb16-20" tabindex="-1"></a><span class="co">#&gt;   pval_all reject_all</span></span>
+<span id="cb16-21"><a href="#cb16-21" tabindex="-1"></a><span class="co">#&gt; 1   0.0095       TRUE</span></span>
+<span id="cb16-22"><a href="#cb16-22" tabindex="-1"></a><span class="co">#&gt; 2   0.0095       TRUE</span></span>
+<span id="cb16-23"><a href="#cb16-23" tabindex="-1"></a><span class="co">#&gt; 3   0.0045       TRUE</span></span>
+<span id="cb16-24"><a href="#cb16-24" tabindex="-1"></a><span class="co">#&gt; 4   0.0095       TRUE</span></span></code></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" tabindex="-1"></a><span class="fu">visualize</span>(results_pm)</span></code></pre></div>
+<p><img role="img" src="data:image/png;base64,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" width="100%" /></p>
 <hr />
 </div>
 <div id="references" class="section level2">
 <h2>References</h2>
+<ol style="list-style-type: decimal">
+<li>Westphal M, Zapf A. Statistical inference for diagnostic test
+accuracy studies with multiple comparisons. Statistical Methods in
+Medical Research. 2024;0(0). <a href="https://journals.sagepub.com/doi/full/10.1177/09622802241236933">doi:10.1177/09622802241236933</a></li>
+</ol>
 <ul>
-<li><a href="https://arxiv.org/abs/2105.13469">Westphal, Max, and
-Antonia Zapf. “Statistical Inference for Diagnostic Test Accuracy
-Studies with Multiple Comparisons.” arXiv preprint arXiv:2105.13469
-(2021).</a></li>
 <li>“Breast Cancer Wisconsin (Diagnostic) Data Set” at the UCI Machine
 Learning Repository: <a href="https://archive.ics.uci.edu/ml/datasets/breast+cancer+wisconsin+(diagnostic)" class="uri">https://archive.ics.uci.edu/ml/datasets/breast+cancer+wisconsin+(diagnostic)</a></li>
 </ul>

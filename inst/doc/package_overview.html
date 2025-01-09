@@ -29,27 +29,27 @@ document.addEventListener('DOMContentLoaded', function(e) {
 </script>
 
 <style type="text/css">
-  code{white-space: pre-wrap;}
-  span.smallcaps{font-variant: small-caps;}
-  span.underline{text-decoration: underline;}
-  div.column{display: inline-block; vertical-align: top; width: 50%;}
-  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-  ul.task-list{list-style: none;}
-    </style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
 
 
 
 <style type="text/css">
-  code {
-    white-space: pre;
-  }
-  .sourceCode {
-    overflow: visible;
-  }
+code {
+white-space: pre;
+}
+.sourceCode {
+overflow: visible;
+}
 </style>
 <style type="text/css" data-origin="pandoc">
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span { line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -60,58 +60,57 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
-  { counter-reset: source-line 0; }
+{ counter-reset: source-line 0; }
 pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
+{ position: relative; left: -4em; counter-increment: source-line; }
 pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+{ content: counter(source-line);
+position: relative; left: -1em; text-align: right; vertical-align: baseline;
+border: none; display: inline-block;
+-webkit-touch-callout: none; -webkit-user-select: none;
+-khtml-user-select: none; -moz-user-select: none;
+-ms-user-select: none; user-select: none;
+padding: 0 4px; width: 4em;
+color: #aaaaaa;
+}
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa; padding-left: 4px; }
 div.sourceCode
-  {   }
+{ }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-
+code span.al { color: #ff0000; font-weight: bold; } 
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.at { color: #7d9029; } 
+code span.bn { color: #40a070; } 
+code span.bu { color: #008000; } 
+code span.cf { color: #007020; font-weight: bold; } 
+code span.ch { color: #4070a0; } 
+code span.cn { color: #880000; } 
+code span.co { color: #60a0b0; font-style: italic; } 
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.do { color: #ba2121; font-style: italic; } 
+code span.dt { color: #902000; } 
+code span.dv { color: #40a070; } 
+code span.er { color: #ff0000; font-weight: bold; } 
+code span.ex { } 
+code span.fl { color: #40a070; } 
+code span.fu { color: #06287e; } 
+code span.im { color: #008000; font-weight: bold; } 
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.kw { color: #007020; font-weight: bold; } 
+code span.op { color: #666666; } 
+code span.ot { color: #007020; } 
+code span.pp { color: #bc7a00; } 
+code span.sc { color: #4070a0; } 
+code span.ss { color: #bb6688; } 
+code span.st { color: #4070a0; } 
+code span.va { color: #19177c; } 
+code span.vs { color: #4070a0; } 
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } 
 </style>
 <script>
 // apply pandoc div.sourceCode style to pre.sourceCode instead
@@ -120,13 +119,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   for (var i = 0; i < sheets.length; i++) {
     if (sheets[i].ownerNode.dataset["origin"] !== "pandoc") continue;
     try { var rules = sheets[i].cssRules; } catch (e) { continue; }
-    for (var j = 0; j < rules.length; j++) {
+    var j = 0;
+    while (j < rules.length) {
       var rule = rules[j];
       // check if there is a div.sourceCode rule
-      if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") continue;
+      if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") {
+        j++;
+        continue;
+      }
       var style = rule.style.cssText;
       // check if color or background-color is set
-      if (rule.style.color === '' && rule.style.backgroundColor === '') continue;
+      if (rule.style.color === '' && rule.style.backgroundColor === '') {
+        j++;
+        continue;
+      }
       // replace div.sourceCode by a pre.sourceCode rule
       sheets[i].deleteRule(j);
       sheets[i].insertRule('pre.sourceCode{' + style + '}', j);
@@ -339,7 +345,7 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 <div id="preparation" class="section level2">
 <h2>Preparation</h2>
 <p>Load the package:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(cases)</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="fu">library</span>(cases)</span></code></pre></div>
 </div>
 <div id="important-functions" class="section level2">
 <h2>Important functions</h2>
@@ -348,76 +354,76 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 <p>Often, binary predictions are not readily available but rather need
 to be derived from continuous (risk) scores. This can be done via the
 categorize function.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># real data example from publication here</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">123</span>)</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>M <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(mvtnorm<span class="sc">::</span><span class="fu">rmvnorm</span>(<span class="dv">10</span>, <span class="at">mean=</span><span class="fu">rep</span>(<span class="dv">0</span>, <span class="dv">3</span>), <span class="at">sigma=</span><span class="dv">2</span><span class="sc">*</span><span class="fu">diag</span>(<span class="dv">3</span>)))</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>M</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;             V1         V2         V3</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1  -0.79263226 -0.3255201  2.2043464</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 2   0.09971392  0.1828405  2.4254682</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 3   0.65183395 -1.7890668 -0.9713566</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 4  -0.63026120  1.7311131  0.5088536</span></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 5   0.56677642  0.1565290 -0.7860781</span></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 6   2.52707679  0.7040669 -2.7812167</span></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 7   0.99186703 -0.6686280 -1.5101308</span></span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 8  -0.30826308 -1.4509894 -1.0308079</span></span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 9  -0.88393901 -2.3853446  1.1848098</span></span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 10  0.21690234 -1.6095687  1.7731621</span></span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="do">## categorize at 0 by default</span></span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>yhat <span class="ot">&lt;-</span> <span class="fu">categorize</span>(M)</span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>yhat</span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;    V1_0 V2_0 V3_0</span></span>
-<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1     0    0    1</span></span>
-<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 2     1    1    1</span></span>
-<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 3     1    0    0</span></span>
-<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 4     0    1    1</span></span>
-<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 5     1    1    0</span></span>
-<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 6     1    1    0</span></span>
-<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 7     1    0    0</span></span>
-<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 8     0    0    0</span></span>
-<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 9     0    0    1</span></span>
-<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 10    1    0    1</span></span>
-<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a><span class="do">## define multiple cutpoints to define multiple decision rules per marker</span></span>
-<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>C <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">1</span>)</span>
-<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">3</span>)</span>
-<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a><span class="fu">categorize</span>(M, C, a)</span>
-<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;    V1_0 V1_1 V2_0 V2_1 V3_0 V3_1</span></span>
-<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1     0    0    0    0    1    1</span></span>
-<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 2     1    0    1    0    1    1</span></span>
-<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 3     1    0    0    0    0    0</span></span>
-<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 4     0    0    1    1    1    0</span></span>
-<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 5     1    0    1    0    0    0</span></span>
-<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 6     1    1    1    0    0    0</span></span>
-<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 7     1    0    0    0    0    0</span></span>
-<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 8     0    0    0    0    0    0</span></span>
-<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 9     0    0    0    0    1    1</span></span>
-<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 10    1    0    0    0    1    1</span></span>
-<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a><span class="do">## this can even be used to do multi-class classification, like this:</span></span>
-<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a>C <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="fu">rep</span>(<span class="fu">c</span>(<span class="sc">-</span><span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="sc">-</span><span class="dv">2</span>, <span class="dv">0</span>, <span class="dv">2</span>), <span class="dv">3</span>), <span class="at">ncol=</span><span class="dv">3</span>, <span class="at">byrow =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a>C</span>
-<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;      [,1] [,2] [,3]</span></span>
-<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1,]   -1    0    1</span></span>
-<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [2,]   -2    0    2</span></span>
-<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [3,]   -1    0    1</span></span>
-<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [4,]   -2    0    2</span></span>
-<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [5,]   -1    0    1</span></span>
-<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [6,]   -2    0    2</span></span>
-<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a><span class="fu">categorize</span>(M, C, a)</span>
-<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;    V1_a V1_b V2_a V2_b V3_a V3_b</span></span>
-<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1     1    1    1    1    3    3</span></span>
-<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 2     2    2    2    2    3    3</span></span>
-<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 3     2    2    0    1    1    1</span></span>
-<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 4     1    1    3    2    2    2</span></span>
-<span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 5     2    2    2    2    1    1</span></span>
-<span id="cb2-66"><a href="#cb2-66" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 6     3    3    2    2    0    0</span></span>
-<span id="cb2-67"><a href="#cb2-67" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 7     2    2    1    1    0    1</span></span>
-<span id="cb2-68"><a href="#cb2-68" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 8     1    1    0    1    0    1</span></span>
-<span id="cb2-69"><a href="#cb2-69" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 9     1    1    0    0    3    2</span></span>
-<span id="cb2-70"><a href="#cb2-70" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 10    2    2    0    1    3    2</span></span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="co"># real data example from publication here</span></span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">123</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a>M <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(mvtnorm<span class="sc">::</span><span class="fu">rmvnorm</span>(<span class="dv">10</span>, <span class="at">mean =</span> <span class="fu">rep</span>(<span class="dv">0</span>, <span class="dv">3</span>), <span class="at">sigma =</span> <span class="dv">2</span> <span class="sc">*</span> <span class="fu">diag</span>(<span class="dv">3</span>)))</span>
+<span id="cb2-4"><a href="#cb2-4" tabindex="-1"></a>M</span>
+<span id="cb2-5"><a href="#cb2-5" tabindex="-1"></a><span class="co">#&gt;             V1         V2         V3</span></span>
+<span id="cb2-6"><a href="#cb2-6" tabindex="-1"></a><span class="co">#&gt; 1  -0.79263226 -0.3255201  2.2043464</span></span>
+<span id="cb2-7"><a href="#cb2-7" tabindex="-1"></a><span class="co">#&gt; 2   0.09971392  0.1828405  2.4254682</span></span>
+<span id="cb2-8"><a href="#cb2-8" tabindex="-1"></a><span class="co">#&gt; 3   0.65183395 -1.7890668 -0.9713566</span></span>
+<span id="cb2-9"><a href="#cb2-9" tabindex="-1"></a><span class="co">#&gt; 4  -0.63026120  1.7311131  0.5088536</span></span>
+<span id="cb2-10"><a href="#cb2-10" tabindex="-1"></a><span class="co">#&gt; 5   0.56677642  0.1565290 -0.7860781</span></span>
+<span id="cb2-11"><a href="#cb2-11" tabindex="-1"></a><span class="co">#&gt; 6   2.52707679  0.7040669 -2.7812167</span></span>
+<span id="cb2-12"><a href="#cb2-12" tabindex="-1"></a><span class="co">#&gt; 7   0.99186703 -0.6686280 -1.5101308</span></span>
+<span id="cb2-13"><a href="#cb2-13" tabindex="-1"></a><span class="co">#&gt; 8  -0.30826308 -1.4509894 -1.0308079</span></span>
+<span id="cb2-14"><a href="#cb2-14" tabindex="-1"></a><span class="co">#&gt; 9  -0.88393901 -2.3853446  1.1848098</span></span>
+<span id="cb2-15"><a href="#cb2-15" tabindex="-1"></a><span class="co">#&gt; 10  0.21690234 -1.6095687  1.7731621</span></span>
+<span id="cb2-16"><a href="#cb2-16" tabindex="-1"></a></span>
+<span id="cb2-17"><a href="#cb2-17" tabindex="-1"></a><span class="do">## categorize at 0 by default</span></span>
+<span id="cb2-18"><a href="#cb2-18" tabindex="-1"></a>yhat <span class="ot">&lt;-</span> <span class="fu">categorize</span>(M)</span>
+<span id="cb2-19"><a href="#cb2-19" tabindex="-1"></a>yhat</span>
+<span id="cb2-20"><a href="#cb2-20" tabindex="-1"></a><span class="co">#&gt;    V1_0 V2_0 V3_0</span></span>
+<span id="cb2-21"><a href="#cb2-21" tabindex="-1"></a><span class="co">#&gt; 1     0    0    1</span></span>
+<span id="cb2-22"><a href="#cb2-22" tabindex="-1"></a><span class="co">#&gt; 2     1    1    1</span></span>
+<span id="cb2-23"><a href="#cb2-23" tabindex="-1"></a><span class="co">#&gt; 3     1    0    0</span></span>
+<span id="cb2-24"><a href="#cb2-24" tabindex="-1"></a><span class="co">#&gt; 4     0    1    1</span></span>
+<span id="cb2-25"><a href="#cb2-25" tabindex="-1"></a><span class="co">#&gt; 5     1    1    0</span></span>
+<span id="cb2-26"><a href="#cb2-26" tabindex="-1"></a><span class="co">#&gt; 6     1    1    0</span></span>
+<span id="cb2-27"><a href="#cb2-27" tabindex="-1"></a><span class="co">#&gt; 7     1    0    0</span></span>
+<span id="cb2-28"><a href="#cb2-28" tabindex="-1"></a><span class="co">#&gt; 8     0    0    0</span></span>
+<span id="cb2-29"><a href="#cb2-29" tabindex="-1"></a><span class="co">#&gt; 9     0    0    1</span></span>
+<span id="cb2-30"><a href="#cb2-30" tabindex="-1"></a><span class="co">#&gt; 10    1    0    1</span></span>
+<span id="cb2-31"><a href="#cb2-31" tabindex="-1"></a></span>
+<span id="cb2-32"><a href="#cb2-32" tabindex="-1"></a><span class="do">## define multiple cutpoints to define multiple decision rules per marker</span></span>
+<span id="cb2-33"><a href="#cb2-33" tabindex="-1"></a>C <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">1</span>)</span>
+<span id="cb2-34"><a href="#cb2-34" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">3</span>)</span>
+<span id="cb2-35"><a href="#cb2-35" tabindex="-1"></a><span class="fu">categorize</span>(M, C, a)</span>
+<span id="cb2-36"><a href="#cb2-36" tabindex="-1"></a><span class="co">#&gt;    V1_0 V1_1 V2_0 V2_1 V3_0 V3_1</span></span>
+<span id="cb2-37"><a href="#cb2-37" tabindex="-1"></a><span class="co">#&gt; 1     0    0    0    0    1    1</span></span>
+<span id="cb2-38"><a href="#cb2-38" tabindex="-1"></a><span class="co">#&gt; 2     1    0    1    0    1    1</span></span>
+<span id="cb2-39"><a href="#cb2-39" tabindex="-1"></a><span class="co">#&gt; 3     1    0    0    0    0    0</span></span>
+<span id="cb2-40"><a href="#cb2-40" tabindex="-1"></a><span class="co">#&gt; 4     0    0    1    1    1    0</span></span>
+<span id="cb2-41"><a href="#cb2-41" tabindex="-1"></a><span class="co">#&gt; 5     1    0    1    0    0    0</span></span>
+<span id="cb2-42"><a href="#cb2-42" tabindex="-1"></a><span class="co">#&gt; 6     1    1    1    0    0    0</span></span>
+<span id="cb2-43"><a href="#cb2-43" tabindex="-1"></a><span class="co">#&gt; 7     1    0    0    0    0    0</span></span>
+<span id="cb2-44"><a href="#cb2-44" tabindex="-1"></a><span class="co">#&gt; 8     0    0    0    0    0    0</span></span>
+<span id="cb2-45"><a href="#cb2-45" tabindex="-1"></a><span class="co">#&gt; 9     0    0    0    0    1    1</span></span>
+<span id="cb2-46"><a href="#cb2-46" tabindex="-1"></a><span class="co">#&gt; 10    1    0    0    0    1    1</span></span>
+<span id="cb2-47"><a href="#cb2-47" tabindex="-1"></a></span>
+<span id="cb2-48"><a href="#cb2-48" tabindex="-1"></a></span>
+<span id="cb2-49"><a href="#cb2-49" tabindex="-1"></a><span class="do">## this can even be used to do multi-class classification, like this:</span></span>
+<span id="cb2-50"><a href="#cb2-50" tabindex="-1"></a>C <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="fu">rep</span>(<span class="fu">c</span>(<span class="sc">-</span><span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="sc">-</span><span class="dv">2</span>, <span class="dv">0</span>, <span class="dv">2</span>), <span class="dv">3</span>), <span class="at">ncol =</span> <span class="dv">3</span>, <span class="at">byrow =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb2-51"><a href="#cb2-51" tabindex="-1"></a>C</span>
+<span id="cb2-52"><a href="#cb2-52" tabindex="-1"></a><span class="co">#&gt;      [,1] [,2] [,3]</span></span>
+<span id="cb2-53"><a href="#cb2-53" tabindex="-1"></a><span class="co">#&gt; [1,]   -1    0    1</span></span>
+<span id="cb2-54"><a href="#cb2-54" tabindex="-1"></a><span class="co">#&gt; [2,]   -2    0    2</span></span>
+<span id="cb2-55"><a href="#cb2-55" tabindex="-1"></a><span class="co">#&gt; [3,]   -1    0    1</span></span>
+<span id="cb2-56"><a href="#cb2-56" tabindex="-1"></a><span class="co">#&gt; [4,]   -2    0    2</span></span>
+<span id="cb2-57"><a href="#cb2-57" tabindex="-1"></a><span class="co">#&gt; [5,]   -1    0    1</span></span>
+<span id="cb2-58"><a href="#cb2-58" tabindex="-1"></a><span class="co">#&gt; [6,]   -2    0    2</span></span>
+<span id="cb2-59"><a href="#cb2-59" tabindex="-1"></a><span class="fu">categorize</span>(M, C, a)</span>
+<span id="cb2-60"><a href="#cb2-60" tabindex="-1"></a><span class="co">#&gt;    V1_a V1_b V2_a V2_b V3_a V3_b</span></span>
+<span id="cb2-61"><a href="#cb2-61" tabindex="-1"></a><span class="co">#&gt; 1     1    1    1    1    3    3</span></span>
+<span id="cb2-62"><a href="#cb2-62" tabindex="-1"></a><span class="co">#&gt; 2     2    2    2    2    3    3</span></span>
+<span id="cb2-63"><a href="#cb2-63" tabindex="-1"></a><span class="co">#&gt; 3     2    2    0    1    1    1</span></span>
+<span id="cb2-64"><a href="#cb2-64" tabindex="-1"></a><span class="co">#&gt; 4     1    1    3    2    2    2</span></span>
+<span id="cb2-65"><a href="#cb2-65" tabindex="-1"></a><span class="co">#&gt; 5     2    2    2    2    1    1</span></span>
+<span id="cb2-66"><a href="#cb2-66" tabindex="-1"></a><span class="co">#&gt; 6     3    3    2    2    0    0</span></span>
+<span id="cb2-67"><a href="#cb2-67" tabindex="-1"></a><span class="co">#&gt; 7     2    2    1    1    0    1</span></span>
+<span id="cb2-68"><a href="#cb2-68" tabindex="-1"></a><span class="co">#&gt; 8     1    1    0    1    0    1</span></span>
+<span id="cb2-69"><a href="#cb2-69" tabindex="-1"></a><span class="co">#&gt; 9     1    1    0    0    3    2</span></span>
+<span id="cb2-70"><a href="#cb2-70" tabindex="-1"></a><span class="co">#&gt; 10    2    2    0    1    3    2</span></span></code></pre></div>
 </div>
 <div id="compare" class="section level3">
 <h3>compare()</h3>
@@ -426,141 +432,149 @@ of labels. In medical testing, this is usually called the reference
 standard provided by an established diagnostic/prognostic tool. We need
 to compare model predictions against these labels in order to compute
 model accuracy.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="do">## consider binary prediction from 3 models from previous r chunk</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(yhat) <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="st">&quot;rule&quot;</span>, <span class="dv">1</span><span class="sc">:</span><span class="fu">ncol</span>(yhat))</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>yhat</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;    rule1 rule2 rule3</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1      0     0     1</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 2      1     1     1</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 3      1     0     0</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 4      0     1     1</span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 5      1     1     0</span></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 6      1     1     0</span></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 7      1     0     0</span></span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 8      0     0     0</span></span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 9      0     0     1</span></span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 10     1     0     1</span></span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="do">## assume true labels</span></span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fu">rep</span>(<span class="dv">1</span>, <span class="dv">5</span>), <span class="fu">rep</span>(<span class="dv">0</span>, <span class="dv">5</span>))</span>
-<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a><span class="do">## compare then results in </span></span>
-<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a><span class="fu">compare</span>(yhat, y)</span>
-<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; $specificity</span></span>
-<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;    rule1 rule2 rule3</span></span>
-<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 6      0     0     1</span></span>
-<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 7      0     1     1</span></span>
-<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 8      1     1     1</span></span>
-<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 9      1     1     0</span></span>
-<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 10     0     1     0</span></span>
-<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; </span></span>
-<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; $sensitivity</span></span>
-<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   rule1 rule2 rule3</span></span>
-<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1     0     0     1</span></span>
-<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 2     1     1     1</span></span>
-<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 3     1     0     0</span></span>
-<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 4     0     1     1</span></span>
-<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 5     1     1     0</span></span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="do">## consider binary prediction from 3 models from previous r chunk</span></span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a><span class="fu">names</span>(yhat) <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="st">&quot;rule&quot;</span>, <span class="dv">1</span><span class="sc">:</span><span class="fu">ncol</span>(yhat))</span>
+<span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a>yhat</span>
+<span id="cb3-4"><a href="#cb3-4" tabindex="-1"></a><span class="co">#&gt;    rule1 rule2 rule3</span></span>
+<span id="cb3-5"><a href="#cb3-5" tabindex="-1"></a><span class="co">#&gt; 1      0     0     1</span></span>
+<span id="cb3-6"><a href="#cb3-6" tabindex="-1"></a><span class="co">#&gt; 2      1     1     1</span></span>
+<span id="cb3-7"><a href="#cb3-7" tabindex="-1"></a><span class="co">#&gt; 3      1     0     0</span></span>
+<span id="cb3-8"><a href="#cb3-8" tabindex="-1"></a><span class="co">#&gt; 4      0     1     1</span></span>
+<span id="cb3-9"><a href="#cb3-9" tabindex="-1"></a><span class="co">#&gt; 5      1     1     0</span></span>
+<span id="cb3-10"><a href="#cb3-10" tabindex="-1"></a><span class="co">#&gt; 6      1     1     0</span></span>
+<span id="cb3-11"><a href="#cb3-11" tabindex="-1"></a><span class="co">#&gt; 7      1     0     0</span></span>
+<span id="cb3-12"><a href="#cb3-12" tabindex="-1"></a><span class="co">#&gt; 8      0     0     0</span></span>
+<span id="cb3-13"><a href="#cb3-13" tabindex="-1"></a><span class="co">#&gt; 9      0     0     1</span></span>
+<span id="cb3-14"><a href="#cb3-14" tabindex="-1"></a><span class="co">#&gt; 10     1     0     1</span></span>
+<span id="cb3-15"><a href="#cb3-15" tabindex="-1"></a></span>
+<span id="cb3-16"><a href="#cb3-16" tabindex="-1"></a><span class="do">## assume true labels</span></span>
+<span id="cb3-17"><a href="#cb3-17" tabindex="-1"></a>y <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fu">rep</span>(<span class="dv">1</span>, <span class="dv">5</span>), <span class="fu">rep</span>(<span class="dv">0</span>, <span class="dv">5</span>))</span>
+<span id="cb3-18"><a href="#cb3-18" tabindex="-1"></a></span>
+<span id="cb3-19"><a href="#cb3-19" tabindex="-1"></a><span class="do">## compare then results in</span></span>
+<span id="cb3-20"><a href="#cb3-20" tabindex="-1"></a><span class="fu">compare</span>(yhat, y)</span>
+<span id="cb3-21"><a href="#cb3-21" tabindex="-1"></a><span class="co">#&gt; $specificity</span></span>
+<span id="cb3-22"><a href="#cb3-22" tabindex="-1"></a><span class="co">#&gt;    rule1 rule2 rule3</span></span>
+<span id="cb3-23"><a href="#cb3-23" tabindex="-1"></a><span class="co">#&gt; 6      0     0     1</span></span>
+<span id="cb3-24"><a href="#cb3-24" tabindex="-1"></a><span class="co">#&gt; 7      0     1     1</span></span>
+<span id="cb3-25"><a href="#cb3-25" tabindex="-1"></a><span class="co">#&gt; 8      1     1     1</span></span>
+<span id="cb3-26"><a href="#cb3-26" tabindex="-1"></a><span class="co">#&gt; 9      1     1     0</span></span>
+<span id="cb3-27"><a href="#cb3-27" tabindex="-1"></a><span class="co">#&gt; 10     0     1     0</span></span>
+<span id="cb3-28"><a href="#cb3-28" tabindex="-1"></a><span class="co">#&gt; </span></span>
+<span id="cb3-29"><a href="#cb3-29" tabindex="-1"></a><span class="co">#&gt; $sensitivity</span></span>
+<span id="cb3-30"><a href="#cb3-30" tabindex="-1"></a><span class="co">#&gt;   rule1 rule2 rule3</span></span>
+<span id="cb3-31"><a href="#cb3-31" tabindex="-1"></a><span class="co">#&gt; 1     0     0     1</span></span>
+<span id="cb3-32"><a href="#cb3-32" tabindex="-1"></a><span class="co">#&gt; 2     1     1     1</span></span>
+<span id="cb3-33"><a href="#cb3-33" tabindex="-1"></a><span class="co">#&gt; 3     1     0     0</span></span>
+<span id="cb3-34"><a href="#cb3-34" tabindex="-1"></a><span class="co">#&gt; 4     0     1     1</span></span>
+<span id="cb3-35"><a href="#cb3-35" tabindex="-1"></a><span class="co">#&gt; 5     1     1     0</span></span></code></pre></div>
 </div>
 <div id="evaluate" class="section level3">
 <h3>evaluate()</h3>
 <p>Main function of the package</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">evaluate</span>(<span class="fu">compare</span>(yhat, y))</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [cases] evaluation results:</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; $specificity</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   parameter hypothesis estimate  lower  upper   pval pval_all reject reject_all</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1     rule1    == 0.75      0.4 0.0080 0.7920 0.0401   0.2266  FALSE      FALSE</span></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 2     rule2    == 0.75      0.8 0.4799 1.1201 0.3797   0.3797  FALSE      FALSE</span></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 3     rule3    == 0.75      0.6 0.2080 0.9920 0.2266   0.2266  FALSE      FALSE</span></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; </span></span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; $sensitivity</span></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   parameter hypothesis estimate lower upper   pval pval_all reject reject_all</span></span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1     rule1    == 0.75      0.6 0.208 0.992 0.2266   0.2266  FALSE      FALSE</span></span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 2     rule2    == 0.75      0.6 0.208 0.992 0.2266   0.3797  FALSE      FALSE</span></span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 3     rule3    == 0.75      0.6 0.208 0.992 0.2266   0.2266  FALSE      FALSE</span></span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="fu">evaluate</span>(<span class="fu">compare</span>(yhat, y))</span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a><span class="co">#&gt; [cases] evaluation results:</span></span>
+<span id="cb4-3"><a href="#cb4-3" tabindex="-1"></a><span class="co">#&gt; $specificity</span></span>
+<span id="cb4-4"><a href="#cb4-4" tabindex="-1"></a><span class="co">#&gt;   parameter hypothesis estimate  lower  upper  tstat   pval reject pval_all</span></span>
+<span id="cb4-5"><a href="#cb4-5" tabindex="-1"></a><span class="co">#&gt; 1     rule1     == 0.5      0.4 0.0080 0.7920 0.5000 0.6171  FALSE   0.6171</span></span>
+<span id="cb4-6"><a href="#cb4-6" tabindex="-1"></a><span class="co">#&gt; 2     rule2     == 0.5      0.8 0.4799 1.1201 1.8371 0.0662  FALSE   0.6171</span></span>
+<span id="cb4-7"><a href="#cb4-7" tabindex="-1"></a><span class="co">#&gt; 3     rule3     == 0.5      0.6 0.2080 0.9920 0.5000 0.6171  FALSE   0.6171</span></span>
+<span id="cb4-8"><a href="#cb4-8" tabindex="-1"></a><span class="co">#&gt;   reject_all</span></span>
+<span id="cb4-9"><a href="#cb4-9" tabindex="-1"></a><span class="co">#&gt; 1      FALSE</span></span>
+<span id="cb4-10"><a href="#cb4-10" tabindex="-1"></a><span class="co">#&gt; 2      FALSE</span></span>
+<span id="cb4-11"><a href="#cb4-11" tabindex="-1"></a><span class="co">#&gt; 3      FALSE</span></span>
+<span id="cb4-12"><a href="#cb4-12" tabindex="-1"></a><span class="co">#&gt; </span></span>
+<span id="cb4-13"><a href="#cb4-13" tabindex="-1"></a><span class="co">#&gt; $sensitivity</span></span>
+<span id="cb4-14"><a href="#cb4-14" tabindex="-1"></a><span class="co">#&gt;   parameter hypothesis estimate lower upper tstat   pval reject pval_all</span></span>
+<span id="cb4-15"><a href="#cb4-15" tabindex="-1"></a><span class="co">#&gt; 1     rule1     == 0.5      0.6 0.208 0.992   0.5 0.6171  FALSE   0.6171</span></span>
+<span id="cb4-16"><a href="#cb4-16" tabindex="-1"></a><span class="co">#&gt; 2     rule2     == 0.5      0.6 0.208 0.992   0.5 0.6171  FALSE   0.6171</span></span>
+<span id="cb4-17"><a href="#cb4-17" tabindex="-1"></a><span class="co">#&gt; 3     rule3     == 0.5      0.6 0.208 0.992   0.5 0.6171  FALSE   0.6171</span></span>
+<span id="cb4-18"><a href="#cb4-18" tabindex="-1"></a><span class="co">#&gt;   reject_all</span></span>
+<span id="cb4-19"><a href="#cb4-19" tabindex="-1"></a><span class="co">#&gt; 1      FALSE</span></span>
+<span id="cb4-20"><a href="#cb4-20" tabindex="-1"></a><span class="co">#&gt; 2      FALSE</span></span>
+<span id="cb4-21"><a href="#cb4-21" tabindex="-1"></a><span class="co">#&gt; 3      FALSE</span></span></code></pre></div>
 <p>More details on the dta function are provided in the last section</p>
 </div>
 <div id="draw_data" class="section level3">
 <h3>draw_data()</h3>
 <p>cases includes a few functions for synthetic data generation</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">draw_data_lfc</span>(<span class="at">n=</span><span class="dv">20</span>)</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; $specificity</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;       model1 model2 model3 model4 model5 model6 model7 model8 model9 model10</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [1,]      1      1      1      1      1      1      1      1      1       1</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [2,]      1      1      1      1      1      0      1      1      1       1</span></span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [3,]      0      1      1      1      1      1      1      1      1       1</span></span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [4,]      1      1      1      1      1      1      1      1      1       1</span></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [5,]      1      1      0      1      1      1      1      1      1       1</span></span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [6,]      1      1      1      1      1      1      0      1      0       1</span></span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [7,]      1      1      1      1      1      1      1      1      1       1</span></span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [8,]      1      1      0      1      1      1      1      1      1       1</span></span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [9,]      1      1      1      1      1      0      1      1      1       1</span></span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [10,]      1      1      1      1      1      1      1      1      1       1</span></span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; </span></span>
-<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; $sensitivity</span></span>
-<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;       model1 model2 model3 model4 model5 model6 model7 model8 model9 model10</span></span>
-<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [1,]      1      1      1      1      1      1      1      1      1       1</span></span>
-<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [2,]      1      1      1      1      1      1      1      1      1       1</span></span>
-<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [3,]      1      1      1      1      1      1      1      1      1       0</span></span>
-<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [4,]      1      1      1      1      1      1      1      1      1       0</span></span>
-<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [5,]      1      1      1      1      0      1      1      1      1       1</span></span>
-<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [6,]      1      1      1      1      0      1      1      1      1       1</span></span>
-<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [7,]      1      1      1      1      1      1      1      0      1       0</span></span>
-<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [8,]      1      1      1      0      1      1      1      1      1       1</span></span>
-<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [9,]      1      1      1      1      1      1      1      0      1       1</span></span>
-<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [10,]      1      1      1      1      1      1      1      1      1       0</span></span>
-<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; </span></span>
-<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; attr(,&quot;info&quot;)</span></span>
-<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;      model     b  se  sp</span></span>
-<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1   model1  TRUE 1.0 0.8</span></span>
-<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 2   model2 FALSE 0.8 1.0</span></span>
-<span id="cb5-32"><a href="#cb5-32" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 3   model3  TRUE 1.0 0.8</span></span>
-<span id="cb5-33"><a href="#cb5-33" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 4   model4 FALSE 0.8 1.0</span></span>
-<span id="cb5-34"><a href="#cb5-34" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 5   model5 FALSE 0.8 1.0</span></span>
-<span id="cb5-35"><a href="#cb5-35" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 6   model6  TRUE 1.0 0.8</span></span>
-<span id="cb5-36"><a href="#cb5-36" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 7   model7  TRUE 1.0 0.8</span></span>
-<span id="cb5-37"><a href="#cb5-37" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 8   model8 FALSE 0.8 1.0</span></span>
-<span id="cb5-38"><a href="#cb5-38" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 9   model9  TRUE 1.0 0.8</span></span>
-<span id="cb5-39"><a href="#cb5-39" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 10 model10 FALSE 0.8 1.0</span></span></code></pre></div>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">draw_data_roc</span>(<span class="at">n=</span><span class="dv">20</span>)</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; $specificity</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;       model1 model2 model3 model4 model5 model6 model7 model8 model9 model10</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [1,]      1      0      1      0      1      1      1      1      1       1</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [2,]      1      1      1      1      1      1      1      1      1       1</span></span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [3,]      0      1      1      1      1      1      1      1      1       1</span></span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [4,]      0      0      1      0      1      1      1      1      1       1</span></span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [5,]      1      1      1      0      0      1      1      1      1       1</span></span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [6,]      1      1      0      1      1      1      1      1      1       1</span></span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [7,]      0      1      1      1      1      1      1      1      1       1</span></span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [8,]      1      1      0      0      1      1      1      1      1       1</span></span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [9,]      1      1      1      1      1      1      1      1      1       1</span></span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [10,]      0      1      1      1      1      1      1      1      1       1</span></span>
-<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; </span></span>
-<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; $sensitivity</span></span>
-<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;       model1 model2 model3 model4 model5 model6 model7 model8 model9 model10</span></span>
-<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [1,]      1      0      1      1      1      1      1      1      1       0</span></span>
-<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [2,]      1      0      0      0      0      0      0      0      0       0</span></span>
-<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [3,]      1      0      1      1      1      1      1      1      0       0</span></span>
-<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [4,]      1      1      1      1      1      1      1      1      1       1</span></span>
-<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [5,]      1      1      1      1      1      1      1      1      1       1</span></span>
-<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [6,]      1      0      1      1      1      1      1      1      1       1</span></span>
-<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [7,]      1      1      1      1      1      1      1      1      1       1</span></span>
-<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [8,]      1      1      1      1      1      1      1      1      1       1</span></span>
-<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [9,]      0      1      1      1      1      1      1      1      1       1</span></span>
-<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [10,]      0      1      1      1      1      1      1      1      1       1</span></span>
-<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; </span></span>
-<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; attr(,&quot;info&quot;)</span></span>
-<span id="cb6-29"><a href="#cb6-29" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;      model   auc    cutoff        se        sp</span></span>
-<span id="cb6-30"><a href="#cb6-30" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1   model1 0.850 0.7026076 0.7773072 0.7588499</span></span>
-<span id="cb6-31"><a href="#cb6-31" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 2   model2 0.875 0.9744355 0.7429298 0.8350798</span></span>
-<span id="cb6-32"><a href="#cb6-32" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 3   model3 0.900 0.7414402 0.8579035 0.7707867</span></span>
-<span id="cb6-33"><a href="#cb6-33" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 4   model4 0.925 0.6637751 0.9149729 0.7465829</span></span>
-<span id="cb6-34"><a href="#cb6-34" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 5   model5 0.925 0.8579379 0.8805752 0.8045366</span></span>
-<span id="cb6-35"><a href="#cb6-35" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 6   model6 0.950 0.5861100 0.9590761 0.7210992</span></span>
-<span id="cb6-36"><a href="#cb6-36" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 7   model7 0.950 0.9744355 0.9117706 0.8350798</span></span>
-<span id="cb6-37"><a href="#cb6-37" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 8   model8 0.950 1.0909332 0.8916296 0.8623489</span></span>
-<span id="cb6-38"><a href="#cb6-38" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 9   model9 0.950 1.1685983 0.8764814 0.8787172</span></span>
-<span id="cb6-39"><a href="#cb6-39" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 10 model10 0.950 1.4792588 0.8014789 0.9304644</span></span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="fu">draw_data_lfc</span>(<span class="at">n =</span> <span class="dv">20</span>)</span>
+<span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a><span class="co">#&gt; $specificity</span></span>
+<span id="cb5-3"><a href="#cb5-3" tabindex="-1"></a><span class="co">#&gt;       model1 model2 model3 model4 model5 model6 model7 model8 model9 model10</span></span>
+<span id="cb5-4"><a href="#cb5-4" tabindex="-1"></a><span class="co">#&gt;  [1,]      1      1      1      1      1      1      1      1      1       1</span></span>
+<span id="cb5-5"><a href="#cb5-5" tabindex="-1"></a><span class="co">#&gt;  [2,]      1      1      1      1      1      0      1      1      1       1</span></span>
+<span id="cb5-6"><a href="#cb5-6" tabindex="-1"></a><span class="co">#&gt;  [3,]      0      1      1      1      1      1      1      1      1       1</span></span>
+<span id="cb5-7"><a href="#cb5-7" tabindex="-1"></a><span class="co">#&gt;  [4,]      1      1      1      1      1      1      1      1      1       1</span></span>
+<span id="cb5-8"><a href="#cb5-8" tabindex="-1"></a><span class="co">#&gt;  [5,]      1      1      0      1      1      1      1      1      1       1</span></span>
+<span id="cb5-9"><a href="#cb5-9" tabindex="-1"></a><span class="co">#&gt;  [6,]      1      1      1      1      1      1      0      1      0       1</span></span>
+<span id="cb5-10"><a href="#cb5-10" tabindex="-1"></a><span class="co">#&gt;  [7,]      1      1      1      1      1      1      1      1      1       1</span></span>
+<span id="cb5-11"><a href="#cb5-11" tabindex="-1"></a><span class="co">#&gt;  [8,]      1      1      0      1      1      1      1      1      1       1</span></span>
+<span id="cb5-12"><a href="#cb5-12" tabindex="-1"></a><span class="co">#&gt;  [9,]      1      1      1      1      1      0      1      1      1       1</span></span>
+<span id="cb5-13"><a href="#cb5-13" tabindex="-1"></a><span class="co">#&gt; [10,]      1      1      1      1      1      1      1      1      1       1</span></span>
+<span id="cb5-14"><a href="#cb5-14" tabindex="-1"></a><span class="co">#&gt; </span></span>
+<span id="cb5-15"><a href="#cb5-15" tabindex="-1"></a><span class="co">#&gt; $sensitivity</span></span>
+<span id="cb5-16"><a href="#cb5-16" tabindex="-1"></a><span class="co">#&gt;       model1 model2 model3 model4 model5 model6 model7 model8 model9 model10</span></span>
+<span id="cb5-17"><a href="#cb5-17" tabindex="-1"></a><span class="co">#&gt;  [1,]      1      1      1      1      1      1      1      1      1       1</span></span>
+<span id="cb5-18"><a href="#cb5-18" tabindex="-1"></a><span class="co">#&gt;  [2,]      1      1      1      1      1      1      1      1      1       1</span></span>
+<span id="cb5-19"><a href="#cb5-19" tabindex="-1"></a><span class="co">#&gt;  [3,]      1      1      1      1      1      1      1      1      1       0</span></span>
+<span id="cb5-20"><a href="#cb5-20" tabindex="-1"></a><span class="co">#&gt;  [4,]      1      1      1      1      1      1      1      1      1       0</span></span>
+<span id="cb5-21"><a href="#cb5-21" tabindex="-1"></a><span class="co">#&gt;  [5,]      1      1      1      1      0      1      1      1      1       1</span></span>
+<span id="cb5-22"><a href="#cb5-22" tabindex="-1"></a><span class="co">#&gt;  [6,]      1      1      1      1      0      1      1      1      1       1</span></span>
+<span id="cb5-23"><a href="#cb5-23" tabindex="-1"></a><span class="co">#&gt;  [7,]      1      1      1      1      1      1      1      0      1       0</span></span>
+<span id="cb5-24"><a href="#cb5-24" tabindex="-1"></a><span class="co">#&gt;  [8,]      1      1      1      0      1      1      1      1      1       1</span></span>
+<span id="cb5-25"><a href="#cb5-25" tabindex="-1"></a><span class="co">#&gt;  [9,]      1      1      1      1      1      1      1      0      1       1</span></span>
+<span id="cb5-26"><a href="#cb5-26" tabindex="-1"></a><span class="co">#&gt; [10,]      1      1      1      1      1      1      1      1      1       0</span></span>
+<span id="cb5-27"><a href="#cb5-27" tabindex="-1"></a><span class="co">#&gt; </span></span>
+<span id="cb5-28"><a href="#cb5-28" tabindex="-1"></a><span class="co">#&gt; attr(,&quot;info&quot;)</span></span>
+<span id="cb5-29"><a href="#cb5-29" tabindex="-1"></a><span class="co">#&gt;      model     b  se  sp</span></span>
+<span id="cb5-30"><a href="#cb5-30" tabindex="-1"></a><span class="co">#&gt; 1   model1  TRUE 1.0 0.8</span></span>
+<span id="cb5-31"><a href="#cb5-31" tabindex="-1"></a><span class="co">#&gt; 2   model2 FALSE 0.8 1.0</span></span>
+<span id="cb5-32"><a href="#cb5-32" tabindex="-1"></a><span class="co">#&gt; 3   model3  TRUE 1.0 0.8</span></span>
+<span id="cb5-33"><a href="#cb5-33" tabindex="-1"></a><span class="co">#&gt; 4   model4 FALSE 0.8 1.0</span></span>
+<span id="cb5-34"><a href="#cb5-34" tabindex="-1"></a><span class="co">#&gt; 5   model5 FALSE 0.8 1.0</span></span>
+<span id="cb5-35"><a href="#cb5-35" tabindex="-1"></a><span class="co">#&gt; 6   model6  TRUE 1.0 0.8</span></span>
+<span id="cb5-36"><a href="#cb5-36" tabindex="-1"></a><span class="co">#&gt; 7   model7  TRUE 1.0 0.8</span></span>
+<span id="cb5-37"><a href="#cb5-37" tabindex="-1"></a><span class="co">#&gt; 8   model8 FALSE 0.8 1.0</span></span>
+<span id="cb5-38"><a href="#cb5-38" tabindex="-1"></a><span class="co">#&gt; 9   model9  TRUE 1.0 0.8</span></span>
+<span id="cb5-39"><a href="#cb5-39" tabindex="-1"></a><span class="co">#&gt; 10 model10 FALSE 0.8 1.0</span></span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a><span class="fu">draw_data_roc</span>(<span class="at">n =</span> <span class="dv">20</span>)</span>
+<span id="cb6-2"><a href="#cb6-2" tabindex="-1"></a><span class="co">#&gt; $specificity</span></span>
+<span id="cb6-3"><a href="#cb6-3" tabindex="-1"></a><span class="co">#&gt;       model1 model2 model3 model4 model5 model6 model7 model8 model9 model10</span></span>
+<span id="cb6-4"><a href="#cb6-4" tabindex="-1"></a><span class="co">#&gt;  [1,]      1      0      1      0      1      1      1      1      1       1</span></span>
+<span id="cb6-5"><a href="#cb6-5" tabindex="-1"></a><span class="co">#&gt;  [2,]      1      1      1      1      1      1      1      1      1       1</span></span>
+<span id="cb6-6"><a href="#cb6-6" tabindex="-1"></a><span class="co">#&gt;  [3,]      0      1      1      1      1      1      1      1      1       1</span></span>
+<span id="cb6-7"><a href="#cb6-7" tabindex="-1"></a><span class="co">#&gt;  [4,]      0      0      1      0      1      1      1      1      1       1</span></span>
+<span id="cb6-8"><a href="#cb6-8" tabindex="-1"></a><span class="co">#&gt;  [5,]      1      1      1      0      0      1      1      1      1       1</span></span>
+<span id="cb6-9"><a href="#cb6-9" tabindex="-1"></a><span class="co">#&gt;  [6,]      1      1      0      1      1      1      1      1      1       1</span></span>
+<span id="cb6-10"><a href="#cb6-10" tabindex="-1"></a><span class="co">#&gt;  [7,]      0      1      1      1      1      1      1      1      1       1</span></span>
+<span id="cb6-11"><a href="#cb6-11" tabindex="-1"></a><span class="co">#&gt;  [8,]      1      1      0      0      1      1      1      1      1       1</span></span>
+<span id="cb6-12"><a href="#cb6-12" tabindex="-1"></a><span class="co">#&gt;  [9,]      1      1      1      1      1      1      1      1      1       1</span></span>
+<span id="cb6-13"><a href="#cb6-13" tabindex="-1"></a><span class="co">#&gt; [10,]      0      1      1      1      1      1      1      1      1       1</span></span>
+<span id="cb6-14"><a href="#cb6-14" tabindex="-1"></a><span class="co">#&gt; </span></span>
+<span id="cb6-15"><a href="#cb6-15" tabindex="-1"></a><span class="co">#&gt; $sensitivity</span></span>
+<span id="cb6-16"><a href="#cb6-16" tabindex="-1"></a><span class="co">#&gt;       model1 model2 model3 model4 model5 model6 model7 model8 model9 model10</span></span>
+<span id="cb6-17"><a href="#cb6-17" tabindex="-1"></a><span class="co">#&gt;  [1,]      1      0      1      1      1      1      1      1      1       0</span></span>
+<span id="cb6-18"><a href="#cb6-18" tabindex="-1"></a><span class="co">#&gt;  [2,]      1      0      0      0      0      0      0      0      0       0</span></span>
+<span id="cb6-19"><a href="#cb6-19" tabindex="-1"></a><span class="co">#&gt;  [3,]      1      0      1      1      1      1      1      1      0       0</span></span>
+<span id="cb6-20"><a href="#cb6-20" tabindex="-1"></a><span class="co">#&gt;  [4,]      1      1      1      1      1      1      1      1      1       1</span></span>
+<span id="cb6-21"><a href="#cb6-21" tabindex="-1"></a><span class="co">#&gt;  [5,]      1      1      1      1      1      1      1      1      1       1</span></span>
+<span id="cb6-22"><a href="#cb6-22" tabindex="-1"></a><span class="co">#&gt;  [6,]      1      0      1      1      1      1      1      1      1       1</span></span>
+<span id="cb6-23"><a href="#cb6-23" tabindex="-1"></a><span class="co">#&gt;  [7,]      1      1      1      1      1      1      1      1      1       1</span></span>
+<span id="cb6-24"><a href="#cb6-24" tabindex="-1"></a><span class="co">#&gt;  [8,]      1      1      1      1      1      1      1      1      1       1</span></span>
+<span id="cb6-25"><a href="#cb6-25" tabindex="-1"></a><span class="co">#&gt;  [9,]      0      1      1      1      1      1      1      1      1       1</span></span>
+<span id="cb6-26"><a href="#cb6-26" tabindex="-1"></a><span class="co">#&gt; [10,]      0      1      1      1      1      1      1      1      1       1</span></span>
+<span id="cb6-27"><a href="#cb6-27" tabindex="-1"></a><span class="co">#&gt; </span></span>
+<span id="cb6-28"><a href="#cb6-28" tabindex="-1"></a><span class="co">#&gt; attr(,&quot;info&quot;)</span></span>
+<span id="cb6-29"><a href="#cb6-29" tabindex="-1"></a><span class="co">#&gt;      model   auc    cutoff        se        sp</span></span>
+<span id="cb6-30"><a href="#cb6-30" tabindex="-1"></a><span class="co">#&gt; 1   model1 0.850 0.7026076 0.7773072 0.7588499</span></span>
+<span id="cb6-31"><a href="#cb6-31" tabindex="-1"></a><span class="co">#&gt; 2   model2 0.875 0.9744355 0.7429298 0.8350798</span></span>
+<span id="cb6-32"><a href="#cb6-32" tabindex="-1"></a><span class="co">#&gt; 3   model3 0.900 0.7414402 0.8579035 0.7707867</span></span>
+<span id="cb6-33"><a href="#cb6-33" tabindex="-1"></a><span class="co">#&gt; 4   model4 0.925 0.6637751 0.9149729 0.7465829</span></span>
+<span id="cb6-34"><a href="#cb6-34" tabindex="-1"></a><span class="co">#&gt; 5   model5 0.925 0.8579379 0.8805752 0.8045366</span></span>
+<span id="cb6-35"><a href="#cb6-35" tabindex="-1"></a><span class="co">#&gt; 6   model6 0.950 0.5861100 0.9590761 0.7210992</span></span>
+<span id="cb6-36"><a href="#cb6-36" tabindex="-1"></a><span class="co">#&gt; 7   model7 0.950 0.9744355 0.9117706 0.8350798</span></span>
+<span id="cb6-37"><a href="#cb6-37" tabindex="-1"></a><span class="co">#&gt; 8   model8 0.950 1.0909332 0.8916296 0.8623489</span></span>
+<span id="cb6-38"><a href="#cb6-38" tabindex="-1"></a><span class="co">#&gt; 9   model9 0.950 1.1685983 0.8764814 0.8787172</span></span>
+<span id="cb6-39"><a href="#cb6-39" tabindex="-1"></a><span class="co">#&gt; 10 model10 0.950 1.4792588 0.8014789 0.9304644</span></span></code></pre></div>
 <p>Remark: Synthetic data comes at the ‘compared’ level meaning the
 labels 1 and 0 indicate correct and false predictions, respectively. No
 need to compare() in addition.</p>
@@ -571,29 +585,37 @@ need to compare() in addition.</p>
 <p>The pipe operator ‘%&gt;%’ allows us to chain together subsequent
 operations in R. This is useful, as the dta function expects
 preprocessed data indicating correct (1) and false (0) predictions.</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>M <span class="sc">%&gt;%</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">categorize</span>() <span class="sc">%&gt;%</span></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">compare</span>(y) <span class="sc">%&gt;%</span></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">evaluate</span>()</span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [cases] evaluation results:</span></span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; $specificity</span></span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   parameter hypothesis estimate  lower  upper   pval pval_all reject reject_all</span></span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1      V1_0    == 0.75      0.4 0.0080 0.7920 0.0401   0.2266  FALSE      FALSE</span></span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 2      V2_0    == 0.75      0.8 0.4799 1.1201 0.3797   0.3797  FALSE      FALSE</span></span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 3      V3_0    == 0.75      0.6 0.2080 0.9920 0.2266   0.2266  FALSE      FALSE</span></span>
-<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; </span></span>
-<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; $sensitivity</span></span>
-<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   parameter hypothesis estimate lower upper   pval pval_all reject reject_all</span></span>
-<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1      V1_0    == 0.75      0.6 0.208 0.992 0.2266   0.2266  FALSE      FALSE</span></span>
-<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 2      V2_0    == 0.75      0.6 0.208 0.992 0.2266   0.3797  FALSE      FALSE</span></span>
-<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 3      V3_0    == 0.75      0.6 0.208 0.992 0.2266   0.2266  FALSE      FALSE</span></span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a>M <span class="sc">%&gt;%</span></span>
+<span id="cb7-2"><a href="#cb7-2" tabindex="-1"></a>  <span class="fu">categorize</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb7-3"><a href="#cb7-3" tabindex="-1"></a>  <span class="fu">compare</span>(y) <span class="sc">%&gt;%</span></span>
+<span id="cb7-4"><a href="#cb7-4" tabindex="-1"></a>  <span class="fu">evaluate</span>()</span>
+<span id="cb7-5"><a href="#cb7-5" tabindex="-1"></a><span class="co">#&gt; [cases] evaluation results:</span></span>
+<span id="cb7-6"><a href="#cb7-6" tabindex="-1"></a><span class="co">#&gt; $specificity</span></span>
+<span id="cb7-7"><a href="#cb7-7" tabindex="-1"></a><span class="co">#&gt;   parameter hypothesis estimate  lower  upper  tstat   pval reject pval_all</span></span>
+<span id="cb7-8"><a href="#cb7-8" tabindex="-1"></a><span class="co">#&gt; 1      V1_0     == 0.5      0.4 0.0080 0.7920 0.5000 0.6171  FALSE   0.6171</span></span>
+<span id="cb7-9"><a href="#cb7-9" tabindex="-1"></a><span class="co">#&gt; 2      V2_0     == 0.5      0.8 0.4799 1.1201 1.8371 0.0662  FALSE   0.6171</span></span>
+<span id="cb7-10"><a href="#cb7-10" tabindex="-1"></a><span class="co">#&gt; 3      V3_0     == 0.5      0.6 0.2080 0.9920 0.5000 0.6171  FALSE   0.6171</span></span>
+<span id="cb7-11"><a href="#cb7-11" tabindex="-1"></a><span class="co">#&gt;   reject_all</span></span>
+<span id="cb7-12"><a href="#cb7-12" tabindex="-1"></a><span class="co">#&gt; 1      FALSE</span></span>
+<span id="cb7-13"><a href="#cb7-13" tabindex="-1"></a><span class="co">#&gt; 2      FALSE</span></span>
+<span id="cb7-14"><a href="#cb7-14" tabindex="-1"></a><span class="co">#&gt; 3      FALSE</span></span>
+<span id="cb7-15"><a href="#cb7-15" tabindex="-1"></a><span class="co">#&gt; </span></span>
+<span id="cb7-16"><a href="#cb7-16" tabindex="-1"></a><span class="co">#&gt; $sensitivity</span></span>
+<span id="cb7-17"><a href="#cb7-17" tabindex="-1"></a><span class="co">#&gt;   parameter hypothesis estimate lower upper tstat   pval reject pval_all</span></span>
+<span id="cb7-18"><a href="#cb7-18" tabindex="-1"></a><span class="co">#&gt; 1      V1_0     == 0.5      0.6 0.208 0.992   0.5 0.6171  FALSE   0.6171</span></span>
+<span id="cb7-19"><a href="#cb7-19" tabindex="-1"></a><span class="co">#&gt; 2      V2_0     == 0.5      0.6 0.208 0.992   0.5 0.6171  FALSE   0.6171</span></span>
+<span id="cb7-20"><a href="#cb7-20" tabindex="-1"></a><span class="co">#&gt; 3      V3_0     == 0.5      0.6 0.208 0.992   0.5 0.6171  FALSE   0.6171</span></span>
+<span id="cb7-21"><a href="#cb7-21" tabindex="-1"></a><span class="co">#&gt;   reject_all</span></span>
+<span id="cb7-22"><a href="#cb7-22" tabindex="-1"></a><span class="co">#&gt; 1      FALSE</span></span>
+<span id="cb7-23"><a href="#cb7-23" tabindex="-1"></a><span class="co">#&gt; 2      FALSE</span></span>
+<span id="cb7-24"><a href="#cb7-24" tabindex="-1"></a><span class="co">#&gt; 3      FALSE</span></span></code></pre></div>
 </div>
 <div id="multiple-testing-for-co-primary-endpoints" class="section level2">
 <h2>Multiple testing for co-primary endpoints</h2>
 <div id="specification-of-hypotheses" class="section level3">
 <h3>Specification of hypotheses</h3>
 <p>The R command</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>?evaluate </span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a>?evaluate</span></code></pre></div>
 <p>gives an overview over the function arguments of the evaluate
 function.</p>
 <ul>
@@ -618,155 +640,53 @@ Sp_j \leq Sp_0\)</span></p>
 <p>In the following, we highlight the difference between the
 “co-primary” analysis (comparison regions) and a “full” analysis
 (confidence regions).</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">1337</span>)</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">draw_data_roc</span>(<span class="at">n=</span><span class="dv">120</span>, <span class="at">prev=</span><span class="fu">c</span>(<span class="fl">0.25</span>, <span class="fl">0.75</span>), <span class="at">m=</span><span class="dv">4</span>,</span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>                      <span class="at">delta=</span><span class="fl">0.05</span>, <span class="at">e=</span><span class="dv">10</span>, <span class="at">auc=</span><span class="fu">seq</span>(<span class="fl">0.90</span>, <span class="fl">0.95</span>, <span class="fl">0.025</span>), <span class="at">rho=</span><span class="fu">c</span>(<span class="fl">0.25</span>, <span class="fl">0.25</span>))</span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(data)</span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; $specificity</span></span>
-<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;       model1 model2 model3 model4</span></span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [1,]      1      1      1      1</span></span>
-<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [2,]      0      0      1      1</span></span>
-<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [3,]      1      1      1      1</span></span>
-<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [4,]      1      1      1      1</span></span>
-<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [5,]      1      1      1      1</span></span>
-<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [6,]      1      1      1      1</span></span>
-<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [7,]      1      1      1      1</span></span>
-<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [8,]      1      1      1      1</span></span>
-<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [9,]      1      1      1      1</span></span>
-<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [10,]      1      1      1      1</span></span>
-<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [11,]      1      1      1      1</span></span>
-<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [12,]      1      1      1      1</span></span>
-<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [13,]      1      1      1      1</span></span>
-<span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [14,]      1      1      1      1</span></span>
-<span id="cb9-23"><a href="#cb9-23" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [15,]      1      1      0      0</span></span>
-<span id="cb9-24"><a href="#cb9-24" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [16,]      0      0      0      0</span></span>
-<span id="cb9-25"><a href="#cb9-25" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [17,]      0      1      1      1</span></span>
-<span id="cb9-26"><a href="#cb9-26" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [18,]      1      1      1      1</span></span>
-<span id="cb9-27"><a href="#cb9-27" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [19,]      1      1      1      1</span></span>
-<span id="cb9-28"><a href="#cb9-28" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [20,]      1      1      0      0</span></span>
-<span id="cb9-29"><a href="#cb9-29" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [21,]      1      1      1      1</span></span>
-<span id="cb9-30"><a href="#cb9-30" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [22,]      0      0      1      1</span></span>
-<span id="cb9-31"><a href="#cb9-31" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [23,]      1      1      1      1</span></span>
-<span id="cb9-32"><a href="#cb9-32" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [24,]      1      1      1      1</span></span>
-<span id="cb9-33"><a href="#cb9-33" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [25,]      1      1      1      1</span></span>
-<span id="cb9-34"><a href="#cb9-34" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [26,]      1      1      1      1</span></span>
-<span id="cb9-35"><a href="#cb9-35" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [27,]      0      0      1      1</span></span>
-<span id="cb9-36"><a href="#cb9-36" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [28,]      1      1      1      1</span></span>
-<span id="cb9-37"><a href="#cb9-37" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [29,]      1      1      1      1</span></span>
-<span id="cb9-38"><a href="#cb9-38" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [30,]      1      1      0      0</span></span>
-<span id="cb9-39"><a href="#cb9-39" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [31,]      1      1      1      1</span></span>
-<span id="cb9-40"><a href="#cb9-40" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [32,]      1      1      1      1</span></span>
-<span id="cb9-41"><a href="#cb9-41" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [33,]      1      1      1      1</span></span>
-<span id="cb9-42"><a href="#cb9-42" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [34,]      1      1      1      1</span></span>
-<span id="cb9-43"><a href="#cb9-43" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [35,]      0      0      1      1</span></span>
-<span id="cb9-44"><a href="#cb9-44" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [36,]      1      1      1      1</span></span>
-<span id="cb9-45"><a href="#cb9-45" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [37,]      0      0      1      1</span></span>
-<span id="cb9-46"><a href="#cb9-46" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [38,]      1      1      1      1</span></span>
-<span id="cb9-47"><a href="#cb9-47" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [39,]      1      1      1      1</span></span>
-<span id="cb9-48"><a href="#cb9-48" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [40,]      1      1      1      1</span></span>
-<span id="cb9-49"><a href="#cb9-49" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [41,]      1      1      1      1</span></span>
-<span id="cb9-50"><a href="#cb9-50" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [42,]      1      1      1      1</span></span>
-<span id="cb9-51"><a href="#cb9-51" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [43,]      1      1      1      1</span></span>
-<span id="cb9-52"><a href="#cb9-52" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [44,]      0      0      1      1</span></span>
-<span id="cb9-53"><a href="#cb9-53" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [45,]      1      1      1      1</span></span>
-<span id="cb9-54"><a href="#cb9-54" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [46,]      1      1      1      1</span></span>
-<span id="cb9-55"><a href="#cb9-55" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [47,]      1      1      1      1</span></span>
-<span id="cb9-56"><a href="#cb9-56" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [48,]      1      1      1      1</span></span>
-<span id="cb9-57"><a href="#cb9-57" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [49,]      1      1      1      1</span></span>
-<span id="cb9-58"><a href="#cb9-58" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [50,]      0      0      1      1</span></span>
-<span id="cb9-59"><a href="#cb9-59" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [51,]      1      1      1      1</span></span>
-<span id="cb9-60"><a href="#cb9-60" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [52,]      1      1      1      1</span></span>
-<span id="cb9-61"><a href="#cb9-61" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [53,]      1      1      1      1</span></span>
-<span id="cb9-62"><a href="#cb9-62" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [54,]      1      1      1      1</span></span>
-<span id="cb9-63"><a href="#cb9-63" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [55,]      1      1      1      1</span></span>
-<span id="cb9-64"><a href="#cb9-64" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [56,]      1      1      1      1</span></span>
-<span id="cb9-65"><a href="#cb9-65" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [57,]      1      1      1      1</span></span>
-<span id="cb9-66"><a href="#cb9-66" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [58,]      1      1      1      1</span></span>
-<span id="cb9-67"><a href="#cb9-67" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [59,]      1      1      1      1</span></span>
-<span id="cb9-68"><a href="#cb9-68" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [60,]      1      1      1      1</span></span>
-<span id="cb9-69"><a href="#cb9-69" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [61,]      1      1      1      1</span></span>
-<span id="cb9-70"><a href="#cb9-70" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [62,]      0      1      1      1</span></span>
-<span id="cb9-71"><a href="#cb9-71" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [63,]      1      1      1      1</span></span>
-<span id="cb9-72"><a href="#cb9-72" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [64,]      1      1      1      1</span></span>
-<span id="cb9-73"><a href="#cb9-73" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [65,]      0      1      1      1</span></span>
-<span id="cb9-74"><a href="#cb9-74" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [66,]      1      1      1      1</span></span>
-<span id="cb9-75"><a href="#cb9-75" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [67,]      0      0      1      1</span></span>
-<span id="cb9-76"><a href="#cb9-76" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [68,]      1      1      1      1</span></span>
-<span id="cb9-77"><a href="#cb9-77" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [69,]      1      1      1      1</span></span>
-<span id="cb9-78"><a href="#cb9-78" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [70,]      1      1      1      1</span></span>
-<span id="cb9-79"><a href="#cb9-79" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [71,]      1      1      1      1</span></span>
-<span id="cb9-80"><a href="#cb9-80" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [72,]      1      1      1      1</span></span>
-<span id="cb9-81"><a href="#cb9-81" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [73,]      0      1      0      0</span></span>
-<span id="cb9-82"><a href="#cb9-82" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [74,]      1      1      1      1</span></span>
-<span id="cb9-83"><a href="#cb9-83" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [75,]      1      1      1      1</span></span>
-<span id="cb9-84"><a href="#cb9-84" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [76,]      0      0      1      1</span></span>
-<span id="cb9-85"><a href="#cb9-85" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [77,]      1      1      1      1</span></span>
-<span id="cb9-86"><a href="#cb9-86" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [78,]      0      1      1      1</span></span>
-<span id="cb9-87"><a href="#cb9-87" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [79,]      1      1      1      1</span></span>
-<span id="cb9-88"><a href="#cb9-88" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [80,]      1      1      1      1</span></span>
-<span id="cb9-89"><a href="#cb9-89" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [81,]      1      1      1      1</span></span>
-<span id="cb9-90"><a href="#cb9-90" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [82,]      0      0      1      1</span></span>
-<span id="cb9-91"><a href="#cb9-91" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [83,]      0      1      1      1</span></span>
-<span id="cb9-92"><a href="#cb9-92" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [84,]      1      1      1      1</span></span>
-<span id="cb9-93"><a href="#cb9-93" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [85,]      1      1      1      1</span></span>
-<span id="cb9-94"><a href="#cb9-94" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [86,]      1      1      1      1</span></span>
-<span id="cb9-95"><a href="#cb9-95" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [87,]      1      1      1      1</span></span>
-<span id="cb9-96"><a href="#cb9-96" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [88,]      1      1      1      1</span></span>
-<span id="cb9-97"><a href="#cb9-97" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [89,]      1      1      1      1</span></span>
-<span id="cb9-98"><a href="#cb9-98" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [90,]      1      1      1      1</span></span>
-<span id="cb9-99"><a href="#cb9-99" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; </span></span>
-<span id="cb9-100"><a href="#cb9-100" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; $sensitivity</span></span>
-<span id="cb9-101"><a href="#cb9-101" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;       model1 model2 model3 model4</span></span>
-<span id="cb9-102"><a href="#cb9-102" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [1,]      0      0      1      1</span></span>
-<span id="cb9-103"><a href="#cb9-103" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [2,]      1      1      1      1</span></span>
-<span id="cb9-104"><a href="#cb9-104" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [3,]      1      1      1      1</span></span>
-<span id="cb9-105"><a href="#cb9-105" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [4,]      1      1      0      0</span></span>
-<span id="cb9-106"><a href="#cb9-106" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [5,]      1      1      1      1</span></span>
-<span id="cb9-107"><a href="#cb9-107" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [6,]      1      1      1      1</span></span>
-<span id="cb9-108"><a href="#cb9-108" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [7,]      1      1      1      1</span></span>
-<span id="cb9-109"><a href="#cb9-109" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [8,]      1      1      1      1</span></span>
-<span id="cb9-110"><a href="#cb9-110" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [9,]      1      1      1      1</span></span>
-<span id="cb9-111"><a href="#cb9-111" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [10,]      1      0      1      1</span></span>
-<span id="cb9-112"><a href="#cb9-112" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [11,]      1      1      1      0</span></span>
-<span id="cb9-113"><a href="#cb9-113" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [12,]      1      1      1      1</span></span>
-<span id="cb9-114"><a href="#cb9-114" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [13,]      1      1      0      0</span></span>
-<span id="cb9-115"><a href="#cb9-115" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [14,]      1      1      0      0</span></span>
-<span id="cb9-116"><a href="#cb9-116" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [15,]      1      1      1      1</span></span>
-<span id="cb9-117"><a href="#cb9-117" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [16,]      1      1      1      1</span></span>
-<span id="cb9-118"><a href="#cb9-118" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [17,]      1      1      1      1</span></span>
-<span id="cb9-119"><a href="#cb9-119" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [18,]      1      1      0      0</span></span>
-<span id="cb9-120"><a href="#cb9-120" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [19,]      1      1      0      0</span></span>
-<span id="cb9-121"><a href="#cb9-121" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [20,]      1      1      1      1</span></span>
-<span id="cb9-122"><a href="#cb9-122" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [21,]      1      1      1      1</span></span>
-<span id="cb9-123"><a href="#cb9-123" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [22,]      1      1      1      1</span></span>
-<span id="cb9-124"><a href="#cb9-124" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [23,]      1      1      1      1</span></span>
-<span id="cb9-125"><a href="#cb9-125" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [24,]      1      1      1      1</span></span>
-<span id="cb9-126"><a href="#cb9-126" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [25,]      1      1      1      1</span></span>
-<span id="cb9-127"><a href="#cb9-127" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [26,]      1      1      1      1</span></span>
-<span id="cb9-128"><a href="#cb9-128" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [27,]      1      1      1      1</span></span>
-<span id="cb9-129"><a href="#cb9-129" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [28,]      1      1      1      1</span></span>
-<span id="cb9-130"><a href="#cb9-130" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [29,]      1      0      0      0</span></span>
-<span id="cb9-131"><a href="#cb9-131" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [30,]      1      1      1      1</span></span></code></pre></div>
-<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="do">## comparison regions</span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>results_comp <span class="ot">&lt;-</span> data <span class="sc">%&gt;%</span> <span class="fu">evaluate</span>(<span class="at">alternative =</span><span class="st">&quot;greater&quot;</span>,</span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">alpha=</span><span class="fl">0.025</span>,</span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">benchmark =</span> <span class="fu">c</span>(<span class="fl">0.7</span>, <span class="fl">0.8</span>),</span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">analysis =</span> <span class="st">&quot;co-primary&quot;</span>,</span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">regu =</span> <span class="cn">TRUE</span>,</span>
-<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">adj =</span> <span class="st">&quot;maxt&quot;</span>)</span>
-<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a><span class="fu">visualize</span>(results_comp)</span></code></pre></div>
-<p><img src="data:image/png;base64,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" width="100%" /></p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="do">## confidence regions</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>results_conf <span class="ot">&lt;-</span> data <span class="sc">%&gt;%</span> <span class="fu">evaluate</span>(<span class="at">alternative =</span> <span class="st">&quot;greater&quot;</span>,</span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">alpha =</span> <span class="fl">0.025</span>,</span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">benchmark =</span> <span class="fu">c</span>(<span class="fl">0.7</span>, <span class="fl">0.8</span>),</span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">analysis =</span> <span class="st">&quot;full&quot;</span>,</span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">regu =</span> <span class="cn">TRUE</span>,</span>
-<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">adj =</span> <span class="st">&quot;maxt&quot;</span>)</span>
-<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a><span class="fu">visualize</span>(results_conf)</span></code></pre></div>
-<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASAAAAEgCAMAAAAjXV6yAAABg1BMVEUAAAAAADoAAGYAOjoAOmYAOpAAZpAAZrYzMzM6AAA6ADo6OgA6Ojo6OmY6Zjo6ZmY6ZpA6ZrY6kLY6kNtNTU1NTW5NTY5Nbm5Nbo5NbqtNjshOnIFmAABmADpmOgBmOjpmOpBmZjpmZmZmZpBmkLZmtttmtv9uTU1ubk1ubo5ujqtujshuq6tuq+SOTU2Obk2Obm6Oq8iOyOSOyP+QOgCQOjqQZjqQZmaQkDqQkGaQkLaQkNuQtraQttuQ2/+rbk2rjm6ryOSr5OSr5P+2ZgC2Zjq2kDq2kGa2kJC2tpC2tra2ttu229u22/+2///Ijk3Ijm7Iq27Iq47I5P/I///MbwDT5NrbkDrbkGbbtmbbtpDbtrbb27bb29vb2//b///cjhri8+nkq27kq47kyI7kyKvk5Kvk5OTk/+Tk///r6+v2nSz4jAX5oC/7ni/9jwn+iwH+jwn/jAL/kAr/ojP/tmb/yI7/25D/27b/29v/5Kv/5Mj//7b//8j//9v//+T///+HsMdXAAAACXBIWXMAAA7DAAAOwwHHb6hkAAARa0lEQVR4nO2d62PVRBbA5wqIlbLAEtwuunZFtKu7S1dldV/KohVdX1W6WFGUWvHFtcULLWAXbvOnb+aZeSUzk0ySyc2cD3BzcpLM/Do58zqZAWmUUgFdJyB0AV0nIHQBXScgdAFdJyB0AV0nIHQBXScgdAHe7nSTSv6rJVUjd4+ADKoIyKCKgAyqCoA2n/gvf/jtcpIsXIyAmNxIBECbCZI/R0BY9j9JBEB7S8nLENqptyIgxGM5WVjmAW3isrOZF6Fm01umCgHQ6qmXfrjAAdq/gIvO3tJvf6R3akKelKTx81UBff9jxkQAhA8enmPKYQPimKQYDC45RPlYJi3gkTJ45coVE4CNjQ0nQJlI2fYDqKES1AmgRkoQlAZ8Jkzvp7J8zX6Nx2NJoxhRk3IrJv4AaXxQBGSoxYIEdOvWrW4AtdMO6jOgVlrS/QT08ByCUtQXg3VDBAT/L+jN+wQEK+l6gNp00iaJgCIgL4B8Ount7a2yXEVAEVA9QEwz5jhEQGpGt8YKoQiIkzEGNNYZOQLiapjZATSmgMYaowgIIqCAxqqRY0u6d4AmkzzTfJ3FwRjfujXpB6AGZOfOZOtrKltb2t9bk8lki8jXimQnVWWxQEBSGuTj6tJlCcoKSvglqAlAtk4aA9IYDRsQYUIB6YwCBOSzs2rZ1ShpKEZASFPc1YiADFkPsKEYARkA+XTSrQ+YRUAzBqj1mdUIqDagr4YNyDhg9uCpA2ev9xBQa0OuD57KytjR1zXZl6cJ0/SbpSR5YW2IgDI5/qHER5loTlex5uWwAfmeep6+M0dCr0ZneXekhipsJqcyzbdLwwte+IUxOvAcc0dKsMv+heQVTO700AAhRkcII+KO1HApGlm2f2GgAVRTyujgG6ku4K6dGMXaLelxU4AYn8wZvaHDkZcpFgZMb6gO61YWCKhkBFk7Ci0awAFrhzFpCEhKgyYzOZ0RdEeHteUlc9IXoZNO5BIUUHRHdp4bavRUgnL/M8rq+ukKAI98pAOUeWko3AccwQEaU0BGT2UPiLaDMvf8AVLcm4OANEG/6f7lpQR+wCE76WAAjXNAY9+ADr5+PVcgQErQL5Fmq3nTrAafdb6tOB5vNQhI6I09WDwGD9Wg31XcDmo2DNgakDSx2iCg353V9ufVlvTd5Ik1+JVd/s4NAtD0tTPP0vJzb/HICXaC64vhKFfipHNiXQBiGm1frCEnnbkc9vtQ/rLlvXkSBrz/cdabf7HZ3rw1IL0qQ3P79m2Xat44YMYDwhWYvYQH6FMMyGRlC2hF/pYK9B7QpxCQ2coS0L05BdAhl9HFEAH5nVlVi9DzDnwGAOje4jzsZhyYx3L0WXlYMTRAFvWTz1cMCu+kXWUQgPh2UASkAVRHyI19dlZnMnihE0C+pn3KAD1YnD/6UfYPL0crtINmFxD0z/l4UOWGoldAExYCnUvOjPREWRAn12OVxoOwldifHXMR6PTaRgE1IE9ubGxsKcJGkLkIac1ZdCSbiGeVa2GmpTSwY18lyOu0TwbIqgTxpaCpElRbmgAUXvhLBBQBlQGymTi8Ov8G+v/e3Am3NnWQgBxb0haA1gE4SX8cjoAUQHBQCHGZng9guCNAQCt0mGz6NnAsQkEC8h5AdZ6+YWm62/2IYnhOWprV6LyhGAH1DRB8xahnrviK+eyshgcIOukRbgd9PlfNSc84oF2Yv9H8/Lw8q6HGSd/4Q5L8Jo8C7gCQRdb9t6T5uR+uABXGSXe5RFcngFD7B0seuqCN7oAheDeajZO+edMmVy33xdL7r6LZMSHYXo0Pamm55LqAihqKeGyoGiCNaCLMGKBX9ICelETOue58WnJeznvxeWxE1D///DM9z9MYjzekVV7rAlJiFPeWcJRrUQBV0IDGGNCGcn1VQJooV7hGOYxyxS6Ii5MmImdAvmVL53/66Sf1/E4mGxIhQqNsTLpk2kcHCH4NlaAvWog0W4LyM6nhPDaSAXF334ayIRHCp6rOamgDyRfWUCB5gQ+S0tuoqsRocvv2NlNlXOAPBGgC/9nZli6rCkj1QVTT7GrABhXJcBCA1K992viYpUFAtycTR0ClorR66IKuwZegyUR73fYEAZIvKwV06dg/Cjvvakt6NVl4M02/W+5yXw0LQNREtKKAlAvLAE3Pw1dssSBgoShOOsm/TfCZdTtVZUD4LdtWL7TxQQWDZGqc9GXYm38p/3ZDfUb1rNupqgNChDQXGgCNnruWAfrgSyZOywyoz6iedTtVVR9UfHfDK6ZI1+EvzQGqUIJ8BZL3AlAVH6QLJA9h0L7Eqk4thsQNUPrLO2eemQOjY2eYOEW8OmW9U0CUj2M7CEpgcdLNANrOATm3pAOLk64PyGNfrLbUpdEuIM99sQjIX5x0YID8dVaDDAPWjKVysrOzY7qD3mSHiHICZlpW0R9BhgE31A6q1VmdLUCFXQ10wrGhWFOcst41oJsV+mI9BDSZkPYeL8wIVVZZLcZahdvcC7eNazFJ2gDks7NqAHRTyLoW0IQwVADdVC+0BFQ3TnrWAdWOk24TkPlW2wUjigUqM6D6cdIzDiisOGlLVYu1WGBx0uEBCiwMOALyo6oCSK+yesVqxknPNqDiOGkpDPjhuYRIh8ELFkbeuxpFcdJyGPBgARXESavBC1joosADAqSPk1aDfgV9uIC8NxRTbZx00UKTwnHtfPYFkEZ0S5Wm4gs2bEC6KNcUfo5AC5AaBhyIWAxb81I2Js1k+u4iWiDwwT+ZSg9ILECp+kdwLAitlqDKTjr9bI6MRu+yXlkBIMkjqc+on/UAAa2z4foV2mQs8kFSnaY+o37WwwOEGopHICDY66ANIW0tRpX9BKRXWXU1Dn2Iu6nrXF9M1w6i750EyGfWwxswy4pN9l5hQHxvXteSvpucFq61Sa+jqj6gZoY7VEBqGLDarHbKeo8BsRIkrgashAHz39INBxD0zIeuI0C8k7YSp6x3DkivsqzF5ufA6FficEdfAfnvavDDHU4DikMBxA13uPEZCqA0vbaI8Gj3qZsdQNX7Yki+dIQzOEBVxCnrvQY0/eK999573zlc2inrnQPSq2wA3X+a+OiDbiu2p+ozrLJQpgoR0NW8lh85NYN6BqjqKyZ88sPGg/oLyPu0D2wnHjj7wZfX3n0auEZQkRuqw7qVxRAnbSF37tzRn9APVhvHpGEY8GHinle6DwO2VLXYF8O9eSwB7O0THiD0bXgOK0Z36HwQF/5yMnWQ2vnsBaDsvRrhTtjVue5XA24QUNUBsy/gTs+j+WdQ+MsBp2+imsh6cICkj1mQ2HrqJrJeG5DvhuJwAOlVEZDhwr4Nd4T3ikVAERB/ogaga6+dOes4ZKY+o37WA/RB9x6HfbF1ZbRDXS75278kyalOF1iyMGric6iTbFSIq7/U5ZI3C5bomnFAOOaFzh6yvpga3bG3BBfh/N85JU46LEBNfKtx+DoeFbpUGh9EtlPnYmBq51NVhTeiiMeD4Bv2PD8eVLzQJCdOWe8xIBS+mQfBEEByjOLe0un9f2uddGCA5M/C6Ze9GJD8Ue+VK1aA8GArB0iNcr2b/Okc56QbipOuPya9c+fOjir5aUkgIOkO4jF6xZALQlUZ9UE6QAlecLvRlTg9TPvIn4UL34a7lyAUxPkqQMOKK6AUUBtruQY4L7bLevD89706H9TGasABAiLLTUIy63wguVxeBgsonV6aA6PncGHKx+yVdhD9TqO3r5he5dSbn3JBQtqNR15ufMn2sAEJosZJf4w1eTC5TXodVT0CpImTLtj8aKiAzKI+wyoLZaoIyKCKgAyqCMigmklAPp20pSoCMqhabUlHQNR8IICKhjsqDpjNHCBh+XEf40ERUHOAZkGgD5JV3m7eUnFxLEFuquE5aUdVBGRQRUAGVQRkUPWtsxoB+VFFQAZVBGRQ9QuQz/TWHzBzVEVABlUEZFBFQAaVl4lDInfxzGo+Gd1AensEqDAMOAJColnkbVVeOrmB9PYHkBoGLC3rOnBAmoUmH547LRnlt5YehVRy+1F3nMrnOUC5fapcn6r3S22exwPC56sDUpYqvZv88eMlIQx4yIA0i90SH82FAYujufLobqVjLgzYy/2Mx7I2rQ5oNXlxTQwDjiVI55nVGEU5JVymnFU9ctLaJdtTXZTrQAHpF/2PgKgo7SBalvJl7YcNSG1JryYLmZO+0WwYsKUqAEBqGPDDZbl31kB6ewRIDQPez9qJQv++gfT2CZBZGkjvbAFiYvdpnUcrf7cC4DEgq6xu7iQ9BqSxAlaXOUkE5PqMpq36Bmi2BHSdgNAFdJ2A0AV0nYDQBXSdgNAF+LmNeV5Ra6UsQqSx0uxYqr2V/AWk3uqbrIP0wpqS/k1xoIu7Dii2VcRiXrHMShhlstjSVXerVUVTYiVxTG8I8IXrgCnvNmIzr2i3CJHdlq76r7AvwuEX/jLVapN8qy3efP8TsXQK1wEbACaxmVe0W4TIbktXjZHuspKv/flJvb3lZGFZs/Ue/g/oMuwoVvOKdosQ2W3pqjFimXqlxIqOg+5f4G++euqlH/i/p3gdKMu5pVjNK9otQmS3pavGKHtb0Wo0QkZlK/3szPc/igrxOmDPoVCM84oFVtIiRCV54Me+C4z20BDnwltlVnnZkByA8DTxOmAJoUys5hXtFiGy29JVZwTr7wT54BKrTfrAzgER4T2H1SJEdlu6arO+sCauJaKzykCjcrbcLiCreUW7RYjstnRVjaiGJ6m71f5l6Bl/EJy0lIIGfJDVvKLdIkR2W7oWV4jGW5EHS3WsBMh3LWY1r2i3CJHdlq66B2pgFDa8lEaW+EJ7bwdZzSvaLUJkt6Wr/oFvpul3y3zWdQ98Yg02nMtcQRMtaZt5RZ2VugiR1kr9i6tGxP0WdusEK6UblLsddMp7X8xmXlFrZeiCF23pqn3gZXirwoEBPlkvKr15CZD/3vwMC+g6AaEL6DoBoQvoOgGhC+g6AaEL6DoBoQvoOgGhC+g6AaEL6DoBbpJvvHj/9x+JinK7ygJqXd260Izff5UAMABidpUF1Lq6dSEZh6s62wDK7SoLqHV1V2Kb8QjIk12JgFpXV5HPF2Es6fzZr7jj0VG88zZaJ3569UimoXsvieb41UFbDwG0NQFW5C/aCt6TSLR79Dxbn3/ddYdmUD/HTkLWhAc0nez4JD36NdGgHMnmBYDgUvxo+1Oyo4Nst84/zmn32NYB0TQD8jdfYYeQUM4D0IX1FXMdIMqFkZLs4F4z6C/AflgL8Jp9o0ACj2Z/wft/PYheGpihQx+iTe5prQM3ep2u4OzL5oW12LoAULFjBWfd2ScBvwBMAv/UJ7hjmiHyl0WAnifHWY5k80JAeDuivCTJduQdQ5s7uaUY1MhtBcHv0LF/EQ/NMkRSzjIET2SAJPNiQOR65otkO/IHIBxdBHjItYvsUp97HNZbwralBAhzzvCHaF7SUFwXazOdXXY/9zes/Wr+szkK5ATbCo95YQWQaF4CCJUNyBu7YMUO7XhV4Q3roB00xS0bQPYwMwASzMu6GtmPw7uskaPYIXYV3rCOWtK//OdpVE0xH0REA4g3V2op7kcG55G/sYsUO/SOXXJtBKXddTXgH/MwnwEkBYCYeQkg4s5II0cFBEvXEddGUNo+oGt/P3I8q5Omb+PMkHbQ9NLjx99PNYAkcz7j2cv0lVRE8m6EYkcAunUzoAA/+baVXdHnCE3nkyog2ZyvtIBUBHdJTYhEsSMAnd+w1kvQVeaWpb4YqqWUEiSb85UW3fGUAGKNTK0dAej8hrXvg6bvzMOUzrOdklEtdQC3c1QfJJkzHp9nbnt0ggckNHIUu8pDH6BqRnsnco1pKcB7QgIV1P91bQSlQwFEPJ27ix4KINIGqFCAhgIoa0MDMqzrKMBzSmZOQNcJCF1A1wkIXUDXCQhdQNcJCF1A1wkIXUDXCQhd/g/ZaY2SpihArQAAAABJRU5ErkJggg==" width="100%" /></p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">1337</span>)</span>
+<span id="cb9-2"><a href="#cb9-2" tabindex="-1"></a></span>
+<span id="cb9-3"><a href="#cb9-3" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">draw_data_roc</span>(</span>
+<span id="cb9-4"><a href="#cb9-4" tabindex="-1"></a>  <span class="at">n =</span> <span class="dv">120</span>, <span class="at">prev =</span> <span class="fu">c</span>(<span class="fl">0.25</span>, <span class="fl">0.75</span>), <span class="at">m =</span> <span class="dv">4</span>,</span>
+<span id="cb9-5"><a href="#cb9-5" tabindex="-1"></a>  <span class="at">delta =</span> <span class="fl">0.05</span>, <span class="at">e =</span> <span class="dv">10</span>, <span class="at">auc =</span> <span class="fu">seq</span>(<span class="fl">0.90</span>, <span class="fl">0.95</span>, <span class="fl">0.025</span>), <span class="at">rho =</span> <span class="fu">c</span>(<span class="fl">0.25</span>, <span class="fl">0.25</span>)</span>
+<span id="cb9-6"><a href="#cb9-6" tabindex="-1"></a>)</span>
+<span id="cb9-7"><a href="#cb9-7" tabindex="-1"></a></span>
+<span id="cb9-8"><a href="#cb9-8" tabindex="-1"></a><span class="fu">lapply</span>(data, head)</span>
+<span id="cb9-9"><a href="#cb9-9" tabindex="-1"></a><span class="co">#&gt; $specificity</span></span>
+<span id="cb9-10"><a href="#cb9-10" tabindex="-1"></a><span class="co">#&gt;      model1 model2 model3 model4</span></span>
+<span id="cb9-11"><a href="#cb9-11" tabindex="-1"></a><span class="co">#&gt; [1,]      1      1      1      1</span></span>
+<span id="cb9-12"><a href="#cb9-12" tabindex="-1"></a><span class="co">#&gt; [2,]      0      0      1      1</span></span>
+<span id="cb9-13"><a href="#cb9-13" tabindex="-1"></a><span class="co">#&gt; [3,]      1      1      1      1</span></span>
+<span id="cb9-14"><a href="#cb9-14" tabindex="-1"></a><span class="co">#&gt; [4,]      1      1      1      1</span></span>
+<span id="cb9-15"><a href="#cb9-15" tabindex="-1"></a><span class="co">#&gt; [5,]      1      1      1      1</span></span>
+<span id="cb9-16"><a href="#cb9-16" tabindex="-1"></a><span class="co">#&gt; [6,]      1      1      1      1</span></span>
+<span id="cb9-17"><a href="#cb9-17" tabindex="-1"></a><span class="co">#&gt; </span></span>
+<span id="cb9-18"><a href="#cb9-18" tabindex="-1"></a><span class="co">#&gt; $sensitivity</span></span>
+<span id="cb9-19"><a href="#cb9-19" tabindex="-1"></a><span class="co">#&gt;      model1 model2 model3 model4</span></span>
+<span id="cb9-20"><a href="#cb9-20" tabindex="-1"></a><span class="co">#&gt; [1,]      0      0      1      1</span></span>
+<span id="cb9-21"><a href="#cb9-21" tabindex="-1"></a><span class="co">#&gt; [2,]      1      1      1      1</span></span>
+<span id="cb9-22"><a href="#cb9-22" tabindex="-1"></a><span class="co">#&gt; [3,]      1      1      1      1</span></span>
+<span id="cb9-23"><a href="#cb9-23" tabindex="-1"></a><span class="co">#&gt; [4,]      1      1      0      0</span></span>
+<span id="cb9-24"><a href="#cb9-24" tabindex="-1"></a><span class="co">#&gt; [5,]      1      1      1      1</span></span>
+<span id="cb9-25"><a href="#cb9-25" tabindex="-1"></a><span class="co">#&gt; [6,]      1      1      1      1</span></span></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a><span class="do">## comparison regions</span></span>
+<span id="cb10-2"><a href="#cb10-2" tabindex="-1"></a>results_comp <span class="ot">&lt;-</span> data <span class="sc">%&gt;%</span> <span class="fu">evaluate</span>(</span>
+<span id="cb10-3"><a href="#cb10-3" tabindex="-1"></a>  <span class="at">alternative =</span> <span class="st">&quot;greater&quot;</span>,</span>
+<span id="cb10-4"><a href="#cb10-4" tabindex="-1"></a>  <span class="at">alpha =</span> <span class="fl">0.025</span>,</span>
+<span id="cb10-5"><a href="#cb10-5" tabindex="-1"></a>  <span class="at">benchmark =</span> <span class="fu">c</span>(<span class="fl">0.7</span>, <span class="fl">0.8</span>),</span>
+<span id="cb10-6"><a href="#cb10-6" tabindex="-1"></a>  <span class="at">analysis =</span> <span class="st">&quot;co-primary&quot;</span>,</span>
+<span id="cb10-7"><a href="#cb10-7" tabindex="-1"></a>  <span class="at">regu =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb10-8"><a href="#cb10-8" tabindex="-1"></a>  <span class="at">adj =</span> <span class="st">&quot;maxt&quot;</span></span>
+<span id="cb10-9"><a href="#cb10-9" tabindex="-1"></a>)</span>
+<span id="cb10-10"><a href="#cb10-10" tabindex="-1"></a><span class="fu">visualize</span>(results_comp)</span></code></pre></div>
+<p><img role="img" src="data:image/png;base64,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" width="100%" /></p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a><span class="do">## confidence regions</span></span>
+<span id="cb11-2"><a href="#cb11-2" tabindex="-1"></a>results_conf <span class="ot">&lt;-</span> data <span class="sc">%&gt;%</span> <span class="fu">evaluate</span>(</span>
+<span id="cb11-3"><a href="#cb11-3" tabindex="-1"></a>  <span class="at">alternative =</span> <span class="st">&quot;greater&quot;</span>,</span>
+<span id="cb11-4"><a href="#cb11-4" tabindex="-1"></a>  <span class="at">alpha =</span> <span class="fl">0.025</span>,</span>
+<span id="cb11-5"><a href="#cb11-5" tabindex="-1"></a>  <span class="at">benchmark =</span> <span class="fu">c</span>(<span class="fl">0.7</span>, <span class="fl">0.8</span>),</span>
+<span id="cb11-6"><a href="#cb11-6" tabindex="-1"></a>  <span class="at">analysis =</span> <span class="st">&quot;full&quot;</span>,</span>
+<span id="cb11-7"><a href="#cb11-7" tabindex="-1"></a>  <span class="at">regu =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb11-8"><a href="#cb11-8" tabindex="-1"></a>  <span class="at">adj =</span> <span class="st">&quot;maxt&quot;</span></span>
+<span id="cb11-9"><a href="#cb11-9" tabindex="-1"></a>)</span>
+<span id="cb11-10"><a href="#cb11-10" tabindex="-1"></a><span class="fu">visualize</span>(results_conf)</span></code></pre></div>
+<p><img role="img" src="data:image/png;base64,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" width="100%" /></p>
 <p>As we can see, the comparison regions are more liberal compared to
 the confidence regions.</p>
 </div>
@@ -775,16 +695,15 @@ the confidence regions.</p>
 <h2>Real data example</h2>
 <p>A second vignette shows an application of the cases package to the
 Breast Cancer Wisconsin Diagnostic (wdbc) data set.</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">vignette</span>(<span class="st">&quot;example_wdbc&quot;</span>, <span class="st">&quot;cases&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" tabindex="-1"></a><span class="fu">vignette</span>(<span class="st">&quot;example_wdbc&quot;</span>, <span class="st">&quot;cases&quot;</span>)</span></code></pre></div>
 </div>
 <div id="references" class="section level2">
 <h2>References</h2>
-<ul>
-<li><a href="https://arxiv.org/abs/2105.13469">Westphal, Max, and
-Antonia Zapf. “Statistical Inference for Diagnostic Test Accuracy
-Studies with Multiple Comparisons.” arXiv preprint arXiv:2105.13469
-(2021).</a></li>
-</ul>
+<ol style="list-style-type: decimal">
+<li>Westphal M, Zapf A. Statistical inference for diagnostic test
+accuracy studies with multiple comparisons. Statistical Methods in
+Medical Research. 2024;0(0). <a href="https://journals.sagepub.com/doi/full/10.1177/09622802241236933">doi:10.1177/09622802241236933</a></li>
+</ol>
 </div>
 
 
